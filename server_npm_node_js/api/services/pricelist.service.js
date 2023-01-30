@@ -23,6 +23,7 @@ export default {
   bulkUpdate,
   bulkDelete,
   // getPriceListone,
+  getPriceListbyOrg,
   getPriceListbyService,
   createService,
 };
@@ -533,4 +534,32 @@ async function createService(body) {
   } else {
     throw Error("Service already exists");
   }
+}
+
+async function getPriceListbyOrg(body) {
+  const Organisationid = body.Organisationid;
+  if (Organisationid) {
+    const PricelistDetails = await Pricelist.aggregate([
+      { $match: { Organisationid: Organisationid } },
+      {
+        $project: {
+          // SNo: 1,
+          ServiceCode: 1,
+          DiagnosisTestorServiceName: 1,
+          Organisationid: 1,
+          OrganisationPrices: 1,
+          FacilityNPI: 1,
+          FacilityName: 1,
+          FacilityPrices: 1,
+          createdBy: 1,
+          createdDate: 1,
+          updatedBy: 1,
+          updatedDate: 1,
+        },
+      },
+    ]);
+    return { data: PricelistDetails };
+  } else {
+    throw Error("please provide facility npi");
+  }
 }

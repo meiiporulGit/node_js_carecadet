@@ -6,6 +6,7 @@ const router = Router();
 export default router;
 
 router.post("/uploadPricelist", uploadPricelist);
+router.post("/unknownHeaderPricelist", unknownHeaderPricelist);
 router.post("/publishPricelist", publishPricelist);
 router.get("/getPriceList", getPriceList);
 router.get("/getPriceListbyFacility", getPriceListbyFacility);
@@ -34,6 +35,19 @@ function uploadPricelist(req, res, next) {
   // console.log("Body",req.body);
   let file = req.body;
   PricelistService.uploadPricelist(file)
+    .then((obj) => {
+      new ResObject(res, obj);
+    })
+    .catch(next);
+  // console.log("check");
+  // res.send(200);
+}
+
+function unknownHeaderPricelist(req, res, next) {
+  // let file = req.files.screenshot;
+  // console.log("Body",req.body);
+  let file = req.body;
+  PricelistService.unKnownHeaderPricelist(file)
     .then((obj) => {
       new ResObject(res, obj);
     })

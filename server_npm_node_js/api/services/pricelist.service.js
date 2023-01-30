@@ -146,7 +146,32 @@ async function pathConfirmPricelist(emailData, orgID, filename) {
   await pathPriceListDetails.save();
   return { message: "success" };
 }
-
+async function fileConfirmation(body){
+  console.log(body,"console")
+ 
+ 
+    const findFilePath = await PathPricelist.findOne({organizationID:body.orgID,filePath:body.file.filePath });
+  
+      if(findFilePath){
+          await PathPricelist.findOneAndUpdate(
+              { organizationID:body.orgID,filePath:body.file.filePath },
+              {
+                  $set:{
+                     
+                      status:"published",
+                      updatedBy:"Admin",
+                      updatedDate: new Date(),
+                  }
+                 
+              }
+          );
+          // await sendConfirmationEmail(decoded.email,decoded.name,decoded.file)
+          return { message: 'Successfully verified' };
+      } else {
+         throw Error("File not exist")
+      }
+  
+  }
 //****************************************************create&update&delete********************** */
 
 async function uploadPricelist(file) {
@@ -304,9 +329,11 @@ const createPricelist=await   Pricelist.create(finalPublish
 //     if (err) throw err;
 //   }
 );
+
  if(createPricelist.length===0){
   throw Error("Not Create")
  }else{
+  await fileConfirmation(file.emailData)
   return {
     message:"Successfully Published"
   }

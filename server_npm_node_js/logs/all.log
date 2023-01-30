@@ -17552,3 +17552,286 @@ Jan-23-2023 11:14:26 [32minfo[39m: [32m2023-01-23T16:14:26.467Z[39m
 Jan-30-2023 17:30:27 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
 Jan-30-2023 17:30:27 [32minfo[39m: [32mEnvironment : development[39m
 Jan-30-2023 17:30:27 [32minfo[39m: [32m2023-01-30T22:30:27.432Z[39m
+Jan-30-2023 17:44:01 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Jan-30-2023 17:44:01 [32minfo[39m: [32mEnvironment : development[39m
+Jan-30-2023 17:44:01 [32minfo[39m: [32m2023-01-30T22:44:01.725Z[39m
+Jan-30-2023 17:47:25 [32mhttp[39m: [32mPOST /user/login 200 521 - 1854.549 ms[39m
+[32m[39m
+Jan-30-2023 17:47:26 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-164 304 - - 585.602 ms[39m
+[32m[39m
+Jan-30-2023 17:47:26 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-164 304 - - 594.989 ms[39m
+[32m[39m
+Jan-30-2023 17:47:27 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-164 304 - - 592.451 ms[39m
+[32m[39m
+Jan-30-2023 17:47:27 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-164 304 - - 666.024 ms[39m
+[32m[39m
+Jan-30-2023 17:47:28 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-164 304 - - 582.278 ms[39m
+[32m[39m
+Jan-30-2023 17:47:28 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-164 304 - - 563.167 ms[39m
+[32m[39m
+Jan-30-2023 17:47:33 [32mhttp[39m: [32mGET /getPriceList 200 30 - 554.911 ms[39m
+[32m[39m
+Jan-30-2023 17:47:34 [32mhttp[39m: [32mGET /getPriceList 304 - - 621.784 ms[39m
+[32m[39m
+Jan-30-2023 17:47:35 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-164 304 - - 577.564 ms[39m
+[32m[39m
+Jan-30-2023 17:47:36 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-164 304 - - 581.798 ms[39m
+[32m[39m
+Jan-30-2023 17:47:48 [32mhttp[39m: [32mPOST /user/logout 200 55 - 291.839 ms[39m
+[32m[39m
+Jan-30-2023 17:48:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 17:48:05 [32minfo[39m: [32mdev err Already a user exists with this email[39m
+Jan-30-2023 17:48:05 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-30-2023 17:48:05 [32mhttp[39m: [32mPOST /provider/createProvider 500 345 - 301.218 ms[39m
+[32m[39m
+Jan-30-2023 17:48:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 17:48:20 [32minfo[39m: [32mdev err Pending Account.Please Verify Your Email![39m
+Jan-30-2023 17:48:20 [31merror[39m: [31mPending Account.Please Verify Your Email![39m
+Jan-30-2023 17:48:20 [32mhttp[39m: [32mPOST /user/login 500 255 - 427.792 ms[39m
+[32m[39m
+Jan-30-2023 17:49:05 [32mhttp[39m: [32mPOST /provider/createProvider 200 53 - 1171.179 ms[39m
+[32m[39m
+Jan-30-2023 17:49:06 [31merror[39m: [31mUncaught Exception[39m
+Jan-30-2023 17:53:34 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Jan-30-2023 17:53:34 [32minfo[39m: [32mEnvironment : development[39m
+Jan-30-2023 17:53:34 [32minfo[39m: [32m2023-01-30T22:53:34.622Z[39m
+Jan-30-2023 17:53:41 [32mhttp[39m: [32mPOST /provider/createProvider 200 53 - 6605.072 ms[39m
+[32m[39m
+Jan-30-2023 17:53:42 [31merror[39m: [31mUncaught Exception[39m
+Jan-30-2023 17:54:30 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Jan-30-2023 17:54:30 [32minfo[39m: [32mEnvironment : development[39m
+Jan-30-2023 17:54:30 [32minfo[39m: [32m2023-01-30T22:54:30.999Z[39m
+Jan-30-2023 17:54:59 [32mhttp[39m: [32mPOST /provider/createProvider 200 53 - 1100.347 ms[39m
+[32m[39m
+Jan-30-2023 17:55:10 [32mhttp[39m: [32mGET /user/confirm?firstName=jan&email=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphbmFuaS5tZWlpcG9ydWxAZ21haWwuY29tIiwiY3JlYXRlZCI6Ik1vbiBKYW4gMzAgMjAyMyIsImlhdCI6MTY3NTExOTI5OSwiZXhwIjoxNjc1MjA1Njk5fQ.tT8F-r2kkzjRpO-XjjSOrivWVzdF8c3rRLWjHQHco7k 200 16 - 634.854 ms[39m
+[32m[39m
+Jan-30-2023 17:55:10 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 17:55:10 [32minfo[39m: [32mdev err No Authorization provided[39m
+Jan-30-2023 17:55:10 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 17:55:10 [32mhttp[39m: [32mGET /favicon.ico 401 - - 14.289 ms[39m
+[32m[39m
+Jan-30-2023 17:55:41 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Jan-30-2023 17:55:41 [32minfo[39m: [32mEnvironment : development[39m
+Jan-30-2023 17:55:41 [32minfo[39m: [32m2023-01-30T22:55:41.856Z[39m
+Jan-30-2023 17:56:46 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Jan-30-2023 17:56:46 [32minfo[39m: [32mEnvironment : development[39m
+Jan-30-2023 17:56:46 [32minfo[39m: [32m2023-01-30T22:56:46.033Z[39m
+Jan-30-2023 17:57:14 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Jan-30-2023 17:57:14 [32minfo[39m: [32mEnvironment : development[39m
+Jan-30-2023 17:57:14 [32minfo[39m: [32m2023-01-30T22:57:14.314Z[39m
+Jan-30-2023 17:57:23 [32mhttp[39m: [32mPOST /user/login 200 596 - 1435.448 ms[39m
+[32m[39m
+Jan-30-2023 17:57:24 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-248 200 30 - 626.632 ms[39m
+[32m[39m
+Jan-30-2023 17:57:24 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 200 30 - 630.733 ms[39m
+[32m[39m
+Jan-30-2023 17:57:25 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-248 304 - - 608.942 ms[39m
+[32m[39m
+Jan-30-2023 17:57:25 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 590.347 ms[39m
+[32m[39m
+Jan-30-2023 17:57:25 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-248 304 - - 596.632 ms[39m
+[32m[39m
+Jan-30-2023 17:57:41 [32mhttp[39m: [32mPOST /organization/image 200 35 - 300.610 ms[39m
+[32m[39m
+Jan-30-2023 17:57:43 [32mhttp[39m: [32mPOST /organization/createOrganization 200 53 - 1221.019 ms[39m
+[32m[39m
+Jan-30-2023 17:57:43 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-248 200 593 - 577.230 ms[39m
+[32m[39m
+Jan-30-2023 17:58:32 [32mhttp[39m: [32mPOST /facility/createFacility 200 53 - 1264.913 ms[39m
+[32m[39m
+Jan-30-2023 17:58:33 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 200 501 - 595.277 ms[39m
+[32m[39m
+Jan-30-2023 17:58:34 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 575.357 ms[39m
+[32m[39m
+Jan-30-2023 17:58:42 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=15643&Organisationid=ORG-330 200 30 - 575.034 ms[39m
+[32m[39m
+Jan-30-2023 17:58:43 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=15643&Organisationid=ORG-330 304 - - 556.304 ms[39m
+[32m[39m
+Jan-30-2023 18:00:04 [31merror[39m: [31merr{"errno":-4058,"code":"ESTREAM","syscall":"open","path":"F:\\Carecadet-30.1\\node_js_carecadet\\server_npm_node_js\\unknownHeaderUploads\\1675119602987_servicepricemistake.csv","command":"API","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:00:04 [32minfo[39m: [32mdev err ENOENT: no such file or directory, open 'F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\unknownHeaderUploads\1675119602987_servicepricemistake.csv'[39m
+Jan-30-2023 18:00:04 [31merror[39m: [31mENOENT: no such file or directory, open 'F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\unknownHeaderUploads\1675119602987_servicepricemistake.csv'[39m
+Jan-30-2023 18:00:04 [32mhttp[39m: [32mPOST /unknownHeaderPricelist 500 369 - 4496.540 ms[39m
+[32m[39m
+Jan-30-2023 18:01:42 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-248 304 - - 594.618 ms[39m
+[32m[39m
+Jan-30-2023 18:01:42 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-248 304 - - 582.792 ms[39m
+[32m[39m
+Jan-30-2023 18:01:56 [32mhttp[39m: [32mPOST /unknownHeaderPricelist 200 72 - 5793.076 ms[39m
+[32m[39m
+Jan-30-2023 18:09:31 [32mhttp[39m: [32mGET /getPriceList 304 - - 624.120 ms[39m
+[32m[39m
+Jan-30-2023 18:09:32 [32mhttp[39m: [32mGET /getPriceList 304 - - 613.239 ms[39m
+[32m[39m
+Jan-30-2023 18:09:33 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 578.725 ms[39m
+[32m[39m
+Jan-30-2023 18:09:34 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 567.472 ms[39m
+[32m[39m
+Jan-30-2023 18:09:35 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 200 30 - 268.215 ms[39m
+[32m[39m
+Jan-30-2023 18:09:36 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 283.298 ms[39m
+[32m[39m
+Jan-30-2023 18:10:00 [32mhttp[39m: [32mPOST /uploadPricelist 200 72 - 5959.451 ms[39m
+[32m[39m
+Jan-30-2023 18:10:00 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 200 363 - 270.467 ms[39m
+[32m[39m
+Jan-30-2023 18:10:00 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 281.555 ms[39m
+[32m[39m
+Jan-30-2023 18:10:31 [32mhttp[39m: [32mGET /pathPricelist/verify?file=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcmdJRCI6Ik9SRy0zMzAiLCJmaWxlIjoiL3VwbG9hZHMvMTY3NTEyMDE5NjU1Nl8xNjc1MTE5NzEzMjU2X3NlcnZpY2VwcmljZW1pc3Rha2UgLSAxNjc1MTE5NzEzMjU2X3NlcnZpY2VwcmljZW1pc3Rha2UgKDEpLmNzdiIsImVtYWlsIjoiamFuYW5pLm1laWlwb3J1bEBnbWFpbC5jb20iLCJuYW1lIjoiamFuIGphbmFuaSIsImlhdCI6MTY3NTEyMDE5NiwiZXhwIjoxNjc1MjA2NTk2fQ.l__5AxnugC92tDTjr-N3VSK8lH2Rcf2gnx6mM_k2JFk 200 23 - 3426.860 ms[39m
+[32m[39m
+Jan-30-2023 18:10:31 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:10:31 [32minfo[39m: [32mdev err No Authorization provided[39m
+Jan-30-2023 18:10:31 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 18:10:31 [32mhttp[39m: [32mGET /favicon.ico 401 - - 11.583 ms[39m
+[32m[39m
+Jan-30-2023 18:10:53 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 200 391 - 310.748 ms[39m
+[32m[39m
+Jan-30-2023 18:10:53 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 286.864 ms[39m
+[32m[39m
+Jan-30-2023 18:10:53 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-248 304 - - 626.730 ms[39m
+[32m[39m
+Jan-30-2023 18:10:53 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 302.148 ms[39m
+[32m[39m
+Jan-30-2023 18:10:54 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-248 304 - - 609.915 ms[39m
+[32m[39m
+Jan-30-2023 18:10:54 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 284.798 ms[39m
+[32m[39m
+Jan-30-2023 18:10:58 [32mhttp[39m: [32mGET /pathPricelist/check?file=1675120196556_1675119713256_servicepricemistake%20-%201675119713256_servicepricemistake%20(1).csv 200 - - 7.407 ms[39m
+[32m[39m
+Jan-30-2023 18:10:58 [32mhttp[39m: [32mGET /pathPricelist/check?file=1675120196556_1675119713256_servicepricemistake%20-%201675119713256_servicepricemistake%20(1).csv 304 - - 3.103 ms[39m
+[32m[39m
+Jan-30-2023 18:11:04 [32mhttp[39m: [32mPOST /publishPricelist 200 55 - 2802.199 ms[39m
+[32m[39m
+Jan-30-2023 18:11:04 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 200 392 - 276.090 ms[39m
+[32m[39m
+Jan-30-2023 18:11:05 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 286.361 ms[39m
+[32m[39m
+Jan-30-2023 18:12:52 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 326.056 ms[39m
+[32m[39m
+Jan-30-2023 18:13:00 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 649.044 ms[39m
+[32m[39m
+Jan-30-2023 18:13:00 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 645.635 ms[39m
+[32m[39m
+Jan-30-2023 18:13:04 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=15643&Organisationid=ORG-330 200 - - 581.146 ms[39m
+[32m[39m
+Jan-30-2023 18:13:05 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=15643&Organisationid=ORG-330 304 - - 575.934 ms[39m
+[32m[39m
+Jan-30-2023 18:13:07 [32mhttp[39m: [32mGET /getPriceList 200 - - 595.331 ms[39m
+[32m[39m
+Jan-30-2023 18:13:07 [32mhttp[39m: [32mGET /getPriceList 304 - - 607.108 ms[39m
+[32m[39m
+Jan-30-2023 18:13:08 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 574.561 ms[39m
+[32m[39m
+Jan-30-2023 18:13:09 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 583.208 ms[39m
+[32m[39m
+Jan-30-2023 18:13:17 [32mhttp[39m: [32mGET /getPriceList 304 - - 583.462 ms[39m
+[32m[39m
+Jan-30-2023 18:13:17 [32mhttp[39m: [32mGET /getPriceList 304 - - 613.635 ms[39m
+[32m[39m
+Jan-30-2023 18:13:20 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 315.038 ms[39m
+[32m[39m
+Jan-30-2023 18:13:21 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 305.873 ms[39m
+[32m[39m
+Jan-30-2023 18:13:31 [32mhttp[39m: [32mGET /getPriceList 304 - - 558.986 ms[39m
+[32m[39m
+Jan-30-2023 18:13:32 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 585.728 ms[39m
+[32m[39m
+Jan-30-2023 18:13:32 [32mhttp[39m: [32mGET /getPriceList 304 - - 1378.719 ms[39m
+[32m[39m
+Jan-30-2023 18:13:33 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 588.404 ms[39m
+[32m[39m
+Jan-30-2023 18:13:47 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=15643&Organisationid=ORG-330 304 - - 619.338 ms[39m
+[32m[39m
+Jan-30-2023 18:13:48 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=15643&Organisationid=ORG-330 304 - - 562.764 ms[39m
+[32m[39m
+Jan-30-2023 18:14:19 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:14:19 [32minfo[39m: [32mdev err 2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain already exists[39m
+Jan-30-2023 18:14:19 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain already exists[39m
+Jan-30-2023 18:14:19 [32mhttp[39m: [32mPOST /uploadPricelist 500 697 - 3222.917 ms[39m
+[32m[39m
+Jan-30-2023 18:14:24 [32mhttp[39m: [32mGET /getPriceList 304 - - 596.126 ms[39m
+[32m[39m
+Jan-30-2023 18:14:25 [32mhttp[39m: [32mGET /getPriceList 304 - - 603.098 ms[39m
+[32m[39m
+Jan-30-2023 18:14:30 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 596.163 ms[39m
+[32m[39m
+Jan-30-2023 18:14:31 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 575.837 ms[39m
+[32m[39m
+Jan-30-2023 18:15:15 [32mhttp[39m: [32mPOST /facility/createFacility 200 53 - 1282.212 ms[39m
+[32m[39m
+Jan-30-2023 18:15:16 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 200 969 - 558.938 ms[39m
+[32m[39m
+Jan-30-2023 18:15:16 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 632.963 ms[39m
+[32m[39m
+Jan-30-2023 18:15:17 [32mhttp[39m: [32mGET /getPriceList 304 - - 582.806 ms[39m
+[32m[39m
+Jan-30-2023 18:15:18 [32mhttp[39m: [32mGET /getPriceList 304 - - 578.118 ms[39m
+[32m[39m
+Jan-30-2023 18:15:19 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 577.651 ms[39m
+[32m[39m
+Jan-30-2023 18:15:19 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 621.064 ms[39m
+[32m[39m
+Jan-30-2023 18:15:22 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1324&Organisationid=ORG-330 200 30 - 618.986 ms[39m
+[32m[39m
+Jan-30-2023 18:15:23 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1324&Organisationid=ORG-330 304 - - 605.247 ms[39m
+[32m[39m
+Jan-30-2023 18:15:41 [32mhttp[39m: [32mPOST /uploadPricelist 200 72 - 6627.973 ms[39m
+[32m[39m
+Jan-30-2023 18:15:44 [32mhttp[39m: [32mGET /getPriceList 304 - - 575.631 ms[39m
+[32m[39m
+Jan-30-2023 18:15:44 [32mhttp[39m: [32mGET /getPriceList 304 - - 563.682 ms[39m
+[32m[39m
+Jan-30-2023 18:15:48 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 200 680 - 278.230 ms[39m
+[32m[39m
+Jan-30-2023 18:15:48 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 274.171 ms[39m
+[32m[39m
+Jan-30-2023 18:15:53 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 571.978 ms[39m
+[32m[39m
+Jan-30-2023 18:15:53 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 624.236 ms[39m
+[32m[39m
+Jan-30-2023 18:16:37 [32mhttp[39m: [32mGET /pathPricelist/verify?file=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcmdJRCI6Ik9SRy0zMzAiLCJmaWxlIjoiL3VwbG9hZHMvMTY3NTEyMDUzNzU4NV9zZXJ2aWNlcHJpY2V3aXRob3V0ZmFjaWxpdHkuY3N2IiwiZW1haWwiOiJqYW5hbmkubWVpaXBvcnVsQGdtYWlsLmNvbSIsIm5hbWUiOiJqYW4gamFuYW5pIiwiaWF0IjoxNjc1MTIwNTM3LCJleHAiOjE2NzUyMDY5Mzd9.iLx2FbH76g7kh7WcS7Vg3c041UToIhck23ydXrXeNkA 200 23 - 3512.211 ms[39m
+[32m[39m
+Jan-30-2023 18:16:37 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:16:37 [32minfo[39m: [32mdev err No Authorization provided[39m
+Jan-30-2023 18:16:37 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 18:16:37 [32mhttp[39m: [32mGET /favicon.ico 401 - - 4.233 ms[39m
+[32m[39m
+Jan-30-2023 18:17:09 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 200 708 - 304.834 ms[39m
+[32m[39m
+Jan-30-2023 18:17:10 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 287.885 ms[39m
+[32m[39m
+Jan-30-2023 18:17:12 [32mhttp[39m: [32mGET /pathPricelist/check?file=1675120537585_servicepricewithoutfacility.csv 200 - - 3.502 ms[39m
+[32m[39m
+Jan-30-2023 18:17:12 [32mhttp[39m: [32mGET /pathPricelist/check?file=1675120537585_servicepricewithoutfacility.csv 304 - - 3.143 ms[39m
+[32m[39m
+Jan-30-2023 18:17:17 [32mhttp[39m: [32mPOST /publishPricelist 200 55 - 2682.630 ms[39m
+[32m[39m
+Jan-30-2023 18:17:17 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 200 709 - 309.503 ms[39m
+[32m[39m
+Jan-30-2023 18:17:18 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 323.576 ms[39m
+[32m[39m
+Jan-30-2023 18:17:29 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 303.555 ms[39m
+[32m[39m
+Jan-30-2023 18:17:29 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 316.892 ms[39m
+[32m[39m
+Jan-30-2023 18:17:31 [32mhttp[39m: [32mGET /getPriceList 200 - - 582.578 ms[39m
+[32m[39m
+Jan-30-2023 18:17:32 [32mhttp[39m: [32mGET /getPriceList 304 - - 567.990 ms[39m
+[32m[39m
+Jan-30-2023 18:17:33 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 586.930 ms[39m
+[32m[39m
+Jan-30-2023 18:17:34 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 587.912 ms[39m
+[32m[39m
+Jan-30-2023 18:18:07 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 298.750 ms[39m
+[32m[39m
+Jan-30-2023 18:18:07 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-248&OrganizationID=ORG-330 304 - - 289.905 ms[39m
+[32m[39m
+Jan-30-2023 18:18:11 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 570.859 ms[39m
+[32m[39m
+Jan-30-2023 18:18:11 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-248 304 - - 566.572 ms[39m
+[32m[39m
+Jan-30-2023 18:42:56 [32mhttp[39m: [32mGET /facility/findfacilityNPI 404 163 - 292.435 ms[39m
+[32m[39m
+Jan-30-2023 18:42:56 [32mhttp[39m: [32mGET /facility/findfacilityNPI 404 163 - 284.371 ms[39m
+[32m[39m
+Jan-30-2023 18:43:42 [32mhttp[39m: [32mPOST /user/logout 200 55 - 298.289 ms[39m
+[32m[39m

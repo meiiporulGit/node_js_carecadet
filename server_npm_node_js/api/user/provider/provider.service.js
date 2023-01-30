@@ -14,8 +14,8 @@ export default {
 };
 dotenv.config();
 
-const useremail = "demo.carecade@gmail.com";
-const emailpass = "hlokspklhawbzvls";
+const useremail = "demo.carecadet@gmail.com";
+const emailpass = "wyldgbcphqvxmmws";
 
 // const useremail ="healthlens.demo@meiiporul.com";
 // const emailpass ="healthlens@23";
@@ -58,7 +58,7 @@ async function sendConfirmationEmail(firstName, _email) {
   });
   transport.sendMail(
     {
-      from: "demo.carecade@gmail.com",
+      from: "demo.carecadet@gmail.com",
       to: _email,
       subject: "Please confirm your account",
       html: `<h1>Email Confirmation</h1>

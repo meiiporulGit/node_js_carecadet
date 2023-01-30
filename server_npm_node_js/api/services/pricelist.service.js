@@ -4,6 +4,7 @@ import fs from "fs";
 // import csvjson from "csvtojson";
 import pkg from "json-2-csv";
 const { json2csv } = pkg;
+import jwt from 'jsonwebtoken';
 
 import csvjson from "csvjson";
 const __dirname = path.resolve(path.dirname(""));
@@ -13,6 +14,7 @@ import PathPricelist from "../pathPricelist/pathPricelist.schema.js";
 
 export default {
   uploadPricelist,
+  unKnownHeaderPricelist,
   publishPricelist,
   getPriceList,
   updatePricelist,
@@ -21,12 +23,13 @@ export default {
   bulkUpdate,
   bulkDelete,
   // getPriceListone,
+  getPriceListbyOrg,
   getPriceListbyService,
   createService,
 };
 
-const useremail = "carecadet.demo@gmail.com";
-const emailpass = "iiwcefbinvtgqjyc";
+const useremail = "demo.carecadet@gmail.com";
+const emailpass = "wyldgbcphqvxmmws";
 
 const transport = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -47,16 +50,21 @@ const transport = nodemailer.createTransport({
 
 async function sendConfirmationEmail(emailData, orgID, filename) {
   // console.log("Check");
-
+  // var uId=emailData.userID
+  console.log(emailData)
+var file=`/uploads/${filename}`
+var email=emailData.email
+var name=emailData.firstName+" "+emailData.lastName
+  const verifyFilename = jwt.sign({orgID,file,email,name},process.env.SECRET_KEY,{ expiresIn: '1d' })
   const mailOptions = await transport.sendMail(
     {
-      from: "carecadet.demo@gmail.com",
-      to: "carecadet.demo@gmail.com",
+      from: "demo.carecadet@gmail.com",
+      to: "demo.carecadet@gmail.com",
       subject: "Please confirm your account",
       html: `<h1>PriceList Confirmation</h1>
           <h2>Hello Admin,</h2>
           <p>Please Validate and Verify the uploaded pricelist from <br/> User ID : ${emailData.userID},<br/> User Name : ${emailData.userName} ,<br/> User Email : ${emailData.email}</p>
-          <a href=http://localhost:5200/pathPricelist/verify?filename=/uploads/${filename}&providerID=${emailData.userID}&orgID=${orgID}><button style="color: white;background-color: blue;padding:1rem; font-size: 15px;border:none ; border-radius:10px">Verify</button></a>
+          <a href=http://localhost:5200/pathPricelist/verify?file=${verifyFilename}><button style="color: white;background-color: blue;padding:1rem; font-size: 15px;border:none ; border-radius:10px">Verify</button></a>
           </div>`,
       attachments: [
         {
@@ -85,8 +93,49 @@ async function sendConfirmationEmail(emailData, orgID, filename) {
   // return {message: sendMessage}
 }
 
+async function unknownHeaderSendConfirmationEmail(emailData, orgID, filename,fileType) {
+  // console.log("Check");
+
+  const mailOptions = await transport.sendMail(
+    {
+      from: "demo.carecadet@gmail.com",
+      to: "demo.carecadet@gmail.com",
+      subject: "Please confirm your account",
+      html: `<h1>PriceList Confirmation</h1>
+          <h2>Hello Admin,</h2>
+          <h4>${fileType}</h4>
+          <p>Provider provide unknown Format <br/> User ID : ${emailData.userID},<br/> User Name : ${emailData.userName} ,<br/> User Email : ${emailData.email}</p>
+         
+        `,
+      attachments: [
+        {
+          filename: filename,
+          path: __dirname + "/unknownHeaderUploads/" + filename,
+        },
+      ],
+    }
+    // function (error, info) {
+    //   console.log("sentMail returned!");
+    //   if (error) {
+    //     console.log("Error!!!!!", error);
+    //     sendMessage="suerr"
+    //   } else {
+    //     console.log("Email sent:" + info.response);
+    //     sendMessage="suerr"
+    //   }
+    // }
+  );
+  if (mailOptions) {
+    return { message: "success" };
+  } else {
+    throw Error("mail not sent");
+  }
+  // .catch(err => console.log(err));
+  // return {message: sendMessage}
+}
+
 async function pathConfirmPricelist(emailData, orgID, filename) {
-  console.log("checkPath");
+ 
   const pathPriceListDetails = new PathPricelist();
   pathPriceListDetails.status = "Pending";
   pathPriceListDetails.filePath = "/uploads/" + filename;
@@ -98,7 +147,32 @@ async function pathConfirmPricelist(emailData, orgID, filename) {
   await pathPriceListDetails.save();
   return { message: "success" };
 }
-
+async function fileConfirmation(body){
+  console.log(body,"console")
+ 
+ 
+    const findFilePath = await PathPricelist.findOne({organizationID:body.orgID,filePath:body.file.filePath });
+  
+      if(findFilePath){
+          await PathPricelist.findOneAndUpdate(
+              { organizationID:body.orgID,filePath:body.file.filePath },
+              {
+                  $set:{
+                     
+                      status:"published",
+                      updatedBy:"Admin",
+                      updatedDate: new Date(),
+                  }
+                 
+              }
+          );
+          // await sendConfirmationEmail(decoded.email,decoded.name,decoded.file)
+          return { message: 'Successfully verified' };
+      } else {
+         throw Error("File not exist")
+      }
+  
+  }
 //****************************************************create&update&delete********************** */
 
 async function uploadPricelist(file) {
@@ -117,7 +191,7 @@ async function uploadPricelist(file) {
         finalCSV.push(filedata[i].DiagnosisTestorServiceName);
       }
     }
-    console.log(finalCSV.length,"checklength")
+   
     if (finalCSV.length !== 0) {
       throw Error(`${finalCSV} already exists`);
     } else {
@@ -152,6 +226,63 @@ async function uploadPricelist(file) {
       } else {
         throw Error("Something Wrong");
       }
+    }
+} else {
+    throw Error("Invalid data");
+  }
+}
+
+async function unKnownHeaderPricelist(file) {
+  const filedata = file.csv;
+  var fileType=file.fileType==="Multiple facility upload"?file.fileType:"Single facility upload"
+  if (filedata.length !== 0) {
+    var finalCSV = [];
+    for (let i = 0; i < filedata.length; i++) {
+
+      const findService = await Pricelist.findOne({
+        FacilityNPI: filedata[i].FacilityNPI,
+        Organisationid: filedata[i].Organisationid,
+        DiagnosisTestorServiceName: filedata[i].DiagnosisTestorServiceName,
+      });
+      if (findService) {
+     
+        finalCSV.push(filedata[i].DiagnosisTestorServiceName);
+      }
+    }
+   
+    if (finalCSV.length !== 0) {
+      throw Error(`${finalCSV} already exists`);
+    } else {
+      const csvData = csvjson.toCSV(filedata, {
+        headers: "key",
+      });
+      const filename = Date.now() + "_" + file.name;
+      let uploadPath = __dirname + "/unknownHeaderUploads/" + filename;
+
+      fs.writeFile(uploadPath, csvData, (err) => {
+        if (err) console.error(err);
+        else {
+          console.log("Ok");
+        }
+      });
+      // const pathConfirmation = await pathConfirmPricelist(
+      //   file.emailData,
+      //   file.organizationID,
+      //   filename
+      // );
+   
+        const mailConfrimation = await unknownHeaderSendConfirmationEmail(
+          file.emailData,
+          file.organizationID,
+          filename,
+          fileType
+        );
+        if (mailConfrimation.message === "success") {
+          return { message: "Successfully sent your request to admin" };
+        } else {
+          throw Error("mail not sent");
+        }
+       
     }
 } else {
     throw Error("Invalid data");
@@ -199,9 +330,11 @@ const createPricelist=await   Pricelist.create(finalPublish
 //     if (err) throw err;
 //   }
 );
+
  if(createPricelist.length===0){
   throw Error("Not Create")
  }else{
+  await fileConfirmation(file.emailData)
   return {
     message:"Successfully Published"
   }
@@ -401,4 +534,32 @@ async function createService(body) {
   } else {
     throw Error("Service already exists");
   }
+}
+
+async function getPriceListbyOrg(body) {
+  const Organisationid = body.Organisationid;
+  if (Organisationid) {
+    const PricelistDetails = await Pricelist.aggregate([
+      { $match: { Organisationid: Organisationid } },
+      {
+        $project: {
+          // SNo: 1,
+          ServiceCode: 1,
+          DiagnosisTestorServiceName: 1,
+          Organisationid: 1,
+          OrganisationPrices: 1,
+          FacilityNPI: 1,
+          FacilityName: 1,
+          FacilityPrices: 1,
+          createdBy: 1,
+          createdDate: 1,
+          updatedBy: 1,
+          updatedDate: 1,
+        },
+      },
+    ]);
+    return { data: PricelistDetails };
+  } else {
+    throw Error("please provide facility npi");
+  }
 }

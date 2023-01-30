@@ -1,0 +1,10 @@
+Organisationid,SNo,ServiceCode,DiagnosisTestorServiceName,OrganisationPrices,FacilityPrices,FacilityName,FacilityNPI
+ORG-328,1,S-1,2D Echo,1120,5220,checkFacility,Fac1
+ORG-328,2,S-2,4D Scan,23,,checkFacility,Fac1
+ORG-328,3,S-3,ACTH (Adreno Corticotropic Hormone) Test,1025,,checkFacility,Fac1
+ORG-328,4,S-4,Adenosine Deaminase Test,271,,checkFacility,Fac1
+ORG-328,5,S-5,AEC (Absolute Eosinophil Count) Test,2608,5400,checkFacility,Fac1
+ORG-328,6,S-6,AFB (Acid Fast Bacilli) Culture Test,873,1000,checkFacility,Fac1
+ORG-328,7,S-7,AFP (Alpha Feto Protein) Test,1996,2000,checkFacility,Fac1
+ORG-328,8,S-8,Alberts Stain,185,,checkFacility,Fac1
+ORG-328,9,S-9,Albumin Test,3386,4000,checkFacility,Fac1

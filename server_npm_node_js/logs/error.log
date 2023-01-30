@@ -1648,3 +1648,51 @@ Jan-23-2023 11:13:53 [31merror[39m: [31merr{"errno":-4058,"code":"ENOENT","sy
 Jan-23-2023 11:13:53 [31merror[39m: [31mENOENT: no such file or directory, stat 'F:\carecadet_project\server_npm_node_js\PathPrice.html'[39m
 Jan-23-2023 11:13:53 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
 Jan-23-2023 11:13:53 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 17:48:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 17:48:05 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-30-2023 17:48:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 17:48:20 [31merror[39m: [31mPending Account.Please Verify Your Email![39m
+Jan-30-2023 17:49:06 [31merror[39m: [31muncaughtException: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials ck11-20020a056a00328b00b00593906a8843sm4679981pfb.176 - gsmtp[39m
+[31mError: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials ck11-20020a056a00328b00b00593906a8843sm4679981pfb.176 - gsmtp[39m
+[31m    at SMTPConnection._formatError (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)[39m
+[31m    at SMTPConnection._actionAUTHComplete (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)[39m
+[31m    at SMTPConnection.<anonymous> (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)[39m
+[31m    at SMTPConnection._processResponse (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)[39m
+[31m    at SMTPConnection._onData (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)[39m
+[31m    at SMTPConnection._onSocketData (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)[39m
+[31m    at TLSSocket.emit (node:events:513:28)[39m
+[31m    at addChunk (node:internal/streams/readable:324:12)[39m
+[31m    at readableAddChunk (node:internal/streams/readable:297:9)[39m
+[31m    at Readable.push (node:internal/streams/readable:234:10)[39m
+[31m    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)[39m
+Jan-30-2023 17:53:42 [31merror[39m: [31muncaughtException: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials e12-20020a170902ed8c00b00188ea79fae0sm7831461plj.48 - gsmtp[39m
+[31mError: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials e12-20020a170902ed8c00b00188ea79fae0sm7831461plj.48 - gsmtp[39m
+[31m    at SMTPConnection._formatError (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)[39m
+[31m    at SMTPConnection._actionAUTHComplete (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)[39m
+[31m    at SMTPConnection.<anonymous> (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)[39m
+[31m    at SMTPConnection._processResponse (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)[39m
+[31m    at SMTPConnection._onData (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)[39m
+[31m    at SMTPConnection._onSocketData (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)[39m
+[31m    at TLSSocket.emit (node:events:513:28)[39m
+[31m    at addChunk (node:internal/streams/readable:324:12)[39m
+[31m    at readableAddChunk (node:internal/streams/readable:297:9)[39m
+[31m    at Readable.push (node:internal/streams/readable:234:10)[39m
+[31m    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)[39m
+Jan-30-2023 17:55:10 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 17:55:10 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 18:00:04 [31merror[39m: [31merr{"errno":-4058,"code":"ESTREAM","syscall":"open","path":"F:\\Carecadet-30.1\\node_js_carecadet\\server_npm_node_js\\unknownHeaderUploads\\1675119602987_servicepricemistake.csv","command":"API","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:00:04 [31merror[39m: [31mENOENT: no such file or directory, open 'F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\unknownHeaderUploads\1675119602987_servicepricemistake.csv'[39m
+Jan-30-2023 18:10:31 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:10:31 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 18:14:19 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:14:19 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain already exists[39m
+Jan-30-2023 18:16:37 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:16:37 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 18:57:23 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:57:23 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 19:52:54 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 19:52:54 [31merror[39m: [31mFacility already exists[39m

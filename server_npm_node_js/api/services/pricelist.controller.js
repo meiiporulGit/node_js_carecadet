@@ -6,10 +6,12 @@ const router = Router();
 export default router;
 
 router.post("/uploadPricelist", uploadPricelist);
+router.post("/unknownHeaderPricelist", unknownHeaderPricelist);
 router.post("/publishPricelist", publishPricelist);
 router.get("/getPriceList", getPriceList);
 router.get("/getPriceListbyFacility", getPriceListbyFacility);
 router.get("/getPriceListbyService", getPriceListbyService);
+router.get("/getPriceListbyOrg", getPriceListbyOrg);
 router.put("/updatePricelist", updatePricelist);
 router.delete("/deletePricelist", deletePricelist);
 router.delete("/bulkdelete", bulkDelete);
@@ -42,6 +44,19 @@ function uploadPricelist(req, res, next) {
   // res.send(200);
 }
 
+function unknownHeaderPricelist(req, res, next) {
+  // let file = req.files.screenshot;
+  // console.log("Body",req.body);
+  let file = req.body;
+  PricelistService.unKnownHeaderPricelist(file)
+    .then((obj) => {
+      new ResObject(res, obj);
+    })
+    .catch(next);
+  // console.log("check");
+  // res.send(200);
+}
+
 function publishPricelist(req, res, next) {
   let file = req.body;
   PricelistService.publishPricelist(file)
@@ -58,7 +73,14 @@ function getPriceListbyFacility(req, res, next) {
     })
     .catch(next);
 }
-
+function getPriceListbyOrg(req, res, next) {
+  const Organisationid = req.query;
+  PricelistService.getPriceListbyOrg(Organisationid)
+    .then((obj) => {
+      new ResObject(res, obj);
+    })
+    .catch(next);
+}
 function getPriceListbyService(req, res, next) {
   const DiagnosisTestorServiceName = req.query;
   PricelistService.getPriceListbyService(DiagnosisTestorServiceName)

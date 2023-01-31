@@ -1,6 +1,7 @@
 import { Router } from "express";
 import FacilityService from "./facility.service.js";
 import ResObject from '../../core/util/res-object.js';
+import {Lookup} from './facility.schema.js';
 
 const router = Router();
 
@@ -11,6 +12,14 @@ router.get('/getFacilityByProvider',getFacilityByProvider);
 router.post('/createFacility',createFacility);
 router.put('/updateFacility',updateFacility);
 router.delete('/deleteFacility',deleteFacility);
+
+router.get ("/findfacilityNPI",async(req,res)=>{
+ 
+    let data = await Lookup.find({}
+ 
+    )
+    res.send(data)
+})
 
 function getFacilityList(req,res,next) {
     FacilityService.getFacilityList().then(obj => {

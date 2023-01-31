@@ -1692,3 +1692,7 @@ Jan-30-2023 18:14:19 [31merror[39m: [31merr{"statusCode":500,"status":"error"
 Jan-30-2023 18:14:19 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain already exists[39m
 Jan-30-2023 18:16:37 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
 Jan-30-2023 18:16:37 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 18:57:23 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:57:23 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 19:52:54 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 19:52:54 [31merror[39m: [31mFacility already exists[39m

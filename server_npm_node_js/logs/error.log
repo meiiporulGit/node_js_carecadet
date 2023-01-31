@@ -1696,3 +1696,11 @@ Jan-30-2023 18:57:23 [31merror[39m: [31merr{"name":"NoAuthorizationProvided",
 Jan-30-2023 18:57:23 [31merror[39m: [31mNo Authorization provided[39m
 Jan-30-2023 19:52:54 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
 Jan-30-2023 19:52:54 [31merror[39m: [31mFacility already exists[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-31-2023 16:10:10 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-31-2023 16:10:10 [31merror[39m: [31mAuthorization or session expired, Please login again[39m

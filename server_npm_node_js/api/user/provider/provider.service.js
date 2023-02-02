@@ -3,6 +3,7 @@ import { createId } from "../../../shared/common-util.js";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
+import smtpTransport from'nodemailer-smtp-transport';
 
 export default {
   createProvider,
@@ -14,15 +15,14 @@ export default {
 };
 dotenv.config();
 
-const useremail = "demo.carecadet@gmail.com";
-const emailpass = "wyldgbcphqvxmmws";
+// const useremail = "carecadet.demo@gmail.com";
+// const emailpass = "ukcbskospbpwylco";
 
 // const useremail ="healthlens.demo@meiiporul.com";
 // const emailpass ="healthlens@23";
 
-// https://meiiporul.com:2096/
-// user: healthlens.demo@meiiporul.com
-// pass: healthlens@23
+const useremail = "demo.carecadet@gmail.com";
+const emailpass = "ukcbskospbpwylco";
 
 const transport = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -36,13 +36,13 @@ const transport = nodemailer.createTransport({
 
 // const transport
 //  = nodemailer.createTransport({
-//     host:"Meiiporul.com",
+//     host:"mail.meiiporul.com",
 //     auth:{
 //         user:useremail,
 //         pass:emailpass
 //     },
-//     port:2096,
-//     secure: false,
+//     port:465,
+//     secure: true,
 
 // });
 
@@ -58,7 +58,7 @@ async function sendConfirmationEmail(firstName, _email) {
   });
   transport.sendMail(
     {
-      from: "demo.carecadet@gmail.com",
+      from: "healthlens.demo@meiiporul.com",
       to: _email,
       subject: "Please confirm your account",
       html: `<h1>Email Confirmation</h1>
@@ -68,22 +68,11 @@ async function sendConfirmationEmail(firstName, _email) {
         <a href=http://localhost:5200/user/confirm?firstName=${firstName}&email=${tokenmailverification}> Click here</a>
           </div>`,
     }
-    //    <a href=http://localhost:5200/user/confirm?firstName=${firstName}&email=${_email}> Click here</a>//
-    //    function (error,info){
-    //     console.log("sentMail returned!");
-    //     if(error){
-    //         console.log("Error!!!!!",error);
-    //             }else{
-    //                 console.log("Email sent:"+info.response);
-
-    //             }
-    //    }
+   
   );
   return { message: "success" };
 }
-//   function confirmEmail(query){
-//     console.log("query",query)
-//   }
+
 
 // TO create a provider ( use createId to create unique ID)
 async function createProvider(body) {

@@ -1,0 +1,21 @@
+.Box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Typo{
+    color: blueviolet;
+    font-size: 3rem;
+}
+.centerBox{
+ 
+    background-color: bisque;
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgb(154, 154, 154);
+}

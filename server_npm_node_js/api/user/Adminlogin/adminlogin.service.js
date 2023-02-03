@@ -5,12 +5,12 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 
 export default {
-    logout,
-    login,
+    adminlogout,
+    adminlogin,
     updateConfirmEmail
 }
 
-async function logout(body){
+async function adminlogout(body){
     var userName = body.userName;
     await UserSession.updateMany({ userName: userName },{
         $set: {
@@ -24,10 +24,10 @@ async function logout(body){
     return { message: "Successfully logged out"};
 }
 
-async function login(body){
+async function adminlogin(body){
     console.log(body,"login");
     var userType = body.userType;
-    if(userType == "PROVIDER") {
+    if(userType == "ADMIN") {
         var username = body.userName;
         var password = body.password;
         var sessionKey = await uuid();
@@ -36,7 +36,7 @@ async function login(body){
         if(findProvider!== null||undefined) {
             let comparePassword = await bcrypt.compare(password, findProvider.password);
             if(comparePassword){
-                if(findProvider.isActive!=="Pending"){
+                // if(findProvider.isActive!=="Pending"){
                 const token = jwt.sign({ userName: findProvider.username }, process.env.SECRET_KEY + username + sessionKey, { expiresIn: process.env.TOKEN_EXPIRY_TIME });
                 const refreshToken = jwt.sign({ userName: findProvider.username },process.env.SECRET_KEY, { expiresIn: process.env.TOKEN_EXPIRY_TIME });
                 console.log("token", token);
@@ -49,12 +49,13 @@ async function login(body){
                 responseObj.isActive = findProvider.isActive;
              
                 
-                responseObj.userType = "PROVIDER";
+                responseObj.userType = "ADMIN";
                 responseObj.token = token;
                 responseObj.refreshToken = refreshToken;
-                await createUserSession(findProvider.username,sessionKey, "Provider", findProvider.providerID)
-                return {data: responseObj};}
-                else{throw Error('Pending Account.Please Verify Your Email!');}
+                await createUserSession(findProvider.username,sessionKey, "ADMIN", findProvider.providerID)
+                return {data: responseObj};
+            // }
+            //     else{throw Error('Pending Account.Please Verify Your Email!');}
             } else {
                 throw Error('Incorrect password');
                             }

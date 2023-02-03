@@ -1,14 +1,15 @@
-import jwt from 'jsonwebtoken';
+import jwt from "jsonwebtoken";
 import nodemailer from "nodemailer";
 
 import PathPricelist from "./pathPricelist.schema.js";
 
 export default {
-    fileConfirmation,
-    getPathInfoByProvider
-}
-const useremail = "demo.carecadet@gmail.com";
-const emailpass = "wyldgbcphqvxmmws";
+  fileConfirmation,
+  getPathInfoByProvider,
+  nonStandard,
+};
+const useremail = "meiiporulgithub@gmail.com";
+const emailpass = "ubtddcjzvsywlxly";
 
 const transport = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -19,10 +20,10 @@ const transport = nodemailer.createTransport({
   port: 587,
   secure: false,
 });
-async function sendConfirmationEmail(email,name,file) {
+async function sendConfirmationEmail(email, name, file) {
   // console.log("Check");
   // var uId=emailData.userID
-var finalFile=file.split("/")[2]
+  var finalFile = file.split("/")[2];
   const mailOptions = await transport.sendMail(
     {
       from: "demo.carecadet@gmail.com",
@@ -59,58 +60,74 @@ var finalFile=file.split("/")[2]
   // return {message: sendMessage}
 }
 
-async function fileConfirmation(body){
-  console.log(body,"console")
-  const decoded = jwt.verify(body.file,process.env.SECRET_KEY)
-  console.log (decoded)
-    const findFilePath = await PathPricelist.findOne({organizationID:decoded.orgID,filePath:decoded.file });
-  
-      if(findFilePath){
-          await PathPricelist.findOneAndUpdate(
-              { organizationID:decoded.orgID,filePath:decoded.file },
-              {
-                  $set:{
-                     
-                      status:"verified",
-                      updatedBy:"Admin",
-                      updatedDate: new Date(),
-                  }
-                 
-              }
-          );
-          await sendConfirmationEmail(decoded.email,decoded.name,decoded.file)
-          return { message: 'Successfully verified' };
-      } else {
-          return {message:"file not exist"}
-      }
-  
-  }
+async function fileConfirmation(body) {
+  console.log(body, "console");
+  const decoded = jwt.verify(body.file, process.env.SECRET_KEY);
+  console.log(decoded);
+  const findFilePath = await PathPricelist.findOne({
+    organizationID: decoded.orgID,
+    filePath: decoded.file,
+  });
 
-async function getPathInfoByProvider(body){
-    const Organisationid = body.OrganizationID;
-    const ProviderID=body.providerID
-    console.log(Organisationid,ProviderID)
-    if (ProviderID&&Organisationid) {
-        console.log("check")
-      const PathPricelistDetails = await PathPricelist.aggregate([
-        { $match: { providerID: ProviderID, organizationID: Organisationid } },
-        {
-          $project: {
-           status:1,
-           filePath:1,
-           providerID:1,
-           organizationID:1,
-            createdBy: 1,
-            createdDate: 1,
-            updatedBy: 1,
-            updatedDate: 1,
-          },
+  if (findFilePath) {
+    await PathPricelist.findOneAndUpdate(
+      { organizationID: decoded.orgID, filePath: decoded.file },
+      {
+        $set: {
+          status: "verified",
+          updatedBy: "Admin",
+          updatedDate: new Date(),
         },
-      ]);
-      console.log(PathPricelistDetails)
-      return { data: PathPricelistDetails };
-    } else {
-      throw Error("files not available");
-    }
+      }
+    );
+    await sendConfirmationEmail(decoded.email, decoded.name, decoded.file);
+    return { message: "Successfully verified" };
+  } else {
+    return { message: "file not exist" };
+  }
 }
 
+async function getPathInfoByProvider(body) {
+  const Organisationid = body.OrganizationID;
+  const ProviderID = body.providerID;
+  console.log(Organisationid, ProviderID);
+  if (ProviderID && Organisationid) {
+    console.log("check");
+    const PathPricelistDetails = await PathPricelist.aggregate([
+      { $match: { providerID: ProviderID, organizationID: Organisationid } },
+      {
+        $project: {
+          status: 1,
+          filePath: 1,
+          fileFormat: 1,
+          providerID: 1,
+          organizationID: 1,
+          createdBy: 1,
+          createdDate: 1,
+          updatedBy: 1,
+          updatedDate: 1,
+        },
+      },
+    ]);
+    console.log(PathPricelistDetails);
+    return { data: PathPricelistDetails };
+  } else {
+    throw Error("files not available");
+  }
+}
+
+async function nonStandard() {
+  const PathPricelistDetails = await PathPricelist.aggregate([
+    { $match: { fileFormat: "Non-Standard" } },
+    {
+      $project: {
+        filePath: 1,
+        providerName: 1,
+        fileFormat: 1,
+        providerID: 1,
+        organizationID: 1,
+      },
+    },
+  ]);
+  return { data: PathPricelistDetails };
+}

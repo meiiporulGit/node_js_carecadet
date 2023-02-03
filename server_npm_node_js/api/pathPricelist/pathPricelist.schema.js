@@ -6,6 +6,7 @@ const pathPricelistschema = new schema(
   {
     status:{type:String,default:"Pending"},
     filePath:{type:String,require:true},
+    fileFormat:{type:String,require:true},
     providerName:{type:String,require:true},
     providerID:{type:String,require:true},
     organizationID:{type:String,require:true},

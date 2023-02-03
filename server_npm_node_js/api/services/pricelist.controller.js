@@ -18,7 +18,8 @@ router.delete("/bulkdelete", bulkDelete);
 router.put("/bulkupdate", bulkUpdate);
 router.get("/getPriceListone", getPriceListone);
 router.post("/createservice", createService);
-
+router.post("/uploadAdminPricelist",uploadAdminPricelist)
+router.get("/download",csvFormatDownload)
 
 
 
@@ -36,6 +37,19 @@ function uploadPricelist(req, res, next) {
   // console.log("Body",req.body);
   let file = req.body;
   PricelistService.uploadPricelist(file)
+    .then((obj) => {
+      new ResObject(res, obj);
+    })
+    .catch(next);
+  // console.log("check");
+  // res.send(200);
+}
+
+function uploadAdminPricelist(req, res, next) {
+  // let file = req.files.screenshot;
+  // console.log("Body",req.body);
+  let file = req.body;
+  PricelistService.uploadAdminPricelist(file)
     .then((obj) => {
       new ResObject(res, obj);
     })
@@ -141,5 +155,14 @@ function createService(req,res,next) {
 }
 
 
-
+/////////////////////csvFormatDownload///////////////////////
+function csvFormatDownload(req,res,next){
+  const fileFormat=req.query.format
+  console.log(fileFormat)
+  if(fileFormat==="singleFacility"){
+  res.download("./csvFormat/formatForSingleFacility.csv")
+  }else{
+    res.download("./csvFormat/formatForMultipleFacility.csv")
+  }
+}
 

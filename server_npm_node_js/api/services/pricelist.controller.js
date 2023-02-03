@@ -1,7 +1,7 @@
 import { Router } from "express";
 import PricelistService from "./pricelist.service.js";
 import ResObject from "../../core/util/res-object.js";
-import { Servicetable } from "./pricelist.schema.js";
+import { ServiceLookup } from "./pricelist.schema.js";
 const router = Router();
 
 export default router;
@@ -22,14 +22,14 @@ router.post("/createservice", createService);
 router.post("/uploadAdminPricelist",uploadAdminPricelist)
 router.get("/download",csvFormatDownload)
 //test
-router.get ("/findservicename",async(req,res)=>{
+router.get ("/findServiceCode",async(req,res)=>{
+ 
+  let data = await ServiceLookup.find({}
 
-  let servicedata = await Servicetable.find({
-
-  })
-  res.send(servicedata)
-
+  )
+  res.send(data)
 })
+
 
 
 

@@ -36,6 +36,7 @@
     "nodemailer-smtp-transport": "^2.7.4",
     "swagger-autogen": "^2.22.0",
     "swagger-ui-express": "^4.5.0",
+    "undici": "^5.16.0",
     "winston": "^3.8.2"
   },
   "devDependencies": {

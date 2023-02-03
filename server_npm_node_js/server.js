@@ -16,6 +16,7 @@ import FacilityController from './api/facility/facility.controller.js';
 import PricelistController from "./api/services/pricelist.controller.js";
 import ContactController from "./api/contact/contact.controller.js"
 import AdminLoginController from "./api/user/Adminlogin/adminlogin.controller.js"
+import SearchController from "./api/search/search.controller.js";
 import { startAuthAPI } from './core/authentication/authapi.js';
 
 import PathPricelistController from "./api/pathPricelist/pathPricelist.controller.js"
@@ -82,6 +83,7 @@ app.get('/',(req,res) => {
   res.send("Hello world!");
 })
 
+app.use('/search', SearchController)
 app.use('/user',LoginController);
 app.use('/admin',AdminLoginController);
 app.use('/provider',ProviderController);

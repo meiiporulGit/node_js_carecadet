@@ -1,6 +1,7 @@
 import { Router } from "express";
 import PricelistService from "./pricelist.service.js";
 import ResObject from "../../core/util/res-object.js";
+import { Servicetable } from "./pricelist.schema.js";
 const router = Router();
 
 export default router;
@@ -20,6 +21,15 @@ router.get("/getPriceListone", getPriceListone);
 router.post("/createservice", createService);
 router.post("/uploadAdminPricelist",uploadAdminPricelist)
 router.get("/download",csvFormatDownload)
+//test
+router.get ("/findservicename",async(req,res)=>{
+
+  let servicedata = await Servicetable.find({
+
+  })
+  res.send(servicedata)
+
+})
 
 
 

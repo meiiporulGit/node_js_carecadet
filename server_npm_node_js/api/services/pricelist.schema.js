@@ -26,6 +26,19 @@ const pricelistschema = new schema(
   }
 );
 
+const servicelookupschema = new schema({
+  ServiceCode: { type: String, required: false },
+  DiagnosisTestorServiceName: { type: String, required: true }
+},
+{
+  versionKey: false,
+  strict: true,
+  collection: "ServiceLookup"
+}
+)
+
+
+export const Servicetable = db.model("ServiceLookup",servicelookupschema)
 var Pricelist = db.model("pricelist", pricelistschema);
 
 export default Pricelist;

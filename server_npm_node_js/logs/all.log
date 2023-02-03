@@ -17938,3 +17938,15 @@ Jan-30-2023 19:56:53 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=
 [32m[39m
 Jan-30-2023 19:56:53 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-164&OrganizationID=ORG-322 304 - - 323.322 ms[39m
 [32m[39m
+Feb-02-2023 14:21:11 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-02-2023 14:21:11 [32minfo[39m: [32mEnvironment : development[39m
+Feb-02-2023 14:21:11 [32minfo[39m: [32m2023-02-02T19:21:11.937Z[39m
+Feb-02-2023 14:21:21 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-02-2023 14:21:21 [32minfo[39m: [32mEnvironment : development[39m
+Feb-02-2023 14:21:21 [32minfo[39m: [32m2023-02-02T19:21:21.941Z[39m
+Feb-02-2023 14:21:51 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-02-2023 14:21:51 [32minfo[39m: [32mEnvironment : development[39m
+Feb-02-2023 14:21:51 [32minfo[39m: [32m2023-02-02T19:21:51.633Z[39m
+Feb-02-2023 14:22:18 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-02-2023 14:22:18 [32minfo[39m: [32mEnvironment : development[39m
+Feb-02-2023 14:22:18 [32minfo[39m: [32m2023-02-02T19:22:18.488Z[39m

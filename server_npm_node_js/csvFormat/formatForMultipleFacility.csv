@@ -1,0 +1,10 @@
+SNo,ServiceCode,DiagnosisTestorServiceName,OrganisationPrices,FacilityNPI,FacilityName,FacilityPrices
+1,S-1,2D Echo,1120,123,testName1,5220
+2,S-2,4D Scan,23,12354,testName3,
+3,S-3,ACTH (Adreno Corticotropic Hormone) Test,1025,12354,testName4,
+4,S-4,Adenosine Deaminase Test,271,12354,testName5,
+5,S-5,AEC (Absolute Eosinophil Count) Test,2608,12354,testName6,5400
+6,S-6,AFB (Acid Fast Bacilli) Culture Test,873,12354,testName7,1000
+7,S-7,AFP (Alpha Feto Protein) Test,1996,12354,testName8,2000
+8,S-8,Alberts Stain,185,12354,testName9,
+9,S-9,Albumin Test,3386,12354,testName10,4000

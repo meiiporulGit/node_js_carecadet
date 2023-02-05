@@ -1,7 +1,7 @@
 import { Router } from "express";
 import PricelistService from "./pricelist.service.js";
 import ResObject from "../../core/util/res-object.js";
-import { Servicetable } from "./pricelist.schema.js";
+import { ServiceLookup } from "./pricelist.schema.js";
 const router = Router();
 
 export default router;
@@ -19,15 +19,17 @@ router.delete("/bulkdelete", bulkDelete);
 router.put("/bulkupdate", bulkUpdate);
 router.get("/getPriceListone", getPriceListone);
 router.post("/createservice", createService);
+router.post("/uploadAdminPricelist",uploadAdminPricelist)
+router.get("/download",csvFormatDownload)
 //test
-router.get ("/findservicename",async(req,res)=>{
+router.get ("/findServiceCode",async(req,res)=>{
+ 
+  let data = await ServiceLookup.find({}
 
-  let servicedata = await Servicetable.find({
-
-  })
-  res.send(servicedata)
-
+  )
+  res.send(data)
 })
+
 
 
 
@@ -45,6 +47,19 @@ function uploadPricelist(req, res, next) {
   // console.log("Body",req.body);
   let file = req.body;
   PricelistService.uploadPricelist(file)
+    .then((obj) => {
+      new ResObject(res, obj);
+    })
+    .catch(next);
+  // console.log("check");
+  // res.send(200);
+}
+
+function uploadAdminPricelist(req, res, next) {
+  // let file = req.files.screenshot;
+  // console.log("Body",req.body);
+  let file = req.body;
+  PricelistService.uploadAdminPricelist(file)
     .then((obj) => {
       new ResObject(res, obj);
     })
@@ -150,5 +165,14 @@ function createService(req,res,next) {
 }
 
 
-
+/////////////////////csvFormatDownload///////////////////////
+function csvFormatDownload(req,res,next){
+  const fileFormat=req.query.format
+  console.log(fileFormat)
+  if(fileFormat==="singleFacility"){
+  res.download("./csvFormat/formatForSingleFacility.csv")
+  }else{
+    res.download("./csvFormat/formatForMultipleFacility.csv")
+  }
+}
 

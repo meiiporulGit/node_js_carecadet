@@ -10,19 +10,21 @@ export default {
   updateProvider,
   getProviderList,
   deleteProvider,
+  createAdmin,
   // confirmEmail,
   // updateConfirmEmail
 };
 dotenv.config();
 
+const useremail = "meiiporulgithub@gmail.com";
+const emailpass = "ubtddcjzvsywlxly";
 // const useremail = "carecadet.demo@gmail.com";
 // const emailpass = "ukcbskospbpwylco";
 
 // const useremail ="healthlens.demo@meiiporul.com";
 // const emailpass ="healthlens@23";
 
-const useremail = "demo.carecadet@gmail.com";
-const emailpass = "ukcbskospbpwylco";
+
 
 const transport = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -192,5 +194,40 @@ async function deleteProvider(providerID) {
     return { message: "successfully deleted" };
   } else {
     throw Error("Please provide id");
+  }
+}
+
+
+/////////////////////////////////////////ADMIN Create///////////////////////////////////////////
+
+async function createAdmin(body) {
+  // Check the Body parameters( atleast one parameter should be there)
+  console.log("body ", body);
+  if (Object.keys(body).length === 0) {
+    throw Error("Invalid body parameter");
+  }
+  const findProvider = await Provider.findOne({role:body.role, email: body.email });
+  if (findProvider) {
+    throw Error("Already a user exists with this email");
+  } else {
+    const ProviderDetails = new Provider();
+    // ProviderDetails.providerID = await createId(Provider.collection.name);
+    ProviderDetails.providerID="ADMIN"
+    ProviderDetails.firstName = body.firstName;
+    ProviderDetails.lastName = body.lastName;
+    ProviderDetails.email = body.email;
+    ProviderDetails.contact = body.contact;
+    // ProviderDetails.username = body.username;//nextline duplicate for demo
+    ProviderDetails.username = body.email;
+    ProviderDetails.password = body.password;
+    ProviderDetails.role = body.role;
+    ProviderDetails.remark = body.remark;
+    ProviderDetails.isActive = "Pending";
+    ProviderDetails.activeStartDate = new Date();
+    ProviderDetails.createdBy = body.userID;
+    ProviderDetails.createdDate = new Date();
+    await ProviderDetails.save();
+    // await sendConfirmationEmail(body.firstName, body.email);
+    return { message: "Successfully created" };
   }
 }

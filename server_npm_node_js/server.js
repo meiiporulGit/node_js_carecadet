@@ -15,6 +15,7 @@ import OrganizationController from './api/organization/organization.controller.j
 import FacilityController from './api/facility/facility.controller.js';
 import PricelistController from "./api/services/pricelist.controller.js";
 import ContactController from "./api/contact/contact.controller.js"
+import AdminLoginController from "./api/user/Adminlogin/adminlogin.controller.js"
 import SearchController from "./api/search/search.controller.js";
 import { startAuthAPI } from './core/authentication/authapi.js';
 
@@ -84,9 +85,12 @@ app.get('/',(req,res) => {
 
 app.use('/search', SearchController)
 app.use('/user',LoginController);
+app.use('/admin',AdminLoginController);
 app.use('/provider',ProviderController);
 app.use("/contact",ContactController)
 app.use("/pathPricelist",PathPricelistController)
+app.use("/upload", PricelistController);
+app.use("/", PricelistController);
 app.use(express.static('./images'))
 app.use(express.static('./uploads'))
 startAuthAPI(app);
@@ -95,8 +99,7 @@ app.use('/collection-key-gen',CollectionKeyGenController);
 
 app.use('/organization',OrganizationController);
 app.use('/facility',FacilityController);
-app.use("/upload", PricelistController);
-app.use("/", PricelistController);
+
 app.use("/getPriceList",PricelistController);
 
 

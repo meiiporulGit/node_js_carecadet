@@ -10,6 +10,7 @@ router.get('/getProviderList', getProviderList);
 router.post('/createProvider',createProvider);
 router.put('/updateProvider',updateProvider);
 router.delete('/deleteProvider',deleteProvider);
+router.post("/createAdmin",createAdmin)
 // router.get('/confirm',confirmEmail)
 
 function getProviderList(req,res,next){
@@ -48,3 +49,13 @@ function deleteProvider(req,res,next){
 //         res.json("sucess updated")
 //     }).catch(next)
 // }
+
+///////////////////////////////////////Admin Create //////////////////////////////////////////////
+
+
+function createAdmin(req,res,next) {
+    const body = req.body ?? {};
+    ProviderService.createAdmin(body).then(obj => {
+        new ResObject(res,obj);
+    }).catch(next);
+}

@@ -4,7 +4,7 @@ import fs from "fs";
 // import csvjson from "csvtojson";
 import pkg from "json-2-csv";
 const { json2csv } = pkg;
-import jwt from 'jsonwebtoken';
+import jwt from "jsonwebtoken";
 
 import csvjson from "csvjson";
 const __dirname = path.resolve(path.dirname(""));
@@ -26,10 +26,11 @@ export default {
   getPriceListbyOrg,
   getPriceListbyService,
   createService,
+  uploadAdminPricelist,
 };
 
-const useremail = "demo.carecadet@gmail.com";
-const emailpass = "wyldgbcphqvxmmws";
+const useremail = "meiiporulgithub@gmail.com";
+const emailpass = "ubtddcjzvsywlxly";
 
 const transport = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -51,11 +52,15 @@ const transport = nodemailer.createTransport({
 async function sendConfirmationEmail(emailData, orgID, filename) {
   // console.log("Check");
   // var uId=emailData.userID
-  console.log(emailData)
-var file=`/uploads/${filename}`
-var email=emailData.email
-var name=emailData.firstName+" "+emailData.lastName
-  const verifyFilename = jwt.sign({orgID,file,email,name},process.env.SECRET_KEY,{ expiresIn: '1d' })
+  console.log(emailData);
+  var file = `/uploads/${filename}`;
+  var email = emailData.email;
+  var name = emailData.firstName + " " + emailData.lastName;
+  const verifyFilename = jwt.sign(
+    { orgID, file, email, name },
+    process.env.SECRET_KEY,
+    { expiresIn: "1d" }
+  );
   const mailOptions = await transport.sendMail(
     {
       from: "demo.carecadet@gmail.com",
@@ -63,7 +68,7 @@ var name=emailData.firstName+" "+emailData.lastName
       subject: "Please confirm your account",
       html: `<h1>PriceList Confirmation</h1>
           <h2>Hello Admin,</h2>
-          <p>Please Validate and Verify the uploaded pricelist from <br/> User ID : ${emailData.userID},<br/> User Name : ${emailData.userName} ,<br/> User Email : ${emailData.email}</p>
+          <p>Please Validate and Verify the uploaded pricelist from <br/>OrgID : ${orgID}, <br/>User ID : ${emailData.userID},<br/> File Name : ${filename},<br/>User Name : ${emailData.userName} ,<br/> User Email : ${emailData.email}</p>
           <a href=http://localhost:5200/pathPricelist/verify?file=${verifyFilename}><button style="color: white;background-color: blue;padding:1rem; font-size: 15px;border:none ; border-radius:10px">Verify</button></a>
           </div>`,
       attachments: [
@@ -93,7 +98,12 @@ var name=emailData.firstName+" "+emailData.lastName
   // return {message: sendMessage}
 }
 
-async function unknownHeaderSendConfirmationEmail(emailData, orgID, filename,fileType) {
+async function unknownHeaderSendConfirmationEmail(
+  emailData,
+  orgID,
+  filename,
+  fileType
+) {
   // console.log("Check");
 
   const mailOptions = await transport.sendMail(
@@ -104,7 +114,7 @@ async function unknownHeaderSendConfirmationEmail(emailData, orgID, filename,fil
       html: `<h1>PriceList Confirmation</h1>
           <h2>Hello Admin,</h2>
           <h4>${fileType}</h4>
-          <p>Provider provide unknown Format <br/> User ID : ${emailData.userID},<br/> User Name : ${emailData.userName} ,<br/> User Email : ${emailData.email}</p>
+          <p>Provider provide unknown Format <br/>OrgID : ${orgID},<br/> User ID : ${emailData.userID},<br/>File Name : ${filename},<br/> User Name : ${emailData.userName} ,<br/> User Email : ${emailData.email}</p>
          
         `,
       attachments: [
@@ -134,11 +144,11 @@ async function unknownHeaderSendConfirmationEmail(emailData, orgID, filename,fil
   // return {message: sendMessage}
 }
 
-async function pathConfirmPricelist(emailData, orgID, filename) {
- 
+async function pathConfirmPricelist(emailData, orgID, filename, fileFormat) {
   const pathPriceListDetails = new PathPricelist();
   pathPriceListDetails.status = "Pending";
-  pathPriceListDetails.filePath = "/uploads/" + filename;
+  pathPriceListDetails.fileFormat = fileFormat;
+  pathPriceListDetails.filePath = filename;
   pathPriceListDetails.providerName = emailData.userName;
   pathPriceListDetails.providerID = emailData.userID;
   pathPriceListDetails.organizationID = orgID;
@@ -147,32 +157,32 @@ async function pathConfirmPricelist(emailData, orgID, filename) {
   await pathPriceListDetails.save();
   return { message: "success" };
 }
-async function fileConfirmation(body){
-  console.log(body,"console")
- 
- 
-    const findFilePath = await PathPricelist.findOne({organizationID:body.orgID,filePath:body.file.filePath });
-  
-      if(findFilePath){
-          await PathPricelist.findOneAndUpdate(
-              { organizationID:body.orgID,filePath:body.file.filePath },
-              {
-                  $set:{
-                     
-                      status:"published",
-                      updatedBy:"Admin",
-                      updatedDate: new Date(),
-                  }
-                 
-              }
-          );
-          // await sendConfirmationEmail(decoded.email,decoded.name,decoded.file)
-          return { message: 'Successfully verified' };
-      } else {
-         throw Error("File not exist")
+async function fileConfirmation(body) {
+  console.log(body, "console");
+
+  const findFilePath = await PathPricelist.findOne({
+    organizationID: body.orgID,
+    filePath: body.file.filePath,
+  });
+
+  if (findFilePath) {
+    await PathPricelist.findOneAndUpdate(
+      { organizationID: body.orgID, filePath: body.file.filePath },
+      {
+        $set: {
+          status: "published",
+          updatedBy: "Admin",
+          updatedDate: new Date(),
+        },
       }
-  
+    );
+    // await sendConfirmationEmail(decoded.email,decoded.name,decoded.file)
+    return { message: "Successfully verified" };
+  } else {
+    throw Error("File not exist");
   }
+}
+
 //****************************************************create&update&delete********************** */
 
 async function uploadPricelist(file) {
@@ -180,18 +190,18 @@ async function uploadPricelist(file) {
   if (filedata.length !== 0) {
     var finalCSV = [];
     for (let i = 0; i < filedata.length; i++) {
-      console.log(filedata[i].FacilityNPI,filedata[i].Organisationid)
+      console.log(filedata[i].FacilityNPI, filedata[i].Organisationid);
       const findService = await Pricelist.findOne({
         FacilityNPI: filedata[i].FacilityNPI,
         Organisationid: filedata[i].Organisationid,
         DiagnosisTestorServiceName: filedata[i].DiagnosisTestorServiceName,
       });
       if (findService) {
-        console.log(findService,"checkFind")
+        console.log(findService, "checkFind");
         finalCSV.push(filedata[i].DiagnosisTestorServiceName);
       }
     }
-   
+
     if (finalCSV.length !== 0) {
       throw Error(`${finalCSV} already exists`);
     } else {
@@ -207,10 +217,12 @@ async function uploadPricelist(file) {
           console.log("Ok");
         }
       });
+
       const pathConfirmation = await pathConfirmPricelist(
         file.emailData,
         file.organizationID,
-        filename
+        "/uploads/" + filename,
+        "Standard"
       );
       if (pathConfirmation.message === "success") {
         const mailConfrimation = await sendConfirmationEmail(
@@ -227,29 +239,30 @@ async function uploadPricelist(file) {
         throw Error("Something Wrong");
       }
     }
-} else {
+  } else {
     throw Error("Invalid data");
   }
 }
 
 async function unKnownHeaderPricelist(file) {
   const filedata = file.csv;
-  var fileType=file.fileType==="Multiple facility upload"?file.fileType:"Single facility upload"
+  var fileType =
+    file.fileType === "Multiple facility upload"
+      ? file.fileType
+      : "Single facility upload";
   if (filedata.length !== 0) {
     var finalCSV = [];
     for (let i = 0; i < filedata.length; i++) {
-
       const findService = await Pricelist.findOne({
         FacilityNPI: filedata[i].FacilityNPI,
         Organisationid: filedata[i].Organisationid,
         DiagnosisTestorServiceName: filedata[i].DiagnosisTestorServiceName,
       });
       if (findService) {
-     
         finalCSV.push(filedata[i].DiagnosisTestorServiceName);
       }
     }
-   
+
     if (finalCSV.length !== 0) {
       throw Error(`${finalCSV} already exists`);
     } else {
@@ -265,12 +278,13 @@ async function unKnownHeaderPricelist(file) {
           console.log("Ok");
         }
       });
-      // const pathConfirmation = await pathConfirmPricelist(
-      //   file.emailData,
-      //   file.organizationID,
-      //   filename
-      // );
-   
+      const pathConfirmation = await pathConfirmPricelist(
+        file.emailData,
+        file.organizationID,
+        "/unknownHeaderUploads/" + filename,
+        "Non-Standard"
+      );
+      if (pathConfirmation.message === "success") {
         const mailConfrimation = await unknownHeaderSendConfirmationEmail(
           file.emailData,
           file.organizationID,
@@ -282,9 +296,11 @@ async function unKnownHeaderPricelist(file) {
         } else {
           throw Error("mail not sent");
         }
-       
+      } else {
+        throw Error("Something Wrong");
+      }
     }
-} else {
+  } else {
     throw Error("Invalid data");
   }
 }
@@ -325,20 +341,21 @@ async function publishPricelist(file) {
     finalPublish.push(facprice);
   }
 
-const createPricelist=await   Pricelist.create(finalPublish
-//     , function (err, documents) {
-//     if (err) throw err;
-//   }
-);
+  const createPricelist = await Pricelist.create(
+    finalPublish
+    //     , function (err, documents) {
+    //     if (err) throw err;
+    //   }
+  );
 
- if(createPricelist.length===0){
-  throw Error("Not Create")
- }else{
-  await fileConfirmation(file.emailData)
-  return {
-    message:"Successfully Published"
+  if (createPricelist.length === 0) {
+    throw Error("Not Create");
+  } else {
+    await fileConfirmation(file.emailData);
+    return {
+      message: "Successfully Published",
+    };
   }
- }
 }
 
 async function bulkUpdate(body) {
@@ -533,7 +550,7 @@ async function createService(body) {
     return { message: "Successfully created" };
   } else {
     throw Error("Service already exists");
-  }
+  }
 }
 
 async function getPriceListbyOrg(body) {
@@ -561,5 +578,119 @@ async function getPriceListbyOrg(body) {
     return { data: PricelistDetails };
   } else {
     throw Error("please provide facility npi");
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+async function fileAdminConfirmation(id, filePath) {
+  const findFilePath = await PathPricelist.findOne({ _id: id });
+
+  if (findFilePath) {
+    await PathPricelist.findOneAndUpdate(
+      { _id: id },
+      {
+        $set: {
+          status: "verified",
+          filePath: filePath,
+          fileFormat: "Standard",
+          updatedBy: "Admin",
+          updatedDate: new Date(),
+        },
+      }
+    );
+
+    return { message: "success" };
+  } else {
+    throw Error("file not exit");
+  }
+}
+
+async function sendAdminConfirmationEmail(email, filename) {
+  // console.log("Check");
+  // var uId=emailData.userID
+
+  const mailOptions = await transport.sendMail(
+    {
+      from: "demo.carecadet@gmail.com",
+      to: email,
+      subject: "Please confirm your account",
+      html: `<h1>PriceList Confirmation</h1>
+        <p>${filename}</p>`,
+    }
+    // function (error, info) {
+    //   console.log("sentMail returned!");
+    //   if (error) {
+    //     console.log("Error!!!!!", error);
+    //     sendMessage="suerr"
+    //   } else {
+    //     console.log("Email sent:" + info.response);
+    //     sendMessage="suerr"
+    //   }
+    // }
+  );
+  if (mailOptions) {
+    return { message: "success" };
+  } else {
+    throw Error("mail not sent");
+  }
+  // .catch(err => console.log(err));
+  // return {message: sendMessage}
+}
+
+async function uploadAdminPricelist(file) {
+  console.log(file, "filebody");
+  const filedata = file.csv;
+  if (filedata.length !== 0) {
+    var finalCSV = [];
+    for (let i = 0; i < filedata.length; i++) {
+      console.log(filedata[i].FacilityNPI, filedata[i].Organisationid);
+      const findService = await Pricelist.findOne({
+        FacilityNPI: filedata[i].FacilityNPI,
+        Organisationid: filedata[i].Organisationid,
+        DiagnosisTestorServiceName: filedata[i].DiagnosisTestorServiceName,
+      });
+      if (findService) {
+        console.log(findService, "checkFind");
+        finalCSV.push(filedata[i].DiagnosisTestorServiceName);
+      }
+    }
+
+    if (finalCSV.length !== 0) {
+      throw Error(`${finalCSV} already exists`);
+    } else {
+      const csvData = csvjson.toCSV(filedata, {
+        headers: "key",
+      });
+      const filename = Date.now() + "_" + file.name;
+      let uploadPath = __dirname + "/uploads/" + filename;
+
+      fs.writeFile(uploadPath, csvData, (err) => {
+        if (err) console.error(err);
+        else {
+          console.log("Ok");
+        }
+      });
+
+      const pathConfirmation = await fileAdminConfirmation(
+        file.id,
+        "/uploads/" + filename
+      );
+      if (pathConfirmation.message === "success") {
+        const mailConfrimation = await sendAdminConfirmationEmail(
+          file.email,
+          filename
+        );
+        if (mailConfrimation.message === "success") {
+          return { message: "Successfully file upload" };
+        } else {
+          throw Error("mail not sent");
+        }
+      } else {
+        throw Error("Something Wrong");
+      }
+    }
+  } else {
+    throw Error("Invalid data");
   }
 }

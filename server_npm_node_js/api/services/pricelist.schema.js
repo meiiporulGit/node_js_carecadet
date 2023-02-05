@@ -26,19 +26,22 @@ const pricelistschema = new schema(
   }
 );
 
-const servicelookupschema = new schema({
-  ServiceCode: { type: String, required: false },
-  DiagnosisTestorServiceName: { type: String, required: true }
+
+let ServiceLookupSchema = new schema({
+   
+  // facilityID: { type: String, required: [true, 'Enter a Facility ID'], trim: true, unique: [true, 'facility id already exist'] },
+
+  Code:{ type: String, required: false },
+  DiagnosisTestorServiceName:{ type: String, required: false }
+  
 },
 {
   versionKey: false,
   strict: true,
   collection: "ServiceLookup"
-}
-)
+})
+export const ServiceLookup = db.model('ServiceLookup',ServiceLookupSchema)
 
-
-export const Servicetable = db.model("ServiceLookup",servicelookupschema)
 var Pricelist = db.model("pricelist", pricelistschema);
 
 export default Pricelist;

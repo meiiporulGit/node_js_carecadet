@@ -15,12 +15,17 @@ export default router;
 router.get("/verify", fileConfirm);
 router.get("/getPathByProvider",getPathInfoByProvider)
 router.get("/check",getFile)
+router.get("/nonStandard",nonStandard)
 
 function fileConfirm(req, res, next) {
     const body=req.query
     PathPricelistService.fileConfirmation(body)
       .then((obj) => {
-       res.json(obj.message)
+       if(obj.message==="Successfully verified"){
+        res.sendFile('./api/pathPricelist/PathPrice.html', {root: __dirname })
+       }else{
+        res.json(obj.message)
+       }
       })
       .catch(next);
   }
@@ -32,6 +37,12 @@ function fileConfirm(req, res, next) {
         new ResObject(res, obj);
       })
       .catch(next);
+  }
+
+  function nonStandard(req,res,next){
+    PathPricelistService.nonStandard().then((obj)=>{
+      new ResObject(res,obj)
+    }).catch(next)
   }
 
   function getFile(req,res,next){

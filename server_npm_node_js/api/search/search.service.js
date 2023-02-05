@@ -1,5 +1,6 @@
 import { Client } from '@elastic/elasticsearch';
 import dotenv from 'dotenv';
+import Pricelist from '../services/pricelist.schema.js';
 dotenv.config()
 
 const client = new Client({ node: `http://${process.env.ELASTIC_HOST}:${process.env.ELASTIC_PORT}`});
@@ -10,59 +11,125 @@ export default {
 
 async function search(queryParams) {
     const q = queryParams.q;
-
+    const location = queryParams.location;
+    const lat = queryParams.lat;
+    const lon = queryParams.lon;
+    var query = []
+    if(q != null) {
+        query.push(
+            {
+                multi_match: {
+                    query: q,
+                    fields: ["DiagnosisTestorServiceName", "FacilityName"]
+                }
+            }
+        )
+    }
+    if(location != null) {
+        query.push(
+            {
+                multi_match: {
+                  query: location,
+                  fields: ["addressLine1", "addressLine2","city","state"]
+                }
+            }
+        )
+    }
+    if(lat != null || lon != null){
+        query.push(
+            {
+                geo_distance: {
+                  distance: "30km",
+                  location: {
+                    lat: lat ?? 0,
+                    lon: lon ?? 0,
+                  }
+                }
+            }
+        )
+    }
     try{
         var result = await client.search(
             {
-                index: 'hltest.pricelist',
+                index: "hltest.pricelist,hltest.lookup",
                 runtime_mappings: {
-                    FacilityDetails: {
-                        type: "lookup",
-                        target_index: "hltest.facility",
-                        input_field: "FacilityNPI",
-                        target_field: "facilityNPI",
-                        fetch_fields: [
-                          "facilityID",
-                          "facilityNPI",
-                          "facilityName",
-                          "facilityType",
-                          "email",
-                          "contactPerson",
-                          "contact",
-                          "providerID"
-                        ]
-                    },
+                    location: {
+                        type: "geo_point",
+                        script:  `
+                            double lat = 0.0;
+                            double lon = 0.0;
+                            if(doc.containsKey('latitude.keyword') && doc['latitude.keyword'].size() != 0){
+                                lat = Double.parseDouble(doc['latitude.keyword'].value);
+                            } 
+                            if(doc.containsKey('longitude.keyword')  && doc['longitude.keyword'].size() != 0) {
+                                lon = Double.parseDouble(doc['longitude.keyword'].value);
+                            }
+                            emit(lat,lon);
+                        `
+                        
+                    }
                 },
                 query: {
-                   bool: {
-                     should: {
-                        multi_match: {
-                            query: q,
-                            fields: ["DiagnosisTestorServiceName", "FacilityNPI"]
-                        }
-                     }
-                   }
-                },
-                fields: [
-                    "FacilityDetails"
-                ]
+                    bool: {
+                        should: query
+                    }                    
+                }
             }
-        )
-        var finalResult = [];
-        for(var item of result.hits.hits){
-            var result = item._source;
-            result.FacilityDetails = {};
-            var FacilityDetails = item.fields.FacilityDetails[0] ?? null;
-            result.FacilityDetails.facilityID = FacilityDetails?.facilityID[0] ?? null;
-            result.FacilityDetails.facilityType = FacilityDetails?.facilityType[0] ?? null;
-            result.FacilityDetails.providerID = FacilityDetails?.providerID[0] ?? null;
-            result.FacilityDetails.contact = FacilityDetails?.contact[0] ?? null;
-            result.FacilityDetails.facilityNPI = FacilityDetails?.facilityNPI[0] ?? null;
-            result.FacilityDetails.facilityName = FacilityDetails?.facilityName[0] ?? null;
-            result.FacilityDetails.email = FacilityDetails?.email[0] ?? null;
-            finalResult.push(result)
+        );
+        var services = [];
+        var facilities = [];
+        for(var item of result.hits.hits) {
+            if(item._index == "hltest.lookup"){
+                facilities.push(item._source.facilityNPI)
+            }
+            if(item._index == "hltest.pricelist"){
+                services.push(item._source.ServiceCode)
+            }
         }
-        console.log(finalResult)
+        const finalResult = await Pricelist.aggregate(
+            [
+                {
+                    $match: {
+                        $or: [
+                            { "ServiceCode": { $in: services }},
+                            { "FacilityNPI": { $in: facilities }}
+                        ]
+                    }
+                }, 
+                {
+                    $lookup: {
+                        as: "facilityDetails",
+                        from: "Lookup",
+                        localField: "FacilityNPI",
+                        foreignField: "facilityNPI"
+                    }
+                },
+                {
+                    $unwind: {
+                        path: "$facilityDetails",
+                        preserveNullAndEmptyArrays: true
+                    }
+                },
+                {
+                    $project: {
+                        _id: 0,
+                        SNo: 1,
+                        ServiceCode: 1,
+                        DiagnosisTestorServiceName: 1,
+                        Organisationid: 1,
+                        OrganisationPrices: 1,
+                        FacilityNPI: 1,
+                        FacilityName: 1,
+                        FacilityPrices: 1,
+                        createdBy: 1,
+                        createdDate: 1,
+                        updatedBy: 1,
+                        updatedDate: 1,
+                        "FacilityDetails": "$facilityDetails",
+                    }
+                }
+            ]
+        )
         return {data: finalResult};
     } catch(e){
         console.log(e)

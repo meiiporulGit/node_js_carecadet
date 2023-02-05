@@ -15,17 +15,18 @@ async function createFacility(body) {
     if (Object.keys(body).length === 0) {
         throw Error("Invalid body parameter");
     }
-    
-    const findFacility = await Facility.findOne({ facilityNPI: body.facilityNPI,organizationID:body.organizationID });
+    const findFacility = await Facility.findOne({facilityNPI: body.facilityNPI,organizationID:body.organizationID });
     console.log('findfacility',findFacility)
     if(!findFacility){
         const facilityDetails = new Facility();
         facilityDetails.facilityID = await createId(Facility.collection.name);      
-        facilityDetails.providerID = body.providerID;        
+        facilityDetails.providerID = body.providerID;     
+      
         facilityDetails.facilityName = body.facilityName;
         facilityDetails.facilityType = body.facilityType;
         facilityDetails.facilityNPI=body.facilityNPI;
         facilityDetails.address = body.address;
+        facilityDetails.GPSCoordinate = body.GPSCoordinate;
         facilityDetails.email = body.email;
         facilityDetails.contact = body.contact; 
         facilityDetails.remark = body.remark;
@@ -50,13 +51,14 @@ async function updateFacility(body) {
     if(findFacility){
         console.log(findFacility,'findFacility')
         await Facility.findOneAndUpdate(
-            { facilityID: body.facilityID ,organizationID:body.organizationID},
+            { facilityID: body.facilityID },
             {
               $set:{
                 facilityNPI: body.facilityNPI,
                 facilityName: body.facilityName,
                 facilityType:body.facilityType,
                 address: body.address,
+                GPSCoordinate : body.GPSCoordinate,
                 email: body.email,
                 contact: body.contact,
                 remark: body.remark,
@@ -70,6 +72,7 @@ async function updateFacility(body) {
         throw Error('facility not found');
     }
 }
+
 
 async function deleteFacility(facilityID) {
     if(facilityID){
@@ -90,11 +93,12 @@ async function getFacilityByProvider(providerID) {
                         _id: 0,
                         facilityID: 1,
                         providerID: 1,
-                        organizationID:1,
+                      
                         facilityName: 1,
                         facilityType:1,
                         facilityNPI:1,
                         address: 1,
+                        GPSCoordinate:1,
                         email: 1,
                         contact: 1,
                         remark: 1,
@@ -123,12 +127,12 @@ async function getFacilityList() {
                 $project: {
                     _id: 0,
                     facilityID: 1,
-                    providerID: 1,
-                    organization:1,
+                    providerID: 1,              
                     facilityName: 1,
                     facilityType:1,
                     facilityNPI:1,
                     address: 1,
+                    GPSCoordinate:1,
                     email: 1,
                     contact: 1,
                     remark: 1,
@@ -140,7 +144,7 @@ async function getFacilityList() {
                     updatedBy: 1,
                     updatedDate: 1
                 }
-            },
+            }, 
         ]
     );
     return { data: FacilityList };

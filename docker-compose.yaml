@@ -7,7 +7,7 @@ services:
         depends_on:
             - mongo
         ports:
-            - "5003:3000"
+            - "5003:5200"
         restart: always
         
     mongo:

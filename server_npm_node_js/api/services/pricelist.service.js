@@ -114,7 +114,7 @@ async function unknownHeaderSendConfirmationEmail(
       html: `<h1>PriceList Confirmation</h1>
           <h2>Hello Admin,</h2>
           <h4>${fileType}</h4>
-          <p>Provider provide unknown Format <br/>OrgID : ${orgID},<br/> User ID : ${emailData.userID},<br/>File Name : ${filename},<br/> User Name : ${emailData.userName} ,<br/> User Email : ${emailData.email}</p>
+          <p>Provider upload an Unformated <br/>OrgID : ${orgID},<br/> User ID : ${emailData.userID},<br/>File Name : ${filename},<br/> User Name : ${emailData.userName} ,<br/> User Email : ${emailData.email}</p>
          
         `,
       attachments: [
@@ -208,7 +208,15 @@ async function uploadPricelist(file) {
       const csvData = csvjson.toCSV(filedata, {
         headers: "key",
       });
-      const filename = Date.now() + "_" + file.name;
+      var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = dd + '-' + mm + '-' + yyyy;
+
+      const filename = file.organizationID +":"+today+ "_" + file.name+"_"+ Date.now();
+      console.log(today,"check")
       let uploadPath = __dirname + "/uploads/" + filename;
 
       fs.writeFile(uploadPath, csvData, (err) => {
@@ -269,7 +277,13 @@ async function unKnownHeaderPricelist(file) {
       const csvData = csvjson.toCSV(filedata, {
         headers: "key",
       });
-      const filename = Date.now() + "_" + file.name;
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy = today.getFullYear();
+      
+      today = mm + '-' + dd + '-' + yyyy;
+      const filename = file.organizationID +":"+today+ "_" + file.name+"_"+ Date.now();
       let uploadPath = __dirname + "/unknownHeaderUploads/" + filename;
 
       fs.writeFile(uploadPath, csvData, (err) => {
@@ -616,7 +630,8 @@ async function sendAdminConfirmationEmail(email, filename) {
       to: email,
       subject: "Please confirm your account",
       html: `<h1>PriceList Confirmation</h1>
-        <p>${filename}</p>`,
+      <p> File has been modified and uploaded in our application </p>
+        <p>${filename}-Please check and publish the data</p>`,
     }
     // function (error, info) {
     //   console.log("sentMail returned!");
@@ -662,7 +677,13 @@ async function uploadAdminPricelist(file) {
       const csvData = csvjson.toCSV(filedata, {
         headers: "key",
       });
-      const filename = Date.now() + "_" + file.name;
+      var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = mm + '-' + dd + '-' + yyyy;
+const filename = "Admin" +":"+today+ "_" + file.name+"_"+ Date.now();
       let uploadPath = __dirname + "/uploads/" + filename;
 
       fs.writeFile(uploadPath, csvData, (err) => {

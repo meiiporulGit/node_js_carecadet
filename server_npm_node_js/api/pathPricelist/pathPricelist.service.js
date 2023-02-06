@@ -29,9 +29,9 @@ async function sendConfirmationEmail(email, name, file) {
       from: "demo.carecadet@gmail.com",
       to: email,
       subject: "Please confirm your account",
-      html: `<h1>PriceList Confirmation</h1>
+      html: `<h1>Verification Email</h1>
           <h2>Hello ${name},</h2> 
-          <p>${finalFile} - file is verified by admin</p>
+          <p>${finalFile} - File is verified by admin. Please publish your data</p>
           </div>`,
       // attachments: [
       //   {

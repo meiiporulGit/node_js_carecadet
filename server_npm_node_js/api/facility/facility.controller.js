@@ -1,7 +1,7 @@
 import { Router } from "express";
 import FacilityService from "./facility.service.js";
 import ResObject from '../../core/util/res-object.js';
-import {Lookup} from './facility.schema.js';
+import {Lookup,FacilityTypeLookup} from './facility.schema.js';
 
 const router = Router();
 
@@ -13,14 +13,35 @@ router.post('/createFacility',createFacility);
 router.put('/updateFacility',updateFacility);
 router.delete('/deleteFacility',deleteFacility);
 
-router.get ("/findfacilityNPI",async(req,res)=>{
- 
-    let data = await Lookup.find({}
- 
-    )
+router.get ("/findfacilityNPI",async(req,res) => {
+    let data = await Lookup.aggregate([
+        {$project:
+        {
+            _id : 0,
+            facilityNPI : 1,
+            facilityName : 1,
+            addressLine1 : 1,
+            addressLine2 : 1,
+            city : 1,
+            state : 1,
+            zipCode : 1,
+            latitude : 1,
+            longitude : 1
+        }}
+    ])
     res.send(data)
 })
-
+router.get ("/findfacilityType", async(req,res) => {
+    let data = await FacilityTypeLookup.aggregate([
+        {$project : 
+        {
+            _id : 0,
+            item : 1,
+            value : 1
+        }}
+    ])
+    res.send(data)
+})
 function getFacilityList(req,res,next) {
     FacilityService.getFacilityList().then(obj => {
         new ResObject(res,obj);

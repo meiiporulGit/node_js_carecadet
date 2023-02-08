@@ -12,9 +12,9 @@ jobs:
         host: 210.18.155.251
         username: linuxadmin
         password: Qwerty@123
-        port: 33056
+        port: 22
         script: |
           cd /home/linuxadmin/Projects/Healthlens/
-          git pull origin main
+          git pull dev main
           docker-compose down
           docker-compose up -d --build

@@ -96,7 +96,7 @@ app.use(express.static('./uploads'))
 startAuthAPI(app);
 
 app.use('/collection-key-gen',CollectionKeyGenController);
-
+app.use("/pathPricelist",PathPricelistController)
 app.use('/organization',OrganizationController);
 app.use('/facility',FacilityController);
 

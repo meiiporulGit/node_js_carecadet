@@ -70,7 +70,7 @@ async function sendConfirmationEmail(emailData, orgID, filename) {
       html: `<h1>PriceList Confirmation</h1>
           <h2>Hello Admin,</h2>
           <p>Please Validate and Verify the uploaded pricelist from <br/>OrgID : ${orgID}, <br/>User ID : ${emailData.userID},<br/> File Name : ${filename},<br/>User Name : ${emailData.userName} ,<br/> User Email : ${emailData.email}</p>
-          <a href=http://localhost:5200/pathPricelist/verify?file=${verifyFilename}><button style="color: white;background-color: blue;padding:1rem; font-size: 15px;border:none ; border-radius:10px">Verify</button></a>
+          <a href=${process.env.BASE_URL}/pathPricelist/verify?file=${verifyFilename}><button style="color: white;background-color: blue;padding:1rem; font-size: 15px;border:none ; border-radius:10px">Verify</button></a>
           </div>`,
       attachments: [
         {
@@ -210,14 +210,15 @@ async function uploadPricelist(file) {
         headers: "key",
       });
       var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
+      var dd = String(today.getDate()).padStart(2, "0");
+      var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+      var yyyy = today.getFullYear();
 
-today = dd + '-' + mm + '-' + yyyy;
+      today = dd + "-" + mm + "-" + yyyy;
 
-      const filename = file.organizationID +":"+today+"_"+ Date.now()+ "_" + file.name;
-      console.log(today,"check")
+      const filename =
+        file.organizationID + "_" + today + "_" + Date.now() + "_" + file.name;
+      console.log(today, "check");
       let uploadPath = __dirname + "/uploads/" + filename;
 
       fs.writeFile(uploadPath, csvData, (err) => {
@@ -279,12 +280,13 @@ async function unKnownHeaderPricelist(file) {
         headers: "key",
       });
       var today = new Date();
-      var dd = String(today.getDate()).padStart(2, '0');
-      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var dd = String(today.getDate()).padStart(2, "0");
+      var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
       var yyyy = today.getFullYear();
-      
-      today = mm + '-' + dd + '-' + yyyy;
-      const filename = file.organizationID +":"+today+"_"+ Date.now()+ "_" + file.name;
+
+      today = mm + "-" + dd + "-" + yyyy;
+      const filename =
+        file.organizationID + "_" + today + "_" + Date.now() + "_" + file.name;
       let uploadPath = __dirname + "/unknownHeaderUploads/" + filename;
 
       fs.writeFile(uploadPath, csvData, (err) => {
@@ -712,12 +714,12 @@ async function uploadAdminPricelist(file) {
         headers: "key",
       });
       var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
+      var dd = String(today.getDate()).padStart(2, "0");
+      var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+      var yyyy = today.getFullYear();
 
-today = mm + '-' + dd + '-' + yyyy;
-const filename = "Admin" +":"+today+ "_" + Date.now() +"_"+file.name;
+      today = mm + "-" + dd + "-" + yyyy;
+      const filename ="Admin" + "_" + today + "_" + Date.now() + "_" + file.name;
       let uploadPath = __dirname + "/uploads/" + filename;
 
       fs.writeFile(uploadPath, csvData, (err) => {

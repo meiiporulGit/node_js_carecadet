@@ -30,8 +30,9 @@ async function login(body){
     if(userType == "PROVIDER") {
         var username = body.userName;
         var password = body.password;
+        var role=body.userType
         var sessionKey = await uuid();
-        const findProvider = await Provider.findOne({ username: username });
+        const findProvider = await Provider.findOne({ username: username,role: role});
         console.log('findProvider',findProvider);
         if(findProvider!== null||undefined) {
             let comparePassword = await bcrypt.compare(password, findProvider.password);

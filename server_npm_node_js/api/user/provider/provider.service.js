@@ -61,13 +61,14 @@ async function sendConfirmationEmail(firstName, _email) {
   transport.sendMail(
     {
       from: "healthlens.demo@meiiporul.com",
+      
       to: _email,
       subject: "Please confirm your account",
       html: `<h1>Email Confirmation</h1>
           <h2>Hello ${firstName}</h2>
           <p>Thank you for subscribing. Please confirm your email by clicking on the following link</p>
        
-        <a href=http://localhost:5200/user/confirm?firstName=${firstName}&email=${tokenmailverification}> Click here</a>
+        <a href=${process.env.BASE_URL}/user/confirm?firstName=${firstName}&email=${tokenmailverification}> Click here</a>
           </div>`,
     }
    

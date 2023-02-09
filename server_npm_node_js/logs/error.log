@@ -1704,3 +1704,45 @@ Jan-31-2023 16:10:08 [31merror[39m: [31merr{"name":"TokenExpiredError","statu
 Jan-31-2023 16:10:08 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
 Jan-31-2023 16:10:10 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
 Jan-31-2023 16:10:10 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:49 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:49 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 12:41:21 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:41:21 [31merror[39m: [31mCannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 12:46:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:46:31 [31merror[39m: [31mCannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 12:57:18 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:57:18 [31merror[39m: [31mCannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 13:01:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 13:01:12 [31merror[39m: [31mCannot read properties of undefined (reading 'filePath')[39m
+Feb-09-2023 14:19:33 [31merror[39m: [31muncaughtException: ppublishPricelistCorrectformat is not defined[39m
+[31mReferenceError: ppublishPricelistCorrectformat is not defined[39m
+[31m    at file:///D:/Divya/carecadet-git/node_js_carecadet/server_npm_node_js/api/services/pricelist.controller.js:12:47[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+Feb-09-2023 14:19:36 [31merror[39m: [31muncaughtException: publishPricelistCorrectformat is not defined[39m
+[31mReferenceError: publishPricelistCorrectformat is not defined[39m
+[31m    at file:///D:/Divya/carecadet-git/node_js_carecadet/server_npm_node_js/api/services/pricelist.controller.js:12:47[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 14:32:44 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:32:44 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain,Albumin Test already exists[39m
+Feb-09-2023 14:33:33 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:33:33 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 14:33:47 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:33:47 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 15:26:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 15:26:20 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain,Albumin Test already exists[39m
+Feb-09-2023 15:27:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 15:27:12 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 15:27:38 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 15:27:38 [31merror[39m: [31mFacility already exists[39m

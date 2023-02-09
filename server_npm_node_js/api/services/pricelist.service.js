@@ -16,6 +16,7 @@ export default {
   uploadPricelist,
   unKnownHeaderPricelist,
   publishPricelist,
+  publishPricelistCorrectformat,
   getPriceList,
   updatePricelist,
   deletePricelist,
@@ -365,7 +366,40 @@ async function publishPricelist(file) {
   if (createPricelist.length === 0) {
     throw Error("Not Create");
   } else {
-    await fileConfirmation(file.emailData);
+     await fileConfirmation(file.emailData);
+    return {
+      message: "Successfully Published",
+    };
+  }
+}
+
+
+
+async function publishPricelistCorrectformat(file) {
+  const originaldata = file.csv;
+  var finalPublish = [];
+  for (let i = 0; i < originaldata.length; i++) {
+    const facprice = {
+      ...originaldata[i],
+      ["FacilityPrices"]:
+        originaldata[i].FacilityPrices === "" || null || undefined || 0
+          ? originaldata[i].OrganisationPrices
+          : originaldata[i].FacilityPrices,
+    };
+    finalPublish.push(facprice);
+  }
+
+  const createPricelist = await Pricelist.create(
+    finalPublish
+    //     , function (err, documents) {
+    //     if (err) throw err;
+    //   }
+  );
+
+  if (createPricelist.length === 0) {
+    throw Error("Not Create");
+  } else {
+    // await fileConfirmation(file.emailData);
     return {
       message: "Successfully Published",
     };

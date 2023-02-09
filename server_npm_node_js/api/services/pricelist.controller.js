@@ -9,6 +9,7 @@ export default router;
 router.post("/uploadPricelist", uploadPricelist);
 router.post("/unknownHeaderPricelist", unknownHeaderPricelist);
 router.post("/publishPricelist", publishPricelist);
+router.post("/publishPricelistCorrectformat", publishPricelistCorrectformat);
 router.get("/getPriceList", getPriceList);
 router.get("/getPriceListbyFacility", getPriceListbyFacility);
 router.get("/getPriceListbyService", getPriceListbyService);
@@ -84,6 +85,15 @@ function unknownHeaderPricelist(req, res, next) {
 function publishPricelist(req, res, next) {
   let file = req.body;
   PricelistService.publishPricelist(file)
+    .then((obj) => {
+      new ResObject(res, obj);
+    })
+    .catch(next);
+}
+
+function publishPricelistCorrectformat(req, res, next) {
+  let file = req.body;
+  PricelistService.publishPricelistCorrectformat(file)
     .then((obj) => {
       new ResObject(res, obj);
     })

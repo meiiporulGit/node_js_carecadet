@@ -17950,3 +17950,762 @@ Feb-02-2023 14:21:51 [32minfo[39m: [32m2023-02-02T19:21:51.633Z[39m
 Feb-02-2023 14:22:18 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
 Feb-02-2023 14:22:18 [32minfo[39m: [32mEnvironment : development[39m
 Feb-02-2023 14:22:18 [32minfo[39m: [32m2023-02-02T19:22:18.488Z[39m
+Feb-09-2023 12:23:09 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 12:23:09 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 12:23:09 [32minfo[39m: [32m2023-02-09T06:53:09.091Z[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [32minfo[39m: [32mdev err Authorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 401 624 - 102.350 ms[39m
+[32m[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [32minfo[39m: [32mdev err Authorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 401 740 - 145.012 ms[39m
+[32m[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [32minfo[39m: [32mdev err Authorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 401 740 - 163.277 ms[39m
+[32m[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [32minfo[39m: [32mdev err Authorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 401 624 - 206.214 ms[39m
+[32m[39m
+Feb-09-2023 12:25:14 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 71.731 ms[39m
+[32m[39m
+Feb-09-2023 12:25:14 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 30 - 68.647 ms[39m
+[32m[39m
+Feb-09-2023 12:25:14 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 83.616 ms[39m
+[32m[39m
+Feb-09-2023 12:25:14 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 30 - 73.244 ms[39m
+[32m[39m
+Feb-09-2023 12:25:15 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 64.744 ms[39m
+[32m[39m
+Feb-09-2023 12:25:15 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 30 - 90.837 ms[39m
+[32m[39m
+Feb-09-2023 12:25:24 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 30 - 25.193 ms[39m
+[32m[39m
+Feb-09-2023 12:25:24 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 30 - 32.298 ms[39m
+[32m[39m
+Feb-09-2023 12:25:25 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 30 - 25.847 ms[39m
+[32m[39m
+Feb-09-2023 12:25:25 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 30 - 32.386 ms[39m
+[32m[39m
+Feb-09-2023 12:25:27 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 30 - 55.297 ms[39m
+[32m[39m
+Feb-09-2023 12:25:27 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 73.646 ms[39m
+[32m[39m
+Feb-09-2023 12:25:33 [32mhttp[39m: [32mGET /facility/findfacilityType 304 - - 72.014 ms[39m
+[32m[39m
+Feb-09-2023 12:25:33 [32mhttp[39m: [32mGET /facility/findfacilityType 304 - - 68.929 ms[39m
+[32m[39m
+Feb-09-2023 12:25:34 [32mhttp[39m: [32mGET /facility/findfacilityNPI 304 - - 1138.257 ms[39m
+[32m[39m
+Feb-09-2023 12:25:34 [32mhttp[39m: [32mGET /facility/findfacilityNPI 200 - - 1220.803 ms[39m
+[32m[39m
+Feb-09-2023 12:25:49 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:49 [32minfo[39m: [32mdev err Facility already exists[39m
+Feb-09-2023 12:25:49 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 12:25:49 [32mhttp[39m: [32mPOST /facility/createFacility 500 317 - 99.517 ms[39m
+[32m[39m
+Feb-09-2023 12:26:37 [32mhttp[39m: [32mPOST /facility/createFacility 200 53 - 180.367 ms[39m
+[32m[39m
+Feb-09-2023 12:26:37 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 597 - 54.775 ms[39m
+[32m[39m
+Feb-09-2023 12:26:37 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 597 - 66.985 ms[39m
+[32m[39m
+Feb-09-2023 12:27:06 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 30 - 23.273 ms[39m
+[32m[39m
+Feb-09-2023 12:27:06 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 30 - 29.073 ms[39m
+[32m[39m
+Feb-09-2023 12:27:42 [32mhttp[39m: [32mPOST /uploadPricelist 200 72 - 4221.163 ms[39m
+[32m[39m
+Feb-09-2023 12:27:48 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 30 - 26.684 ms[39m
+[32m[39m
+Feb-09-2023 12:27:48 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 304 - - 31.177 ms[39m
+[32m[39m
+Feb-09-2023 12:41:08 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 68.503 ms[39m
+[32m[39m
+Feb-09-2023 12:41:08 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 81.028 ms[39m
+[32m[39m
+Feb-09-2023 12:41:21 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:41:21 [32minfo[39m: [32mdev err Cannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 12:41:21 [31merror[39m: [31mCannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 12:41:21 [32mhttp[39m: [32mPOST /publishPricelist 500 521 - 124.355 ms[39m
+[32m[39m
+Feb-09-2023 12:46:10 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 12:46:10 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 12:46:10 [32minfo[39m: [32m2023-02-09T07:16:10.552Z[39m
+Feb-09-2023 12:46:18 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 115.393 ms[39m
+[32m[39m
+Feb-09-2023 12:46:18 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 119.920 ms[39m
+[32m[39m
+Feb-09-2023 12:46:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:46:31 [32minfo[39m: [32mdev err Cannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 12:46:31 [31merror[39m: [31mCannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 12:46:31 [32mhttp[39m: [32mPOST /publishPricelist 500 521 - 165.599 ms[39m
+[32m[39m
+Feb-09-2023 12:57:18 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:57:18 [32minfo[39m: [32mdev err Cannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 12:57:18 [31merror[39m: [31mCannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 12:57:18 [32mhttp[39m: [32mPOST /publishPricelist 500 521 - 57.469 ms[39m
+[32m[39m
+Feb-09-2023 13:01:04 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 74.785 ms[39m
+[32m[39m
+Feb-09-2023 13:01:04 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 85.471 ms[39m
+[32m[39m
+Feb-09-2023 13:01:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 13:01:12 [32minfo[39m: [32mdev err Cannot read properties of undefined (reading 'filePath')[39m
+Feb-09-2023 13:01:12 [31merror[39m: [31mCannot read properties of undefined (reading 'filePath')[39m
+Feb-09-2023 13:01:12 [32mhttp[39m: [32mPOST /publishPricelist 500 527 - 55.653 ms[39m
+[32m[39m
+Feb-09-2023 13:18:45 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 13:18:45 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 13:18:45 [32minfo[39m: [32m2023-02-09T07:48:45.981Z[39m
+Feb-09-2023 13:18:50 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 128.787 ms[39m
+[32m[39m
+Feb-09-2023 13:18:50 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 109.982 ms[39m
+[32m[39m
+Feb-09-2023 13:18:59 [32mhttp[39m: [32mPOST /publishPricelist 200 55 - 130.025 ms[39m
+[32m[39m
+Feb-09-2023 13:18:59 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 - - 60.446 ms[39m
+[32m[39m
+Feb-09-2023 13:18:59 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 - - 61.626 ms[39m
+[32m[39m
+Feb-09-2023 13:19:05 [32mhttp[39m: [32mGET /getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 200 - - 46.678 ms[39m
+[32m[39m
+Feb-09-2023 13:19:05 [32mhttp[39m: [32mGET /getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 200 - - 43.722 ms[39m
+[32m[39m
+Feb-09-2023 14:17:29 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 14:17:29 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 14:17:29 [32minfo[39m: [32m2023-02-09T08:47:29.933Z[39m
+Feb-09-2023 14:17:35 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 14:17:35 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 14:17:35 [32minfo[39m: [32m2023-02-09T08:47:35.632Z[39m
+Feb-09-2023 14:17:46 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 14:17:46 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 14:17:46 [32minfo[39m: [32m2023-02-09T08:47:46.758Z[39m
+Feb-09-2023 14:18:26 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 14:18:26 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 14:18:26 [32minfo[39m: [32m2023-02-09T08:48:26.579Z[39m
+Feb-09-2023 14:19:16 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 14:19:16 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 14:19:16 [32minfo[39m: [32m2023-02-09T08:49:16.169Z[39m
+Feb-09-2023 14:19:30 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 14:19:30 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 14:19:30 [32minfo[39m: [32m2023-02-09T08:49:30.761Z[39m
+Feb-09-2023 14:20:16 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 14:20:16 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 14:20:16 [32minfo[39m: [32m2023-02-09T08:50:16.067Z[39m
+Feb-09-2023 14:22:54 [32mhttp[39m: [32mGET /getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 304 - - 63.873 ms[39m
+[32m[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:22:54 [32minfo[39m: [32mdev err Authorization or session expired, Please login again[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 14:22:54 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 401 740 - 162.858 ms[39m
+[32m[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:22:54 [32minfo[39m: [32mdev err Authorization or session expired, Please login again[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 14:22:54 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 401 624 - 230.246 ms[39m
+[32m[39m
+Feb-09-2023 14:22:54 [32mhttp[39m: [32mGET /getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 200 - - 67.273 ms[39m
+[32m[39m
+Feb-09-2023 14:22:55 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 73.593 ms[39m
+[32m[39m
+Feb-09-2023 14:22:55 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 70.398 ms[39m
+[32m[39m
+Feb-09-2023 14:22:55 [32mhttp[39m: [32mGET /getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 304 - - 38.001 ms[39m
+[32m[39m
+Feb-09-2023 14:22:55 [32mhttp[39m: [32mGET /getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 200 - - 38.587 ms[39m
+[32m[39m
+Feb-09-2023 14:23:00 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 - - 72.711 ms[39m
+[32m[39m
+Feb-09-2023 14:23:01 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 304 - - 79.774 ms[39m
+[32m[39m
+Feb-09-2023 14:23:17 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 597 - 89.296 ms[39m
+[32m[39m
+Feb-09-2023 14:23:17 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 102.192 ms[39m
+[32m[39m
+Feb-09-2023 14:23:19 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 304 - - 68.840 ms[39m
+[32m[39m
+Feb-09-2023 14:23:19 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 - - 68.671 ms[39m
+[32m[39m
+Feb-09-2023 14:23:34 [32mhttp[39m: [32mPOST /publishPricelistCorrectformat 200 55 - 152.596 ms[39m
+[32m[39m
+Feb-09-2023 14:23:34 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 - - 60.447 ms[39m
+[32m[39m
+Feb-09-2023 14:23:34 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 - - 73.599 ms[39m
+[32m[39m
+Feb-09-2023 14:23:39 [32mhttp[39m: [32mGET /getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 200 - - 30.412 ms[39m
+[32m[39m
+Feb-09-2023 14:23:39 [32mhttp[39m: [32mGET /getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 200 - - 35.350 ms[39m
+[32m[39m
+Feb-09-2023 14:23:46 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 597 - 83.305 ms[39m
+[32m[39m
+Feb-09-2023 14:23:46 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 88.959 ms[39m
+[32m[39m
+Feb-09-2023 14:31:19 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 304 - - 67.942 ms[39m
+[32m[39m
+Feb-09-2023 14:31:19 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 - - 62.207 ms[39m
+[32m[39m
+Feb-09-2023 14:31:22 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 597 - 83.549 ms[39m
+[32m[39m
+Feb-09-2023 14:31:22 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 96.727 ms[39m
+[32m[39m
+Feb-09-2023 14:31:24 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 304 - - 38.305 ms[39m
+[32m[39m
+Feb-09-2023 14:31:24 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 30 - 50.518 ms[39m
+[32m[39m
+Feb-09-2023 14:31:41 [32mhttp[39m: [32mPOST /publishPricelistCorrectformat 200 55 - 76.459 ms[39m
+[32m[39m
+Feb-09-2023 14:31:42 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 29.677 ms[39m
+[32m[39m
+Feb-09-2023 14:31:42 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 29.932 ms[39m
+[32m[39m
+Feb-09-2023 14:32:16 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 - - 124.674 ms[39m
+[32m[39m
+Feb-09-2023 14:32:16 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 - - 127.669 ms[39m
+[32m[39m
+Feb-09-2023 14:32:17 [32mhttp[39m: [32mGET /getPriceListbyService?DiagnosisTestorServiceName=4D%20Scan&Organisationid=ORG-323 200 - - 28.679 ms[39m
+[32m[39m
+Feb-09-2023 14:32:17 [32mhttp[39m: [32mGET /getPriceListbyService?DiagnosisTestorServiceName=4D%20Scan&Organisationid=ORG-323 200 - - 35.394 ms[39m
+[32m[39m
+Feb-09-2023 14:32:20 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 597 - 89.943 ms[39m
+[32m[39m
+Feb-09-2023 14:32:20 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 96.337 ms[39m
+[32m[39m
+Feb-09-2023 14:32:28 [32mhttp[39m: [32mGET /facility/findfacilityType 304 - - 74.592 ms[39m
+[32m[39m
+Feb-09-2023 14:32:28 [32mhttp[39m: [32mGET /facility/findfacilityType 200 321 - 84.568 ms[39m
+[32m[39m
+Feb-09-2023 14:32:30 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 597 - 219.402 ms[39m
+[32m[39m
+Feb-09-2023 14:32:30 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 226.579 ms[39m
+[32m[39m
+Feb-09-2023 14:32:30 [32mhttp[39m: [32mGET /facility/findfacilityNPI 304 - - 2287.291 ms[39m
+[32m[39m
+Feb-09-2023 14:32:30 [32mhttp[39m: [32mGET /facility/findfacilityNPI 200 - - 2470.369 ms[39m
+[32m[39m
+Feb-09-2023 14:32:32 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 304 - - 38.043 ms[39m
+[32m[39m
+Feb-09-2023 14:32:32 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 34.434 ms[39m
+[32m[39m
+Feb-09-2023 14:32:44 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:32:44 [32minfo[39m: [32mdev err 2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain,Albumin Test already exists[39m
+Feb-09-2023 14:32:44 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain,Albumin Test already exists[39m
+Feb-09-2023 14:32:44 [32mhttp[39m: [32mPOST /unknownHeaderPricelist 500 735 - 300.990 ms[39m
+[32m[39m
+Feb-09-2023 14:33:01 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 304 - - 66.835 ms[39m
+[32m[39m
+Feb-09-2023 14:33:01 [32mhttp[39m: [32mGET /getPriceListbyOrg?Organisationid=ORG-323 200 - - 61.066 ms[39m
+[32m[39m
+Feb-09-2023 14:33:04 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 597 - 74.319 ms[39m
+[32m[39m
+Feb-09-2023 14:33:04 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 88.699 ms[39m
+[32m[39m
+Feb-09-2023 14:33:10 [32mhttp[39m: [32mGET /facility/findfacilityType 304 - - 87.209 ms[39m
+[32m[39m
+Feb-09-2023 14:33:10 [32mhttp[39m: [32mGET /facility/findfacilityType 200 321 - 88.922 ms[39m
+[32m[39m
+Feb-09-2023 14:33:12 [32mhttp[39m: [32mGET /facility/findfacilityNPI 304 - - 2076.246 ms[39m
+[32m[39m
+Feb-09-2023 14:33:12 [32mhttp[39m: [32mGET /facility/findfacilityNPI 200 - - 2145.529 ms[39m
+[32m[39m
+Feb-09-2023 14:33:33 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:33:33 [32minfo[39m: [32mdev err Facility already exists[39m
+Feb-09-2023 14:33:33 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 14:33:33 [32mhttp[39m: [32mPOST /facility/createFacility 500 317 - 95.283 ms[39m
+[32m[39m
+Feb-09-2023 14:33:47 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:33:47 [32minfo[39m: [32mdev err Facility already exists[39m
+Feb-09-2023 14:33:47 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 14:33:47 [32mhttp[39m: [32mPOST /facility/createFacility 500 317 - 89.356 ms[39m
+[32m[39m
+Feb-09-2023 14:34:09 [32mhttp[39m: [32mPOST /facility/createFacility 200 53 - 163.550 ms[39m
+[32m[39m
+Feb-09-2023 14:34:10 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 73.725 ms[39m
+[32m[39m
+Feb-09-2023 14:34:10 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 100.220 ms[39m
+[32m[39m
+Feb-09-2023 14:34:12 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1992708598&Organisationid=ORG-323 200 30 - 39.232 ms[39m
+[32m[39m
+Feb-09-2023 14:34:12 [32mhttp[39m: [32mGET /getPriceListbyFacility?facilityNPI=1992708598&Organisationid=ORG-323 200 30 - 34.246 ms[39m
+[32m[39m
+Feb-09-2023 14:34:38 [32mhttp[39m: [32mPOST /unknownHeaderPricelist 200 72 - 4986.778 ms[39m
+[32m[39m
+Feb-09-2023 14:35:56 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 673 - 35.979 ms[39m
+[32m[39m
+Feb-09-2023 14:35:56 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 673 - 39.182 ms[39m
+[32m[39m
+Feb-09-2023 14:35:59 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 673 - 35.571 ms[39m
+[32m[39m
+Feb-09-2023 14:35:59 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 304 - - 47.746 ms[39m
+[32m[39m
+Feb-09-2023 14:35:59 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 79.094 ms[39m
+[32m[39m
+Feb-09-2023 14:35:59 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 118.946 ms[39m
+[32m[39m
+Feb-09-2023 14:35:59 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 304 - - 51.381 ms[39m
+[32m[39m
+Feb-09-2023 14:36:00 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 673 - 58.672 ms[39m
+[32m[39m
+Feb-09-2023 14:36:06 [32mhttp[39m: [32mPOST /user/logout 200 56 - 39.186 ms[39m
+[32m[39m
+Feb-09-2023 14:36:10 [32mhttp[39m: [32mPOST /admin/adminlogin 200 590 - 370.313 ms[39m
+[32m[39m
+Feb-09-2023 14:36:10 [32mhttp[39m: [32mGET /pathPricelist/nonStandard 200 - - 33.130 ms[39m
+[32m[39m
+Feb-09-2023 14:36:10 [32mhttp[39m: [32mGET /pathPricelist/nonStandard 200 - - 31.785 ms[39m
+[32m[39m
+Feb-09-2023 14:36:37 [32mhttp[39m: [32mPOST /uploadAdminPricelist 200 57 - 4000.080 ms[39m
+[32m[39m
+Feb-09-2023 14:36:41 [32mhttp[39m: [32mPOST /admin/adminlogout 200 56 - 33.194 ms[39m
+[32m[39m
+Feb-09-2023 14:36:56 [32mhttp[39m: [32mPOST /user/login 200 593 - 342.930 ms[39m
+[32m[39m
+Feb-09-2023 14:36:56 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 80.576 ms[39m
+[32m[39m
+Feb-09-2023 14:36:56 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 79.643 ms[39m
+[32m[39m
+Feb-09-2023 14:36:56 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 90.501 ms[39m
+[32m[39m
+Feb-09-2023 14:36:56 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 88.029 ms[39m
+[32m[39m
+Feb-09-2023 14:36:56 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 84.843 ms[39m
+[32m[39m
+Feb-09-2023 14:36:56 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 83.327 ms[39m
+[32m[39m
+Feb-09-2023 14:37:44 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 715 - 35.240 ms[39m
+[32m[39m
+Feb-09-2023 14:37:44 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 715 - 38.382 ms[39m
+[32m[39m
+Feb-09-2023 14:37:46 [32mhttp[39m: [32mGET /pathPricelist/check?file=Admin:02-09-2023_1675933593641_ORG-323_02-09-2023_1675933473868_onemistake.csv 200 - - 16.722 ms[39m
+[32m[39m
+Feb-09-2023 14:37:46 [32mhttp[39m: [32mGET /pathPricelist/check?file=Admin:02-09-2023_1675933593641_ORG-323_02-09-2023_1675933473868_onemistake.csv 200 - - 8.630 ms[39m
+[32m[39m
+Feb-09-2023 14:37:47 [32mhttp[39m: [32mPOST /publishPricelist 200 55 - 111.114 ms[39m
+[32m[39m
+Feb-09-2023 14:37:47 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 716 - 33.893 ms[39m
+[32m[39m
+Feb-09-2023 14:37:47 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 716 - 37.861 ms[39m
+[32m[39m
+Feb-09-2023 14:38:58 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 14:38:58 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 14:38:58 [32minfo[39m: [32m2023-02-09T09:08:58.542Z[39m
+Feb-09-2023 14:39:04 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 14:39:04 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 14:39:04 [32minfo[39m: [32m2023-02-09T09:09:04.977Z[39m
+Feb-09-2023 15:03:16 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 120.613 ms[39m
+[32m[39m
+Feb-09-2023 15:03:16 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 72.257 ms[39m
+[32m[39m
+Feb-09-2023 15:05:41 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 15:05:41 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 15:05:41 [32minfo[39m: [32m2023-02-09T09:35:41.362Z[39m
+Feb-09-2023 15:05:53 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 118.843 ms[39m
+[32m[39m
+Feb-09-2023 15:05:53 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 99.667 ms[39m
+[32m[39m
+Feb-09-2023 15:05:53 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 104.751 ms[39m
+[32m[39m
+Feb-09-2023 15:05:53 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 104.074 ms[39m
+[32m[39m
+Feb-09-2023 15:05:53 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 76.328 ms[39m
+[32m[39m
+Feb-09-2023 15:05:53 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 73.220 ms[39m
+[32m[39m
+Feb-09-2023 15:06:00 [32mhttp[39m: [32mGET /service/byOrg?Organisationid=ORG-323 404 152 - 69.772 ms[39m
+[32m[39m
+Feb-09-2023 15:06:00 [32mhttp[39m: [32mGET /service/byOrg?Organisationid=ORG-323 404 152 - 65.529 ms[39m
+[32m[39m
+Feb-09-2023 15:06:21 [32mhttp[39m: [32mPOST /service/publishPricelistCorrectformat 200 55 - 145.733 ms[39m
+[32m[39m
+Feb-09-2023 15:06:22 [32mhttp[39m: [32mGET /service/byOrg?Organisationid=ORG-323 404 152 - 43.023 ms[39m
+[32m[39m
+Feb-09-2023 15:06:22 [32mhttp[39m: [32mGET /service/byOrg?Organisationid=ORG-323 404 152 - 55.263 ms[39m
+[32m[39m
+Feb-09-2023 15:08:20 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Feb-09-2023 15:08:20 [32minfo[39m: [32mEnvironment : development[39m
+Feb-09-2023 15:08:20 [32minfo[39m: [32m2023-02-09T09:38:20.741Z[39m
+Feb-09-2023 15:08:25 [32mhttp[39m: [32mGET /service/byOrg?Organisationid=ORG-323 404 152 - 108.210 ms[39m
+[32m[39m
+Feb-09-2023 15:08:25 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 218.403 ms[39m
+[32m[39m
+Feb-09-2023 15:08:25 [32mhttp[39m: [32mGET /service/byOrg?Organisationid=ORG-323 404 152 - 239.189 ms[39m
+[32m[39m
+Feb-09-2023 15:08:25 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 256.090 ms[39m
+[32m[39m
+Feb-09-2023 15:08:25 [32mhttp[39m: [32mGET /service/byOrg?Organisationid=ORG-323 404 152 - 40.184 ms[39m
+[32m[39m
+Feb-09-2023 15:08:26 [32mhttp[39m: [32mGET /service/byOrg?Organisationid=ORG-323 404 152 - 45.190 ms[39m
+[32m[39m
+Feb-09-2023 15:10:08 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 77.647 ms[39m
+[32m[39m
+Feb-09-2023 15:10:09 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 66.525 ms[39m
+[32m[39m
+Feb-09-2023 15:10:09 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 127.127 ms[39m
+[32m[39m
+Feb-09-2023 15:10:09 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 220.529 ms[39m
+[32m[39m
+Feb-09-2023 15:10:09 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 304 - - 76.414 ms[39m
+[32m[39m
+Feb-09-2023 15:10:09 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 98.459 ms[39m
+[32m[39m
+Feb-09-2023 15:10:13 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AFB%20(Acid%20Fast%20Bacilli)%20Culture%20Test&Organisationid=ORG-323 200 - - 27.899 ms[39m
+[32m[39m
+Feb-09-2023 15:10:13 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AFB%20(Acid%20Fast%20Bacilli)%20Culture%20Test&Organisationid=ORG-323 200 - - 30.804 ms[39m
+[32m[39m
+Feb-09-2023 15:10:16 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AFB%20(Acid%20Fast%20Bacilli)%20Culture%20Test&Organisationid=ORG-323 304 - - 35.042 ms[39m
+[32m[39m
+Feb-09-2023 15:10:16 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AFB%20(Acid%20Fast%20Bacilli)%20Culture%20Test&Organisationid=ORG-323 200 - - 29.608 ms[39m
+[32m[39m
+Feb-09-2023 15:10:32 [32mhttp[39m: [32mPUT /service/bulkupdate 200 20 - 101.488 ms[39m
+[32m[39m
+Feb-09-2023 15:10:33 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AFB%20(Acid%20Fast%20Bacilli)%20Culture%20Test&Organisationid=ORG-323 200 - - 24.139 ms[39m
+[32m[39m
+Feb-09-2023 15:10:33 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AFB%20(Acid%20Fast%20Bacilli)%20Culture%20Test&Organisationid=ORG-323 200 - - 36.415 ms[39m
+[32m[39m
+Feb-09-2023 15:10:38 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 304 - - 35.375 ms[39m
+[32m[39m
+Feb-09-2023 15:10:38 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 304 - - 46.634 ms[39m
+[32m[39m
+Feb-09-2023 15:10:41 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 70.002 ms[39m
+[32m[39m
+Feb-09-2023 15:10:41 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 81.546 ms[39m
+[32m[39m
+Feb-09-2023 15:10:45 [32mhttp[39m: [32mGET /service/byFacility?facilityNPI=1205821113&Organisationid=ORG-323 404 157 - 34.768 ms[39m
+[32m[39m
+Feb-09-2023 15:10:45 [32mhttp[39m: [32mGET /service/byFacility?facilityNPI=1205821113&Organisationid=ORG-323 404 157 - 48.010 ms[39m
+[32m[39m
+Feb-09-2023 15:11:26 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 31.654 ms[39m
+[32m[39m
+Feb-09-2023 15:11:28 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 304 - - 37.188 ms[39m
+[32m[39m
+Feb-09-2023 15:11:28 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 27.730 ms[39m
+[32m[39m
+Feb-09-2023 15:11:28 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 82.094 ms[39m
+[32m[39m
+Feb-09-2023 15:11:28 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 93.901 ms[39m
+[32m[39m
+Feb-09-2023 15:11:29 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 304 - - 43.703 ms[39m
+[32m[39m
+Feb-09-2023 15:11:29 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 43.743 ms[39m
+[32m[39m
+Feb-09-2023 15:11:35 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 304 - - 31.668 ms[39m
+[32m[39m
+Feb-09-2023 15:11:35 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 27.902 ms[39m
+[32m[39m
+Feb-09-2023 15:11:39 [32mhttp[39m: [32mPUT /service/bulkupdate 200 20 - 1.896 ms[39m
+[32m[39m
+Feb-09-2023 15:11:39 [32mhttp[39m: [32mDELETE /service/bulkdelete 200 20 - 36.325 ms[39m
+[32m[39m
+Feb-09-2023 15:11:42 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 28.216 ms[39m
+[32m[39m
+Feb-09-2023 15:11:42 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 45.204 ms[39m
+[32m[39m
+Feb-09-2023 15:11:47 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 304 - - 28.331 ms[39m
+[32m[39m
+Feb-09-2023 15:11:47 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 31.354 ms[39m
+[32m[39m
+Feb-09-2023 15:11:58 [32mhttp[39m: [32mPUT /service/bulkupdate 200 20 - 1.717 ms[39m
+[32m[39m
+Feb-09-2023 15:11:58 [32mhttp[39m: [32mDELETE /service/bulkdelete 200 20 - 30.241 ms[39m
+[32m[39m
+Feb-09-2023 15:12:01 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 26.441 ms[39m
+[32m[39m
+Feb-09-2023 15:12:01 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 31.489 ms[39m
+[32m[39m
+Feb-09-2023 15:12:05 [32mhttp[39m: [32mGET /service/findServiceCode 200 - - 216.935 ms[39m
+[32m[39m
+Feb-09-2023 15:12:05 [32mhttp[39m: [32mGET /service/findServiceCode 200 - - 294.109 ms[39m
+[32m[39m
+Feb-09-2023 15:12:24 [32mhttp[39m: [32mPOST /service/createservice 200 53 - 73.592 ms[39m
+[32m[39m
+Feb-09-2023 15:12:24 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 31.841 ms[39m
+[32m[39m
+Feb-09-2023 15:12:24 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 44.928 ms[39m
+[32m[39m
+Feb-09-2023 15:12:28 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 66.706 ms[39m
+[32m[39m
+Feb-09-2023 15:12:28 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 82.213 ms[39m
+[32m[39m
+Feb-09-2023 15:12:31 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=detailed%20and%20extensive%20oral%20evaluation%20-%20problem%20focused,%20by%20report&Organisationid=ORG-323 200 380 - 29.096 ms[39m
+[32m[39m
+Feb-09-2023 15:12:31 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=detailed%20and%20extensive%20oral%20evaluation%20-%20problem%20focused,%20by%20report&Organisationid=ORG-323 200 380 - 28.855 ms[39m
+[32m[39m
+Feb-09-2023 15:22:13 [32mhttp[39m: [32mPOST /user/logout 200 56 - 47.455 ms[39m
+[32m[39m
+Feb-09-2023 15:22:35 [32mhttp[39m: [32mPOST /user/login 200 593 - 410.134 ms[39m
+[32m[39m
+Feb-09-2023 15:22:36 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 66.692 ms[39m
+[32m[39m
+Feb-09-2023 15:22:36 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 71.478 ms[39m
+[32m[39m
+Feb-09-2023 15:22:36 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 74.342 ms[39m
+[32m[39m
+Feb-09-2023 15:22:36 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 78.039 ms[39m
+[32m[39m
+Feb-09-2023 15:22:36 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 62.311 ms[39m
+[32m[39m
+Feb-09-2023 15:22:36 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 72.596 ms[39m
+[32m[39m
+Feb-09-2023 15:22:38 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 304 - - 35.073 ms[39m
+[32m[39m
+Feb-09-2023 15:22:38 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 41.723 ms[39m
+[32m[39m
+Feb-09-2023 15:22:40 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 304 - - 37.500 ms[39m
+[32m[39m
+Feb-09-2023 15:22:40 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 41.665 ms[39m
+[32m[39m
+Feb-09-2023 15:22:48 [32mhttp[39m: [32mPUT /service/bulkupdate 200 20 - 71.996 ms[39m
+[32m[39m
+Feb-09-2023 15:22:48 [32mhttp[39m: [32mDELETE /service/bulkdelete 200 20 - 1.559 ms[39m
+[32m[39m
+Feb-09-2023 15:22:51 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 29.908 ms[39m
+[32m[39m
+Feb-09-2023 15:22:51 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 36.320 ms[39m
+[32m[39m
+Feb-09-2023 15:22:53 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 65.226 ms[39m
+[32m[39m
+Feb-09-2023 15:22:53 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 69.798 ms[39m
+[32m[39m
+Feb-09-2023 15:22:58 [32mhttp[39m: [32mGET /service/findServiceCode 304 - - 197.773 ms[39m
+[32m[39m
+Feb-09-2023 15:22:58 [32mhttp[39m: [32mGET /service/findServiceCode 200 - - 309.587 ms[39m
+[32m[39m
+Feb-09-2023 15:23:12 [32mhttp[39m: [32mPOST /service/createservice 200 53 - 69.554 ms[39m
+[32m[39m
+Feb-09-2023 15:23:12 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 64.943 ms[39m
+[32m[39m
+Feb-09-2023 15:23:12 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 75.199 ms[39m
+[32m[39m
+Feb-09-2023 15:23:15 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=comprehensive%20periodontal%20evaluation%20-%20new%20or%20established%20patient&Organisationid=ORG-323 200 393 - 87.433 ms[39m
+[32m[39m
+Feb-09-2023 15:23:15 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=comprehensive%20periodontal%20evaluation%20-%20new%20or%20established%20patient&Organisationid=ORG-323 200 393 - 86.883 ms[39m
+[32m[39m
+Feb-09-2023 15:23:22 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=comprehensive%20periodontal%20evaluation%20-%20new%20or%20established%20patient&Organisationid=ORG-323 304 - - 33.385 ms[39m
+[32m[39m
+Feb-09-2023 15:23:22 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=comprehensive%20periodontal%20evaluation%20-%20new%20or%20established%20patient&Organisationid=ORG-323 200 393 - 34.013 ms[39m
+[32m[39m
+Feb-09-2023 15:23:59 [32mhttp[39m: [32mPUT /service/bulkupdate 200 20 - 78.436 ms[39m
+[32m[39m
+Feb-09-2023 15:24:01 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=comprehensive%20periodontal%20evaluation%20-%20new%20or%20established%20patient&Organisationid=ORG-323 200 422 - 43.317 ms[39m
+[32m[39m
+Feb-09-2023 15:24:01 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=comprehensive%20periodontal%20evaluation%20-%20new%20or%20established%20patient&Organisationid=ORG-323 200 422 - 37.516 ms[39m
+[32m[39m
+Feb-09-2023 15:24:05 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 716 - 38.337 ms[39m
+[32m[39m
+Feb-09-2023 15:24:05 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 304 - - 41.442 ms[39m
+[32m[39m
+Feb-09-2023 15:24:07 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 58.878 ms[39m
+[32m[39m
+Feb-09-2023 15:24:07 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 72.546 ms[39m
+[32m[39m
+Feb-09-2023 15:24:35 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 63.224 ms[39m
+[32m[39m
+Feb-09-2023 15:24:35 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 64.262 ms[39m
+[32m[39m
+Feb-09-2023 15:24:36 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 304 - - 77.335 ms[39m
+[32m[39m
+Feb-09-2023 15:24:36 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 69.778 ms[39m
+[32m[39m
+Feb-09-2023 15:24:47 [32mhttp[39m: [32mPOST /service/publishPricelistCorrectformat 200 55 - 107.268 ms[39m
+[32m[39m
+Feb-09-2023 15:24:48 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 67.480 ms[39m
+[32m[39m
+Feb-09-2023 15:24:48 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 63.631 ms[39m
+[32m[39m
+Feb-09-2023 15:24:51 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 200 - - 29.658 ms[39m
+[32m[39m
+Feb-09-2023 15:24:51 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 200 - - 32.845 ms[39m
+[32m[39m
+Feb-09-2023 15:24:58 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 304 - - 30.176 ms[39m
+[32m[39m
+Feb-09-2023 15:24:58 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 200 - - 39.221 ms[39m
+[32m[39m
+Feb-09-2023 15:25:02 [32mhttp[39m: [32mPUT /service/bulkupdate 200 20 - 1.500 ms[39m
+[32m[39m
+Feb-09-2023 15:25:03 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 304 - - 35.070 ms[39m
+[32m[39m
+Feb-09-2023 15:25:03 [32mhttp[39m: [32mGET /service/getPriceListbyService?DiagnosisTestorServiceName=AEC%20(Absolute%20Eosinophil%20Count)%20Test&Organisationid=ORG-323 200 - - 31.982 ms[39m
+[32m[39m
+Feb-09-2023 15:25:06 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 304 - - 37.646 ms[39m
+[32m[39m
+Feb-09-2023 15:25:06 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 716 - 35.500 ms[39m
+[32m[39m
+Feb-09-2023 15:25:42 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 304 - - 51.922 ms[39m
+[32m[39m
+Feb-09-2023 15:25:42 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 39.394 ms[39m
+[32m[39m
+Feb-09-2023 15:26:06 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 67.816 ms[39m
+[32m[39m
+Feb-09-2023 15:26:06 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 74.560 ms[39m
+[32m[39m
+Feb-09-2023 15:26:07 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 304 - - 73.482 ms[39m
+[32m[39m
+Feb-09-2023 15:26:07 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 59.491 ms[39m
+[32m[39m
+Feb-09-2023 15:26:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 15:26:20 [32minfo[39m: [32mdev err 2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain,Albumin Test already exists[39m
+Feb-09-2023 15:26:20 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain,Albumin Test already exists[39m
+Feb-09-2023 15:26:20 [32mhttp[39m: [32mPOST /service/unknownHeaderPricelist 500 735 - 262.084 ms[39m
+[32m[39m
+Feb-09-2023 15:26:25 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 194.007 ms[39m
+[32m[39m
+Feb-09-2023 15:26:25 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 233.103 ms[39m
+[32m[39m
+Feb-09-2023 15:26:32 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 304 - - 40.083 ms[39m
+[32m[39m
+Feb-09-2023 15:26:32 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 716 - 38.702 ms[39m
+[32m[39m
+Feb-09-2023 15:26:34 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 64.206 ms[39m
+[32m[39m
+Feb-09-2023 15:26:34 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 66.463 ms[39m
+[32m[39m
+Feb-09-2023 15:26:35 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 304 - - 63.327 ms[39m
+[32m[39m
+Feb-09-2023 15:26:35 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 57.212 ms[39m
+[32m[39m
+Feb-09-2023 15:26:37 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 115.209 ms[39m
+[32m[39m
+Feb-09-2023 15:26:37 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 105.098 ms[39m
+[32m[39m
+Feb-09-2023 15:26:41 [32mhttp[39m: [32mGET /facility/findfacilityType 304 - - 63.203 ms[39m
+[32m[39m
+Feb-09-2023 15:26:41 [32mhttp[39m: [32mGET /facility/findfacilityType 200 321 - 67.749 ms[39m
+[32m[39m
+Feb-09-2023 15:26:43 [32mhttp[39m: [32mGET /facility/findfacilityNPI 304 - - 2104.632 ms[39m
+[32m[39m
+Feb-09-2023 15:26:43 [32mhttp[39m: [32mGET /facility/findfacilityNPI 200 - - 2030.913 ms[39m
+[32m[39m
+Feb-09-2023 15:27:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 15:27:12 [32minfo[39m: [32mdev err Facility already exists[39m
+Feb-09-2023 15:27:12 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 15:27:12 [32mhttp[39m: [32mPOST /facility/createFacility 500 317 - 106.539 ms[39m
+[32m[39m
+Feb-09-2023 15:27:38 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 15:27:38 [32minfo[39m: [32mdev err Facility already exists[39m
+Feb-09-2023 15:27:38 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 15:27:38 [32mhttp[39m: [32mPOST /facility/createFacility 500 317 - 84.065 ms[39m
+[32m[39m
+Feb-09-2023 15:27:40 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 65.753 ms[39m
+[32m[39m
+Feb-09-2023 15:27:40 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 72.903 ms[39m
+[32m[39m
+Feb-09-2023 15:27:43 [32mhttp[39m: [32mGET /facility/findfacilityType 304 - - 67.886 ms[39m
+[32m[39m
+Feb-09-2023 15:27:43 [32mhttp[39m: [32mGET /facility/findfacilityType 200 321 - 70.786 ms[39m
+[32m[39m
+Feb-09-2023 15:27:45 [32mhttp[39m: [32mGET /facility/findfacilityNPI 304 - - 2058.078 ms[39m
+[32m[39m
+Feb-09-2023 15:27:46 [32mhttp[39m: [32mGET /facility/findfacilityNPI 200 - - 2261.280 ms[39m
+[32m[39m
+Feb-09-2023 15:28:05 [32mhttp[39m: [32mPOST /facility/createFacility 200 53 - 157.972 ms[39m
+[32m[39m
+Feb-09-2023 15:28:06 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 76.052 ms[39m
+[32m[39m
+Feb-09-2023 15:28:06 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 85.675 ms[39m
+[32m[39m
+Feb-09-2023 15:28:07 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1538100029&Organisationid=ORG-323 200 30 - 26.865 ms[39m
+[32m[39m
+Feb-09-2023 15:28:07 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1538100029&Organisationid=ORG-323 200 30 - 26.401 ms[39m
+[32m[39m
+Feb-09-2023 15:28:27 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 61.027 ms[39m
+[32m[39m
+Feb-09-2023 15:28:27 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 68.543 ms[39m
+[32m[39m
+Feb-09-2023 15:28:29 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1538100029&Organisationid=ORG-323 304 - - 24.375 ms[39m
+[32m[39m
+Feb-09-2023 15:28:29 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1538100029&Organisationid=ORG-323 200 30 - 26.182 ms[39m
+[32m[39m
+Feb-09-2023 15:28:50 [32mhttp[39m: [32mPOST /service/unknownHeaderPricelist 200 72 - 4786.983 ms[39m
+[32m[39m
+Feb-09-2023 15:29:30 [32mhttp[39m: [32mPOST /user/logout 200 56 - 37.748 ms[39m
+[32m[39m
+Feb-09-2023 15:29:35 [32mhttp[39m: [32mPOST /admin/adminlogin 200 590 - 372.314 ms[39m
+[32m[39m
+Feb-09-2023 15:29:35 [32mhttp[39m: [32mGET /pathPricelist/nonStandard 200 - - 36.821 ms[39m
+[32m[39m
+Feb-09-2023 15:29:35 [32mhttp[39m: [32mGET /pathPricelist/nonStandard 200 - - 34.806 ms[39m
+[32m[39m
+Feb-09-2023 15:29:58 [32mhttp[39m: [32mPOST /service/uploadAdminPricelist 200 57 - 4392.298 ms[39m
+[32m[39m
+Feb-09-2023 15:30:03 [32mhttp[39m: [32mPOST /admin/adminlogout 200 56 - 34.567 ms[39m
+[32m[39m
+Feb-09-2023 15:30:15 [32mhttp[39m: [32mPOST /user/login 200 593 - 331.974 ms[39m
+[32m[39m
+Feb-09-2023 15:30:16 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 69.480 ms[39m
+[32m[39m
+Feb-09-2023 15:30:16 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 78.893 ms[39m
+[32m[39m
+Feb-09-2023 15:30:16 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 77.425 ms[39m
+[32m[39m
+Feb-09-2023 15:30:16 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 87.896 ms[39m
+[32m[39m
+Feb-09-2023 15:30:16 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 62.426 ms[39m
+[32m[39m
+Feb-09-2023 15:30:16 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 110.389 ms[39m
+[32m[39m
+Feb-09-2023 15:30:19 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 - - 34.801 ms[39m
+[32m[39m
+Feb-09-2023 15:30:19 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 - - 46.345 ms[39m
+[32m[39m
+Feb-09-2023 15:30:20 [32mhttp[39m: [32mGET /pathPricelist/check?file=Admin:02-09-2023_1675936794596_ORG-323_02-09-2023_1675936726038_onemistake.csv 200 - - 19.691 ms[39m
+[32m[39m
+Feb-09-2023 15:30:20 [32mhttp[39m: [32mGET /pathPricelist/check?file=Admin:02-09-2023_1675936794596_ORG-323_02-09-2023_1675936726038_onemistake.csv 200 - - 12.421 ms[39m
+[32m[39m
+Feb-09-2023 15:30:22 [32mhttp[39m: [32mPOST /service/publishPricelist 200 55 - 116.642 ms[39m
+[32m[39m
+Feb-09-2023 15:30:22 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 - - 40.912 ms[39m
+[32m[39m
+Feb-09-2023 15:30:22 [32mhttp[39m: [32mGET /pathPricelist/getPathByProvider?providerID=PVD-242&OrganizationID=ORG-323 200 - - 56.331 ms[39m
+[32m[39m
+Feb-09-2023 15:36:14 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 57.552 ms[39m
+[32m[39m
+Feb-09-2023 15:36:14 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 69.626 ms[39m
+[32m[39m
+Feb-09-2023 15:36:14 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 78.666 ms[39m
+[32m[39m
+Feb-09-2023 15:36:14 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 79.550 ms[39m
+[32m[39m
+Feb-09-2023 15:36:14 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 56.051 ms[39m
+[32m[39m
+Feb-09-2023 15:36:14 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 66.624 ms[39m
+[32m[39m
+Feb-09-2023 15:36:24 [32mhttp[39m: [32mPOST /user/logout 200 56 - 34.756 ms[39m
+[32m[39m
+Feb-09-2023 15:36:31 [32mhttp[39m: [32mPOST /user/login 200 593 - 325.661 ms[39m
+[32m[39m
+Feb-09-2023 15:36:31 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 81.626 ms[39m
+[32m[39m
+Feb-09-2023 15:36:31 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 304 - - 80.036 ms[39m
+[32m[39m
+Feb-09-2023 15:36:31 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-242 200 564 - 77.424 ms[39m
+[32m[39m
+Feb-09-2023 15:36:31 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 84.934 ms[39m
+[32m[39m
+Feb-09-2023 15:36:31 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 304 - - 57.933 ms[39m
+[32m[39m
+Feb-09-2023 15:36:31 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-242 200 - - 67.990 ms[39m
+[32m[39m
+Feb-09-2023 15:36:34 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 304 - - 60.106 ms[39m
+[32m[39m
+Feb-09-2023 15:36:34 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 60.658 ms[39m
+[32m[39m
+Feb-09-2023 15:36:39 [32mhttp[39m: [32mGET /service/findServiceCode 304 - - 296.927 ms[39m
+[32m[39m
+Feb-09-2023 15:36:39 [32mhttp[39m: [32mGET /service/findServiceCode 200 - - 204.785 ms[39m
+[32m[39m
+Feb-09-2023 15:36:50 [32mhttp[39m: [32mPOST /service/createservice 200 53 - 62.068 ms[39m
+[32m[39m
+Feb-09-2023 15:36:51 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 31.911 ms[39m
+[32m[39m
+Feb-09-2023 15:36:51 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1205821113&Organisationid=ORG-323 200 - - 34.727 ms[39m
+[32m[39m
+Feb-09-2023 15:36:53 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 83.742 ms[39m
+[32m[39m
+Feb-09-2023 15:36:53 [32mhttp[39m: [32mGET /service/getPricelistbyOrg?Organisationid=ORG-323 200 - - 94.446 ms[39m
+[32m[39m

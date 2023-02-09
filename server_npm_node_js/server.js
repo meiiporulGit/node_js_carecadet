@@ -89,8 +89,8 @@ app.use('/admin',AdminLoginController);
 app.use('/provider',ProviderController);
 app.use("/contact",ContactController)
 app.use("/pathPricelist",PathPricelistController)
-app.use("/upload", PricelistController);
-app.use("/", PricelistController);
+app.use("/service", PricelistController);
+// app.use("/", PricelistController);
 app.use(express.static('./images'))
 app.use(express.static('./uploads'))
 startAuthAPI(app);
@@ -100,7 +100,7 @@ app.use('/collection-key-gen',CollectionKeyGenController);
 app.use('/organization',OrganizationController);
 app.use('/facility',FacilityController);
 
-app.use("/getPriceList",PricelistController);
+// app.use("/getPriceList",PricelistController);
 
 
 // Handle All Errors 

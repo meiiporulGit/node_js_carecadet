@@ -148,7 +148,7 @@ async function search(queryParams) {
             {
                 multi_match: {
                   query: location,
-                  fields: ["addressLine1", "addressLine2","city","state"]
+                  fields: ["addressLine1", "addressLine2","city","state","zipCode"]
                 }
             }
         )

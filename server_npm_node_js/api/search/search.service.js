@@ -138,20 +138,33 @@ export default {
 // }
 
 async function search(queryParams) {
-    const q = queryParams.q;
+    const q = queryParams.q ?? "";
     const location = queryParams.location;
     const lat = queryParams.lat;
     const lon = queryParams.lon;
-    var facility_query = []
+    var facility_query = [];
     if(location != null) {
         facility_query.push(
             {
                 multi_match: {
                   query: location,
-                  fields: ["addressLine1", "addressLine2","city","state"]
+                  fields: ["addressLine1", "addressLine2","city","state","zipCode"]
                 }
             }
-        )
+        );
+        if(!isNaN(parseInt(location))){
+            const zipcode = parseInt(location)
+            facility_query.push(
+                {
+                    range: {
+                      "zipcode": {
+                        "gte": zipcode - 15,
+                        "lte": zipcode + 15
+                      }
+                    }
+                }
+            );
+        }
     }
     if(lat != null || lon != null){
         facility_query.push(
@@ -172,6 +185,22 @@ async function search(queryParams) {
                 from: 0, size: 30,
                 index: "hltest.lookup",
                 runtime_mappings: {
+                    zipcode: {
+                        type: "long",
+                        script: `
+                          if(!doc['zipCode.keyword'].empty) {
+                            def m = /^([0-9]+)$/.matcher(doc['zipCode.keyword'].value);
+                            if ( m.matches() ) {
+                                emit(Integer.parseInt(m.group(1)))
+                            } else {
+                              emit(0)
+                            }
+                          } else {
+                            emit(0)
+                          }
+                          
+                        `
+                      },
                     location: {
                         type: "geo_point",
                         script:  `
@@ -218,25 +247,30 @@ async function search(queryParams) {
             }
         }
         for(var item of result.hits.hits) {
+            var query = [
+                {
+                    term: {
+                        "FacilityNPI": {
+                            value: item._source?.facilityNPI ?? "",
+                        }
+                    }
+                }
+            ];
+            if(q.trim() !== '' ){
+                query.push(
+                    {
+                        match: {
+                            "DiagnosisTestorServiceName": q
+                        }
+                    },
+                )
+            }
             var result = await client.search(
                 {
                     index: "hltest.pricelist",
                     query: {
                         bool: {
-                            must: [
-                                {
-                                    match: {
-                                        "DiagnosisTestorServiceName": q
-                                    }
-                                },
-                                {
-                                    term: {
-                                        "FacilityNPI": {
-                                            value: item._source?.facilityNPI ?? "",
-                                        }
-                                    }
-                                }
-                            ]
+                            must: query
                         }
                     }
                 }

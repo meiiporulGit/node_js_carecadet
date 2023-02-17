@@ -16,37 +16,37 @@ export default {
 };
 dotenv.config();
 
-const useremail = "meiiporulgithub@gmail.com";
-const emailpass = "ubtddcjzvsywlxly";
+// const useremail = "meiiporulgithub@gmail.com";
+// const emailpass = "ubtddcjzvsywlxly";
 // const useremail = "carecadet.demo@gmail.com";
 // const emailpass = "ukcbskospbpwylco";
 
-// const useremail ="healthlens.demo@meiiporul.com";
-// const emailpass ="healthlens@23";
+const useremail ="healthlens.demo@meiiporul.com";
+const emailpass ="healthlens@23";
 
 
 
-const transport = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  auth: {
-    user: useremail,
-    pass: emailpass,
-  },
-  port: 587,
-  secure: false,
-});
-
-// const transport
-//  = nodemailer.createTransport({
-//     host:"mail.meiiporul.com",
-//     auth:{
-//         user:useremail,
-//         pass:emailpass
-//     },
-//     port:465,
-//     secure: true,
-
+// const transport = nodemailer.createTransport({
+//   host: "smtp.gmail.com",
+//   auth: {
+//     user: useremail,
+//     pass: emailpass,
+//   },
+//   port: 587,
+//   secure: false,
 // });
+
+const transport
+ = nodemailer.createTransport({
+    host:"mail.meiiporul.com",
+    auth:{
+        user:useremail,
+        pass:emailpass
+    },
+    port:465,
+    secure: true,
+
+});
 
 async function sendConfirmationEmail(firstName, _email) {
   console.log("Check");
@@ -61,9 +61,9 @@ async function sendConfirmationEmail(firstName, _email) {
   transport.sendMail(
     {
       from: "healthlens.demo@meiiporul.com",
-      
+      cc:"healthlens.demo@meiiporul.com",
       to: _email,
-      subject: "Please confirm your account",
+      subject: "Email Confirmation",
       html: `<h1>Email Confirmation</h1>
           <h2>Hello ${firstName}</h2>
           <p>Thank you for subscribing. Please confirm your email by clicking on the following link</p>

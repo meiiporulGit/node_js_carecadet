@@ -4,34 +4,34 @@ export default {
   createEmail,
 };
 
-// const useremail ="healthlens.demo@meiiporul.com";
-// const emailpass ="healthlens@23";
+const useremail ="healthlens.demo@meiiporul.com";
+const emailpass ="healthlens@23";
 
-// const transport= nodemailer.createTransport({
-//     host:"Meiiporul.com",
-//     auth:{
-//         user:useremail,
-//         pass:emailpass
-//     },
-//     port:2096,
-//     secure: true,
+const transport= nodemailer.createTransport({
+    host:"Meiiporul.com",
+    auth:{
+        user:useremail,
+        pass:emailpass
+    },
+    port:2096,
+    secure: true,
 
-// });
-
-const useremail = "demo.carecadet@gmail.com";
-const emailpass = "wyldgbcphqvxmmws";
-
-
-
-const transport = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  auth: {
-    user: useremail,
-    pass: emailpass,
-  },
-  port: 587,
-  secure: false,
 });
+
+// const useremail = "demo.carecadet@gmail.com";
+// const emailpass = "wyldgbcphqvxmmws";
+
+
+
+// const transport = nodemailer.createTransport({
+//   host: "smtp.gmail.com",
+//   auth: {
+//     user: useremail,
+//     pass: emailpass,
+//   },
+//   port: 587,
+//   secure: false,
+// });
 async function createEmail(body) {
   // Check the Body parameters( atleast one parameter should be there)
   console.log(body, "checkEmail");
@@ -42,7 +42,7 @@ async function createEmail(body) {
         name: body.email,
         address: body.email,
       },
-      to: "demo.carecadet@gmail.com",
+      to: "healthlens.demo@meiiporul.com",
       subject: body.Subject,
       html: `
            <p>FROM:${body.email}</p>

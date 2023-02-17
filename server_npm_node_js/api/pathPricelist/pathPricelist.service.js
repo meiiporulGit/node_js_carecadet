@@ -8,17 +8,32 @@ export default {
   getPathInfoByProvider,
   nonStandard,
 };
-const useremail = "meiiporulgithub@gmail.com";
-const emailpass = "ubtddcjzvsywlxly";
+// const useremail = "meiiporulgithub@gmail.com";
+// const emailpass = "ubtddcjzvsywlxly";
 
-const transport = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  auth: {
-    user: useremail,
-    pass: emailpass,
-  },
-  port: 587,
-  secure: false,
+// const transport = nodemailer.createTransport({
+//   host: "smtp.gmail.com",
+//   auth: {
+//     user: useremail,
+//     pass: emailpass,
+//   },
+//   port: 587,
+//   secure: false,
+// });
+
+const useremail ="healthlens.demo@meiiporul.com";
+const emailpass ="healthlens@23";
+
+const transport
+ = nodemailer.createTransport({
+    host:"mail.meiiporul.com",
+    auth:{
+        user:useremail,
+        pass:emailpass
+    },
+    port:465,
+    secure: true,
+
 });
 async function sendConfirmationEmail(email, name, file) {
   // console.log("Check");
@@ -26,7 +41,7 @@ async function sendConfirmationEmail(email, name, file) {
   var finalFile = file.split("/")[2];
   const mailOptions = await transport.sendMail(
     {
-      from: "demo.carecadet@gmail.com",
+      from: "healthlens.demo@meiiporul.com",
       to: email,
       subject: "Please confirm your account",
       html: `<h1>Verification Email</h1>

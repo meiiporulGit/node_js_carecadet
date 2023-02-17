@@ -17,10 +17,21 @@ let storage =  multer.diskStorage({
     }
     
 })
+const fileFilter = (req, file, cb) => {
+    if (
+      file.mimetype === "image/png" ||
+      file.mimetype === "image/jpg" ||
+      file.mimetype === "image/jpeg"
+    ) {
+      cb(null, true);
+    } else {
+      cb(new Error("File format should be PNG,JPG,JPEG"), false); 
+    }
+  };
 
 let upload =  multer({
-    storage : storage
-    
+    storage : storage,
+    fileFilter: fileFilter 
 })
 
 

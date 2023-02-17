@@ -27,7 +27,8 @@ router.get ("/findfacilityNPI",async(req,res) => {
             zipCode : 1,
             latitude : 1,
             longitude : 1
-        }}
+        }}, 
+        { $sample: { size: 10 } }
     ])
     res.send(data)
 })

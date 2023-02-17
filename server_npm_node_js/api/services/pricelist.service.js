@@ -279,7 +279,7 @@ async function unKnownHeaderPricelist(file) {
       : "Single facility upload";
   if (filedata.length !== 0) {
     var finalCSV = [];
-    for (let i = 0; i < filedata.length; i++) {
+    for (let i = 0; i < y.length; i++) {
       const findService = await Pricelist.findOne({
         FacilityNPI: filedata[i].FacilityNPI,
         Organisationid: filedata[i].Organisationid,
@@ -395,7 +395,29 @@ async function publishPricelist(file) {
 
 
 async function publishPricelistCorrectformat(file) {
+
   const originaldata = file.csv;
+  var finalCSV = [];
+  console.log(originaldata,"originaldata")
+  for (let i = 0; i < originaldata.length; i++) {
+  const findService = await Pricelist.findOne({
+    FacilityNPI: originaldata[i].FacilityNPI,
+    Organisationid: originaldata[i].Organisationid,
+    DiagnosisTestorServiceName: originaldata[i].DiagnosisTestorServiceName,
+  });
+
+  console.log(findService,"findservice")
+  if (findService) {
+    console.log(findService, "checkFind");
+    finalCSV.push(originaldata[i].DiagnosisTestorServiceName);
+  }
+
+  }
+if (finalCSV.length !== 0) {
+  throw Error(`${finalCSV} already exists`);
+} else {
+
+
   var finalPublish = [];
   for (let i = 0; i < originaldata.length; i++) {
     const facprice = {
@@ -424,7 +446,7 @@ async function publishPricelistCorrectformat(file) {
     };
   }
 }
-
+}
 async function bulkUpdate(body) {
   console.log("body ", body);
   if (Object.keys(body).length === 0) {
@@ -433,6 +455,7 @@ async function bulkUpdate(body) {
   for (var item of body.PriceList) {
     await updatePricelist(item);
   }
+  return {message:"Successfully Updated"}
 }
 
 async function updatePricelist(body) {
@@ -482,6 +505,7 @@ async function bulkDelete(body) {
   for (var id of body.PriceList) {
     await deletePricelist(id);
   }
+  return { message: "successfully Updated" };
 }
 async function deletePricelist(id) {
   if (id) {

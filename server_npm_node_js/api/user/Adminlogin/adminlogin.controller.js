@@ -196,7 +196,7 @@ function confirmEmail(req,res,next){
 
   AdminLoginService.updateConfirmEmail(query).then(obj=>{
     console.log("verify successully")
-    res.json("sucess updated")
+    res.json("Successfully Updated")
 }
 ).catch(next)
 }

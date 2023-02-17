@@ -79,7 +79,7 @@ async function sendConfirmationEmail(emailData, orgID, filename) {
   );
   const mailOptions = await transport.sendMail(
     {
-      from:"healthlens.demo@meiiporul.com",
+      from:email,
       to: "healthlens.demo@meiiporul.com",
       
       
@@ -279,7 +279,7 @@ async function unKnownHeaderPricelist(file) {
       : "Single facility upload";
   if (filedata.length !== 0) {
     var finalCSV = [];
-    for (let i = 0; i < y.length; i++) {
+    for (let i = 0; i < filedata.length; i++) {
       const findService = await Pricelist.findOne({
         FacilityNPI: filedata[i].FacilityNPI,
         Organisationid: filedata[i].Organisationid,
@@ -703,7 +703,7 @@ async function sendAdminConfirmationEmail(email, filename) {
 
   const mailOptions = await transport.sendMail(
     {
-      from: "demo.carecadet@gmail.com",
+      from: "healthlens.demo@meiiporul.com",
       to: email,
       subject: "Please confirm your account",
       html: `<h1>PriceList Confirmation</h1>

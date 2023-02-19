@@ -10,33 +10,36 @@ export default {
 }
 
 // async function search(queryParams) {
-//     const q = queryParams.q;
+//     const q = queryParams.q ?? "";
 //     const location = queryParams.location;
 //     const lat = queryParams.lat;
 //     const lon = queryParams.lon;
-//     var query = []
-//     if(q != null) {
-//         query.push(
-//             {
-//                 multi_match: {
-//                     query: q,
-//                     fields: ["DiagnosisTestorServiceName", "FacilityName"]
-//                 }
-//             }
-//         )
-//     }
+//     var facility_query = [];
 //     if(location != null) {
-//         query.push(
+//         facility_query.push(
 //             {
 //                 multi_match: {
 //                   query: location,
-//                   fields: ["addressLine1", "addressLine2","city","state"]
+//                   fields: ["addressLine1", "addressLine2","city","state","zipCode"]
 //                 }
 //             }
-//         )
+//         );
+//         if(!isNaN(parseInt(location))){
+//             const zipcode = parseInt(location)
+//             facility_query.push(
+//                 {
+//                     range: {
+//                       "zipcode": {
+//                         "gte": zipcode - 15,
+//                         "lte": zipcode + 15
+//                       }
+//                     }
+//                 }
+//             );
+//         }
 //     }
 //     if(lat != null || lon != null){
-//         query.push(
+//         facility_query.push(
 //             {
 //                 geo_distance: {
 //                   distance: "30km",
@@ -51,8 +54,25 @@ export default {
 //     try{
 //         var result = await client.search(
 //             {
-//                 index: "hltest.pricelist,hltest.lookup",
+//                 from: 0, size: 30,
+//                 index: "hltest.lookup",
 //                 runtime_mappings: {
+//                     zipcode: {
+//                         type: "long",
+//                         script: `
+//                           if(!doc['zipCode.keyword'].empty) {
+//                             def m = /^([0-9]+)$/.matcher(doc['zipCode.keyword'].value);
+//                             if ( m.matches() ) {
+//                                 emit(Integer.parseInt(m.group(1)))
+//                             } else {
+//                               emit(0)
+//                             }
+//                           } else {
+//                             emit(0)
+//                           }
+                          
+//                         `
+//                       },
 //                     location: {
 //                         type: "geo_point",
 //                         script:  `
@@ -71,29 +91,71 @@ export default {
 //                 },
 //                 query: {
 //                     bool: {
-//                         should: query
+//                         should: facility_query
 //                     }                    
 //                 }
 //             }
 //         );
 //         var services = [];
-//         var facilities = [];
-//         for(var item of result.hits.hits) {
-//             if(item._index == "hltest.lookup"){
-//                 facilities.push(item._source.facilityNPI)
+//         if(location == null && lat == null && lon == null){
+//             var result = await client.search(
+//                 {
+//                     index: "hltest.pricelist",
+//                     query: {
+//                         bool: {
+//                             should: [
+//                                 {
+//                                     match: {
+//                                         "DiagnosisTestorServiceName": q
+//                                     }
+//                                 }
+//                             ]
+//                         }
+//                     }
+//                 }
+//             )
+//             for(var service of result.hits.hits) {
+//                 services.push(service._source?.ServiceCode ?? "")
 //             }
-//             if(item._index == "hltest.pricelist"){
-//                 services.push(item._source.ServiceCode)
+//         }
+//         for(var item of result.hits.hits) {
+//             var query = [
+//                 {
+//                     term: {
+//                         "FacilityNPI": {
+//                             value: item._source?.facilityNPI ?? "",
+//                         }
+//                     }
+//                 }
+//             ];
+//             if(q.trim() !== '' ){
+//                 query.push(
+//                     {
+//                         match: {
+//                             "DiagnosisTestorServiceName": q
+//                         }
+//                     },
+//                 )
+//             }
+//             var result = await client.search(
+//                 {
+//                     index: "hltest.pricelist",
+//                     query: {
+//                         bool: {
+//                             must: query
+//                         }
+//                     }
+//                 }
+//             )
+//             for(var service of result.hits.hits) {
+//                 services.push(service._source?.ServiceCode ?? "")
 //             }
 //         }
 //         const finalResult = await Pricelist.aggregate(
 //             [
 //                 {
 //                     $match: {
-//                         $or: [
-//                             { "ServiceCode": { $in: services }},
-//                             { "FacilityNPI": { $in: facilities }}
-//                         ]
+//                         "ServiceCode": { $in: services },
 //                     }
 //                 }, 
 //                 {
@@ -142,65 +204,68 @@ async function search(queryParams) {
     const location = queryParams.location;
     const lat = queryParams.lat;
     const lon = queryParams.lon;
-    var facility_query = [];
-    if(location != null) {
-        facility_query.push(
-            {
-                multi_match: {
-                  query: location,
-                  fields: ["addressLine1", "addressLine2","city","state","zipCode"]
-                }
-            }
-        );
-        if(!isNaN(parseInt(location))){
-            const zipcode = parseInt(location)
+    try{
+        var facility_query = [];
+        if(location != null) {
             facility_query.push(
                 {
-                    range: {
-                      "zipcode": {
-                        "gte": zipcode - 15,
-                        "lte": zipcode + 15
-                      }
+                    multi_match: {
+                      query: location,
+                      fields: ["addressLine1", "addressLine2","city","state","zipCode"]
                     }
                 }
             );
-        }
-    }
-    if(lat != null || lon != null){
-        facility_query.push(
-            {
-                geo_distance: {
-                  distance: "30km",
-                  location: {
-                    lat: lat ?? 0,
-                    lon: lon ?? 0,
-                  }
+            if(!isNaN(parseInt(location))){
+                const result = await client.search(
+                    {
+                        index: "hltest.lookup",
+                        query: {
+                            bool: {
+                                must: {
+                                    term: {
+                                        "zipCode": {
+                                            value: location,
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                )
+                if(result.hits.hits.length > 0){
+                    facility_query.push(
+                        {
+                            geo_distance: {
+                                distance: "30km",
+                                location: {
+                                  lat: result.hits.hits[0]._source["latitude"] ?? 0,
+                                  lon: result.hits.hits[0]._source["longitude"] ?? 0,
+                                }
+                              }
+                        }
+                    )
                 }
+            } 
+        } else {
+            if(lat != null || lon != null){
+                facility_query.push(
+                    {
+                        geo_distance: {
+                          distance: "30km",
+                          location: {
+                            lat: lat ?? 0,
+                            lon: lon ?? 0,
+                          }
+                        }
+                    }
+                )
             }
-        )
-    }
-    try{
+        }  
         var result = await client.search(
             {
                 from: 0, size: 30,
                 index: "hltest.lookup",
                 runtime_mappings: {
-                    zipcode: {
-                        type: "long",
-                        script: `
-                          if(!doc['zipCode.keyword'].empty) {
-                            def m = /^([0-9]+)$/.matcher(doc['zipCode.keyword'].value);
-                            if ( m.matches() ) {
-                                emit(Integer.parseInt(m.group(1)))
-                            } else {
-                              emit(0)
-                            }
-                          } else {
-                            emit(0)
-                          }
-                          
-                        `
-                      },
                     location: {
                         type: "geo_point",
                         script:  `

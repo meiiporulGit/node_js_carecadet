@@ -263,7 +263,6 @@ async function search(queryParams) {
         }  
         var result = await client.search(
             {
-                from: 0, size: 30,
                 index: "hltest.lookup",
                 runtime_mappings: {
                     location: {

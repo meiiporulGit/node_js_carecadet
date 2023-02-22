@@ -37,7 +37,7 @@ async function createFacility(body) {
         await facilityDetails.save();
         return { message: "Successfully created" };
     } else {
-        throw Error('Facility already exists');
+        throw Error('FacilityNPI has already been claimed and contact us if it belongs to you');
     }
 }
 

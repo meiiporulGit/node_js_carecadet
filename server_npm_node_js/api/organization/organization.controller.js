@@ -40,6 +40,7 @@ router.get('/getOrganizationByProvider',getOrganizationByProvider);
 router.post('/createOrganization',createOrganization);
 router.put('/updateOrganization',upload.single('file'),updateOrganization);
 router.delete('/deleteOrganization',deleteOrganization);
+router.get("/cityStateList",getCityStatelist)
 router.post("/image", upload.single("file"), (req, res) => {
         res.status(200).json({message:"uploaded successfully",data:req.file})
 })
@@ -47,6 +48,13 @@ router.post("/image", upload.single("file"), (req, res) => {
 
 function getOrganizationList(req,res,next) {
     OrganizationService.getOrganizationList().then(obj => {
+        new ResObject(res,obj);
+    }).catch(next);
+}
+
+
+function getCityStatelist(req,res,next) {
+    OrganizationService.getCityStateList().then(obj => {
         new ResObject(res,obj);
     }).catch(next);
 }

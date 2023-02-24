@@ -204,6 +204,7 @@ async function search(queryParams) {
     const location = queryParams.location;
     const lat = queryParams.lat;
     const lon = queryParams.lon;
+    const distance = queryParams.distance ?? '30km';
     try{
         var facility_query = [];
         if(location != null) {
@@ -251,7 +252,7 @@ async function search(queryParams) {
                 facility_query.push(
                     {
                         geo_distance: {
-                          distance: "30km",
+                          distance: distance,
                           location: {
                             lat: lat ?? 0,
                             lon: lon ?? 0,

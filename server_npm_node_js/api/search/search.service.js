@@ -219,12 +219,12 @@ async function search(queryParams) {
             if(!isNaN(parseInt(location))){
                 const result = await client.search(
                     {
-                        index: "hltest.lookup",
+                        index: "hltest.citystatezipcode",
                         query: {
                             bool: {
                                 must: {
                                     term: {
-                                        "zipCode": {
+                                        "ZIP_CODE": {
                                             value: location,
                                         }
                                     }
@@ -239,8 +239,8 @@ async function search(queryParams) {
                             geo_distance: {
                                 distance: "30km",
                                 location: {
-                                  lat: result.hits.hits[0]._source["latitude"] ?? 0,
-                                  lon: result.hits.hits[0]._source["longitude"] ?? 0,
+                                  lat: +result.hits.hits[0]._source["LAT"] ?? 0,
+                                  lon: +result.hits.hits[0]._source["LONG"] ?? 0,
                                 }
                               }
                         }

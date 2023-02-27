@@ -196,7 +196,7 @@ function confirmEmail(req,res,next){
 
   LoginService.updateConfirmEmail(query).then(obj=>{
     console.log("verify successully")
-    res.json("Sucessfully Updated")
+    res.redirect(`${process.env.APPBASE_URL}/provider/login`)
 }
 ).catch(next)
 }

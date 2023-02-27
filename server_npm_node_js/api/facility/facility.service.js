@@ -1,4 +1,5 @@
 import Facility from './facility.schema.js';
+import Pricelist from "../services/pricelist.schema.js";
 import { createId } from '../../shared/common-util.js';
 
 export default {
@@ -74,12 +75,13 @@ async function updateFacility(body) {
 }
 
 
-async function deleteFacility(facilityID) {
-    if(facilityID){
-        await Facility.deleteOne( { facilityID: facilityID });
+async function deleteFacility(facilityNPI) {
+    if(facilityNPI){
+        await Facility.deleteOne( { facilityNPI: facilityNPI });
+        await Pricelist.remove ({FacilityNPI: facilityNPI})
         return { message: 'successfully deleted'};
     } else {
-        throw Error('Please provide facilityID');
+        throw Error('Please provide facilityNPI');
     }
 }
 

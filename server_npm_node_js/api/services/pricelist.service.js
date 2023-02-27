@@ -413,6 +413,7 @@ async function publishPricelistCorrectformat(file) {
     ]);
     // console.log(createPricelist[0],"createPricelist")
     if (createPricelist[0]!==undefined) {
+      finalCSV.push(originaldata[i].DiagnosisTestorServiceName)
     }else{
       const facprice = {
               ...originaldata[i],
@@ -425,7 +426,7 @@ async function publishPricelistCorrectformat(file) {
     throw Error(`${finalCSV} already exists`);
   }else{
     const createPricelist = await Pricelist.create(finalPublish);
-    
+    console.log(createPricelist,"createpricelist")
         if (createPricelist.length === 0) {
           throw Error("Not Create");
         } else {

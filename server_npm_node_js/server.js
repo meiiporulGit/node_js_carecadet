@@ -56,8 +56,10 @@ app.use(morgan('tiny',{
     stream: stream
   }));
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ extended: true,limit: '50mb', parameterLimit: 50000 }));
 
 app.use(function (req, res, next) {
     // Website you wish to allow to connect

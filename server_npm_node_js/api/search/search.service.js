@@ -299,7 +299,10 @@ async function search(queryParams) {
                             should: [
                                 {
                                     match: {
-                                        "DiagnosisTestorServiceName": q
+                                        "DiagnosisTestorServiceName": {
+                                            query: q,
+                                            operator: "and"
+                                        }
                                     }
                                 }
                             ]
@@ -325,7 +328,10 @@ async function search(queryParams) {
                 query.push(
                     {
                         match: {
-                            "DiagnosisTestorServiceName": q
+                            "DiagnosisTestorServiceName": {
+                                query: q,
+                                operator: "and"
+                            }
                         }
                     },
                 )

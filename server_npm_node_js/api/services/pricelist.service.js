@@ -214,15 +214,21 @@ async function uploadPricelist(file) {
         Organisationid: filedata[i].Organisationid,
         DiagnosisTestorServiceName: filedata[i].DiagnosisTestorServiceName,
       });
+     
       if (findService) {
         console.log(findService, "checkFind");
         finalCSV.push(filedata[i].DiagnosisTestorServiceName);
       }
+   
     }
 
     if (finalCSV.length !== 0) {
       throw Error(`${finalCSV} already exists`);
-    } else {
+    } 
+  
+  
+    else {
+      
       const csvData = csvjson.toCSV(filedata, {
         headers: "key",
       });
@@ -405,17 +411,20 @@ async function publishPricelistCorrectformat(file) {
     Organisationid: originaldata[i].Organisationid,
     DiagnosisTestorServiceName: originaldata[i].DiagnosisTestorServiceName,
   });
-
+ 
   console.log(findService,"findservice")
+
   if (findService) {
-    console.log(findService, "checkFind");
+    
     finalCSV.push(originaldata[i].DiagnosisTestorServiceName);
   }
 
   }
 if (finalCSV.length !== 0) {
   throw Error(`${finalCSV} already exists`);
-} else {
+} 
+
+else {
 
 
   var finalPublish = [];
@@ -624,12 +633,21 @@ async function createService(body) {
     Organisationid: body.Organisationid,
     DiagnosisTestorServiceName: body.DiagnosisTestorServiceName,
   });
+  const Orgprice = {
+    
+    ["OrganisationPrices"]:
+      body.OrganisationPrices === "" || null || undefined || 0
+        ? body.FacilityPrices
+        : body.OrganisationPrices,
+  };
+  console.log(Orgprice,"orgprice")
   if (!findPricelist) {
     const pricelist = new Pricelist();
+ 
     (pricelist.Organisationid = body.Organisationid),
       (pricelist.ServiceCode = body.ServiceCode),
       (pricelist.DiagnosisTestorServiceName = body.DiagnosisTestorServiceName),
-      (pricelist.OrganisationPrices = body.OrganisationPrices),
+      (pricelist.OrganisationPrices = Orgprice.OrganisationPrices),
       (pricelist.FacilityNPI = body.FacilityNPI),
       (pricelist.FacilityName = body.FacilityName),
       (pricelist.FacilityPrices = body.FacilityPrices),

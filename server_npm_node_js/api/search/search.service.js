@@ -204,6 +204,7 @@ async function search(queryParams) {
     const location = queryParams.location;
     const lat = queryParams.lat;
     const lon = queryParams.lon;
+    const distance = queryParams.distance ?? '30km';
     try{
         var facility_query = [];
         if(location != null) {
@@ -218,12 +219,12 @@ async function search(queryParams) {
             if(!isNaN(parseInt(location))){
                 const result = await client.search(
                     {
-                        index: "hltest.lookup",
+                        index: "hltest.citystatezipcode",
                         query: {
                             bool: {
                                 must: {
                                     term: {
-                                        "zipCode": {
+                                        "ZIP_CODE": {
                                             value: location,
                                         }
                                     }
@@ -238,8 +239,8 @@ async function search(queryParams) {
                             geo_distance: {
                                 distance: "30km",
                                 location: {
-                                  lat: result.hits.hits[0]._source["latitude"] ?? 0,
-                                  lon: result.hits.hits[0]._source["longitude"] ?? 0,
+                                  lat: +result.hits.hits[0]._source["LAT"] ?? 0,
+                                  lon: +result.hits.hits[0]._source["LONG"] ?? 0,
                                 }
                               }
                         }
@@ -251,7 +252,7 @@ async function search(queryParams) {
                 facility_query.push(
                     {
                         geo_distance: {
-                          distance: "30km",
+                          distance: distance,
                           location: {
                             lat: lat ?? 0,
                             lon: lon ?? 0,
@@ -263,7 +264,6 @@ async function search(queryParams) {
         }  
         var result = await client.search(
             {
-                from: 0, size: 30,
                 index: "hltest.lookup",
                 runtime_mappings: {
                     location: {
@@ -299,7 +299,10 @@ async function search(queryParams) {
                             should: [
                                 {
                                     match: {
-                                        "DiagnosisTestorServiceName": q
+                                        "DiagnosisTestorServiceName": {
+                                            query: q,
+                                            operator: "and"
+                                        }
                                     }
                                 }
                             ]
@@ -325,7 +328,10 @@ async function search(queryParams) {
                 query.push(
                     {
                         match: {
-                            "DiagnosisTestorServiceName": q
+                            "DiagnosisTestorServiceName": {
+                                query: q,
+                                operator: "and"
+                            }
                         }
                     },
                 )

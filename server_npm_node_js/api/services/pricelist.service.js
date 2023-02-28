@@ -43,19 +43,17 @@ export default {
 //   secure: false,
 // });
 
-const useremail ="healthlens.demo@meiiporul.com";
-const emailpass ="healthlens@23";
+const useremail = "healthlens.demo@meiiporul.com";
+const emailpass = "healthlens@23";
 
-const transport
- = nodemailer.createTransport({
-    host:"mail.meiiporul.com",
-    auth:{
-        user:useremail,
-        pass:emailpass
-    },
-    port:465,
-    secure: true,
-
+const transport = nodemailer.createTransport({
+  host: "mail.meiiporul.com",
+  auth: {
+    user: useremail,
+    pass: emailpass,
+  },
+  port: 465,
+  secure: true,
 });
 // var date = new Date();
 // var mail = {
@@ -79,10 +77,9 @@ async function sendConfirmationEmail(emailData, orgID, filename) {
   );
   const mailOptions = await transport.sendMail(
     {
-      from:email,
+      from: email,
       to: "healthlens.demo@meiiporul.com",
-      
-      
+
       subject: "Please confirm your account",
       html: `<h1>PriceList Confirmation</h1>
           <h2>Hello Admin,</h2>
@@ -391,70 +388,111 @@ async function publishPricelist(file) {
   if (createPricelist.length === 0) {
     throw Error("Not Create");
   } else {
-     await fileConfirmation(file.emailData);
+    await fileConfirmation(file.emailData);
     return {
       message: "Successfully Published",
     };
   }
 }
-
-
 
 async function publishPricelistCorrectformat(file) {
-
   const originaldata = file.csv;
   var finalCSV = [];
-  console.log(originaldata,"originaldata")
+  var finalPublish=[];
   for (let i = 0; i < originaldata.length; i++) {
-  const findService = await Pricelist.findOne({
-    FacilityNPI: originaldata[i].FacilityNPI,
-    Organisationid: originaldata[i].Organisationid,
-    DiagnosisTestorServiceName: originaldata[i].DiagnosisTestorServiceName,
-  });
- 
-  console.log(findService,"findservice")
-
-  if (findService) {
-    
-    finalCSV.push(originaldata[i].DiagnosisTestorServiceName);
+    console.log("forLoop1", i);
+    const createPricelist = await Pricelist.aggregate([
+      {
+        $match: {
+          FacilityNPI: originaldata[i].FacilityNPI,
+          Organisationid: originaldata[i].Organisationid,
+          DiagnosisTestorServiceName:
+            originaldata[i].DiagnosisTestorServiceName,
+        },
+      },
+      {
+        $project: {
+          // SNo: 1,
+          DiagnosisTestorServiceName: 1,
+        },
+      },
+    ]);
+    // console.log(createPricelist[0],"createPricelist")
+    if (createPricelist[0]!==undefined) {
+      finalCSV.push(originaldata[i].DiagnosisTestorServiceName)
+    }else{
+      const facprice = {
+              ...originaldata[i],
+              ["FacilityPrices"]:originaldata[i].FacilityPrices === "" || null || undefined || 0 ? originaldata[i].OrganisationPrices: originaldata[i].FacilityPrices,
+            };
+            finalPublish.push(facprice);
+    }
   }
+  if(finalCSV.length!==0){
+    throw Error(`${finalCSV} already exists`);
+  }else{
+    const createPricelist = await Pricelist.create(finalPublish);
+    console.log(createPricelist,"createpricelist")
+        if (createPricelist.length === 0) {
+          throw Error("Not Create");
+        } else {
+          // await fileConfirmation(file.emailData);
+          return {
+            message: "Successfully Published",
+          };
+        }
+      }
+  
+  //   var finalCSV = [];
+  //   console.log(originaldata,"originaldata")
+  //   for (let i = 0; i < originaldata.length; i++) {
+  //     console.log(i,"checkFirstI")
+  //   const findService = await Pricelist.findOne({
+  //     FacilityNPI: originaldata[i].FacilityNPI,
+  //     Organisationid: originaldata[i].Organisationid,
+  //     DiagnosisTestorServiceName: originaldata[i].DiagnosisTestorServiceName,
+  //   });
 
-  }
-if (finalCSV.length !== 0) {
-  throw Error(`${finalCSV} already exists`);
-} 
+  //   console.log(findService,"findservice")
+  //   if (findService) {
+  //     console.log(findService, "checkFind");
+  //     finalCSV.push(originaldata[i].DiagnosisTestorServiceName);
+  //   }
 
-else {
+  //   }
+  // if (finalCSV.length !== 0) {
+  //   throw Error(`${finalCSV} already exists`);
+  // } else {
 
+  //   var finalPublish = [];
+  //   for (let i = 0; i < originaldata.length; i++) {
+  //     console.log(i,"checkSecond")
+  //     const facprice = {
+  //       ...originaldata[i],
+  //       ["FacilityPrices"]:
+  //         originaldata[i].FacilityPrices === "" || null || undefined || 0
+  //           ? originaldata[i].OrganisationPrices
+  //           : originaldata[i].FacilityPrices,
+  //     };
+  //     finalPublish.push(facprice);
+  //   }
 
-  var finalPublish = [];
-  for (let i = 0; i < originaldata.length; i++) {
-    const facprice = {
-      ...originaldata[i],
-      ["FacilityPrices"]:
-        originaldata[i].FacilityPrices === "" || null || undefined || 0
-          ? originaldata[i].OrganisationPrices
-          : originaldata[i].FacilityPrices,
-    };
-    finalPublish.push(facprice);
-  }
+  //   const createPricelist = await Pricelist.create(
+  //     finalPublish
+  //     //     , function (err, documents) {
+  //     //     if (err) throw err;
+  //     //   }
+  //   );
 
-  const createPricelist = await Pricelist.create(
-    finalPublish
-    //     , function (err, documents) {
-    //     if (err) throw err;
-    //   }
-  );
-
-  if (createPricelist.length === 0) {
-    throw Error("Not Create");
-  } else {
-    // await fileConfirmation(file.emailData);
-    return {
-      message: "Successfully Published",
-    };
-  }
-}
+  //   if (createPricelist.length === 0) {
+  //     throw Error("Not Create");
+  //   } else {
+  //     // await fileConfirmation(file.emailData);
+  //     return {
+  //       message: "Successfully Published",
+  //     };
+  //   }
+  //}
 }
 async function bulkUpdate(body) {
   console.log("body ", body);
@@ -464,7 +502,7 @@ async function bulkUpdate(body) {
   for (var item of body.PriceList) {
     await updatePricelist(item);
   }
-  return {message:"Successfully Updated"}
+  return { message: "Successfully Updated" };
 }
 
 async function updatePricelist(body) {
@@ -778,7 +816,8 @@ async function uploadAdminPricelist(file) {
       var yyyy = today.getFullYear();
 
       today = mm + "-" + dd + "-" + yyyy;
-      const filename ="Admin" + "_" + today + "_" + Date.now() + "_" + file.name;
+      const filename =
+        "Admin" + "_" + today + "_" + Date.now() + "_" + file.name;
       let uploadPath = __dirname + "/uploads/" + filename;
 
       fs.writeFile(uploadPath, csvData, (err) => {

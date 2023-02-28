@@ -30,6 +30,8 @@ let ProviderSchema = new schema({
         // required: [true, 'Enter a active status'],default: 'Y',
         enum: ['Pending', 'Active','Y']
      },
+     resetLink:{type:String,default:""},
+   
     activeStartDate: { type: Date, default: Date.now },
     activeEndDate: { type: Date, default: null },
     createdBy: { type: String, default: ""},

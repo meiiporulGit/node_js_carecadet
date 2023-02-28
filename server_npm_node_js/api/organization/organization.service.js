@@ -1,5 +1,6 @@
 import Organization from './organization.schema.js';
 import { createId } from '../../shared/common-util.js';
+import Lookup from "./lookup.schema.js"
 
 export default {
     createOrganization,
@@ -7,6 +8,7 @@ export default {
     deleteOrganization,
     getOrganizationByProvider,
     getOrganizationList,
+    getCityStateList
 }
 
 async function createOrganization(body) {
@@ -136,6 +138,22 @@ async function getOrganizationList() {
                     createdDate: 1,
                     updatedBy: 1,
                     updatedDate: 1
+                }
+            },
+        ]
+    );
+    return { data: OrganizationList };
+}
+
+async function getCityStateList() {
+    const OrganizationList = await Lookup.aggregate(
+        [
+            {
+                $project: {
+                    _id: 0,
+                   state:1,
+                   city:1,
+                   ZIP_CODE:1
                 }
             },
         ]

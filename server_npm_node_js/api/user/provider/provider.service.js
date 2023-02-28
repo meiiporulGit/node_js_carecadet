@@ -16,10 +16,7 @@ export default {
 };
 dotenv.config();
 
-// const useremail = "meiiporulgithub@gmail.com";
-// const emailpass = "ubtddcjzvsywlxly";
-// const useremail = "carecadet.demo@gmail.com";
-// const emailpass = "ukcbskospbpwylco";
+
 
 const useremail ="healthlens.demo@meiiporul.com";
 const emailpass ="healthlens@23";
@@ -74,6 +71,7 @@ async function sendConfirmationEmail(firstName, _email) {
    
   );
   return { message: "success" };
+  // return res.redirect('http://localhost:3000/provider/login');
 }
 
 
@@ -106,6 +104,7 @@ async function createProvider(body) {
     await ProviderDetails.save();
     await sendConfirmationEmail(body.firstName, body.email);
     return { message: "Successfully created" };
+  
   }
 }
 
@@ -232,3 +231,4 @@ async function createAdmin(body) {
     return { message: "Successfully created" };
   }
 }
+

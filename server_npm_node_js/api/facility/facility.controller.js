@@ -71,8 +71,8 @@ function updateFacility(req,res,next) {
 }
 
 function deleteFacility(req,res,next) {
-    const facilityID = req.query.facilityID ?? null;
-   FacilityService.deleteFacility(facilityID).then(obj => {
+    const facilityNPI = req.query.facilityNPI ?? null;
+   FacilityService.deleteFacility(facilityNPI).then(obj => {
         new ResObject(res,obj);
     }).catch(next);
 }

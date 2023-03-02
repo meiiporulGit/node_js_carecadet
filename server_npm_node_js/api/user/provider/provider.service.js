@@ -3,7 +3,8 @@ import { createId } from "../../../shared/common-util.js";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
-import smtpTransport from'nodemailer-smtp-transport';
+
+import _ from "lodash";
 
 export default {
   createProvider,
@@ -11,8 +12,9 @@ export default {
   getProviderList,
   deleteProvider,
   createAdmin,
-  // confirmEmail,
-  // updateConfirmEmail
+  forgotPassword,
+  resetPassword
+ 
 };
 dotenv.config();
 
@@ -23,15 +25,6 @@ const emailpass ="healthlens@23";
 
 
 
-// const transport = nodemailer.createTransport({
-//   host: "smtp.gmail.com",
-//   auth: {
-//     user: useremail,
-//     pass: emailpass,
-//   },
-//   port: 587,
-//   secure: false,
-// });
 
 const transport
  = nodemailer.createTransport({
@@ -71,7 +64,7 @@ async function sendConfirmationEmail(firstName, _email) {
    
   );
   return { message: "success" };
-  // return res.redirect('http://localhost:3000/provider/login');
+  
 }
 
 
@@ -108,7 +101,7 @@ async function createProvider(body) {
   }
 }
 
-// async function updateConfirmEmail(body){
+
 //     console.log("body",body);
 
 //     if (Object.keys(body).length === 0) {
@@ -198,6 +191,97 @@ async function deleteProvider(providerID) {
 }
 
 
+
+
+async function forgotPassword(email) {
+  
+  const findEmail = await Provider.findOne({ email });
+  console.log("findEmail", findEmail)
+  if (!findEmail) {
+    throw Error('User doesnot exists with this email')
+  } else {
+    const resettoken = await jwt.sign({ id: findEmail._id }, process.env.RESET_PASSWORD_KEY, { expiresIn: '1d' });
+    console.log(resettoken, "resettoken")
+    const data = {
+      from: 'healthlens.demo@meiiporul.com',
+
+      to: email,
+      subject: "Please Activate your link",
+      html: `<h2>Please click on the given link to reset your password</h2>
+                 
+                 <p>Thank you for subscribing. Please confirm your email by clicking on the following link</p>
+              
+               <a href=${process.env.APPBASE_URL}/provider/resetpass?resettoken=${resettoken}> Click here</a>
+                 </div>`,
+    };
+    const resetPass = await findEmail.updateOne({ resetLink: resettoken })
+    console.log("resetPass", resetPass)
+    if (!resetPass) {
+      throw Error('resetLink not updated')
+    }
+    else {
+      const resetemail = await transport.sendMail(data)
+      if (resetemail) {
+        return { message: "Password reset mail has been sent" }
+
+      } else {
+        throw Error(
+          "User does not exit"
+        )
+      }
+    }
+  }
+}
+          async function resetPassword(body) { 
+            const {newPass,resetLink} =body;
+            console.log("newPass",body)
+            if(resetLink){
+             const decodreset= await jwt.verify(resetLink,process.env.RESET_PASSWORD_KEY)
+                  if (!decodreset){
+                    // return res.status(401).json({
+                    //     error:"Incorrect token or it is expired"
+                    // })
+                    throw Error ("Incorrect token or it is expired")
+                  }
+                
+             var findresetLink=  await Provider.findOne({resetLink})
+             console.log("findresetLink",findresetLink)
+                    if(!findresetLink){
+                        // return res.status(400).json({error:"User with this token does not exist"})
+                        throw Error("User with this token does not exist")
+                    }
+                    const obj = {
+                        password:newPass,
+                        resetLink:""
+                    }
+                    console.log("obj",obj)
+                     findresetLink = _.extend(findresetLink,obj);
+                     console.log("newpassword",findresetLink)
+                    findresetLink.save(async(err,result)=>{
+                        if(err){
+        
+                            return {err:"password reset error"}
+                        } else{
+                          
+                            const resetdata={
+                                from: 'healthlens.demo@meiiporul.com',
+                                 to:findresetLink.email,
+                                subject: "Password updated successfully",
+                                html: `<h2>Password  updated successfully</h2>`
+                                   
+                              };
+                              await transport.sendMail(resetdata);
+                            return {message:"password has been updated successfully"}
+                        }
+                        
+                    })
+                  
+                  }
+                }
+            
+
+
+
 /////////////////////////////////////////ADMIN Create///////////////////////////////////////////
 
 async function createAdmin(body) {
@@ -232,3 +316,5 @@ async function createAdmin(body) {
   }
 }
 
+
+   

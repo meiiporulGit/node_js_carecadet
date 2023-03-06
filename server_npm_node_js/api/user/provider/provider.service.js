@@ -131,9 +131,9 @@ async function updateProvider(body) {
     throw Error("Invalid body parameter");
   }
   const findProvider = await Provider.findOne({ providerID: body.providerID });
-  if (!findProvider) {
-    throw Error(" provider does exists ");
-  } else {
+  console.log(findProvider,'findprovider')
+  if (findProvider) {
+   
     await Provider.findOneAndUpdate(
       { providerID: body.providerID },
       {
@@ -142,7 +142,7 @@ async function updateProvider(body) {
           lastName: body.lastName,
           email: body.email,
           contact: body.contact,
-          username: body.username,
+          username: body.email,
           role: body.role,
           remark: body.remark,
           updatedBy: body.userID,
@@ -150,7 +150,9 @@ async function updateProvider(body) {
         },
       }
     );
-    return { message: "Successfully updated" };
+    return { message: "Provider Details successfully updated" };
+  } else {
+    throw Error("Provider does not existsssss ");
   }
 }
 

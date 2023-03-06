@@ -515,6 +515,7 @@ async function updatePricelist(body) {
     FacilityNPI: body.FacilityNPI,
     Organisationid: body.Organisationid,
     DiagnosisTestorServiceName: body.DiagnosisTestorServiceName,
+    FacilityName:body.FacilityName
   });
   if (findPricelist) {
     await Pricelist.findOneAndUpdate(
@@ -523,6 +524,7 @@ async function updatePricelist(body) {
         FacilityNPI: body.FacilityNPI,
         Organisationid: body.Organisationid,
         DiagnosisTestorServiceName: body.DiagnosisTestorServiceName,
+        FacilityName:body.FacilityName
       },
       {
         SNo: body.SNo,

@@ -28,7 +28,7 @@ router.get ("/findfacilityNPI",async(req,res) => {
             latitude : 1,
             longitude : 1
         }}, 
-        { $sample: { size: 10 } }
+        
     ])
     res.send(data)
 })

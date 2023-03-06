@@ -209,6 +209,7 @@ async function search(queryParams) {
     const distance = queryParams.distance ?? '30km';
     try{
         var facility_query = [];
+        var facility_filter = [];
         if(location != null) {
             facility_query.push(
                 {
@@ -236,10 +237,10 @@ async function search(queryParams) {
                     }
                 )
                 if(result.hits.hits.length > 0){
-                    facility_query.push(
+                    facility_filter.push(
                         {
                             geo_distance: {
-                                distance: "30km",
+                                distance: distance,
                                 location: {
                                   lat: +result.hits.hits[0]._source["LAT"] ?? 0,
                                   lon: +result.hits.hits[0]._source["LONG"] ?? 0,
@@ -251,7 +252,7 @@ async function search(queryParams) {
             } 
         } else {
             if(lat != null || lon != null){
-                facility_query.push(
+                facility_filter.push(
                     {
                         geo_distance: {
                           distance: distance,
@@ -286,9 +287,10 @@ async function search(queryParams) {
                 },
                 query: {
                     bool: {
-                        should: facility_query
+                        should: facility_query,
+                        filter: facility_filter,
                     }                    
-                }
+                },
             }
         );
         var services = [];

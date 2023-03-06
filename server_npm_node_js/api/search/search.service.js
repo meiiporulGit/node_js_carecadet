@@ -1,6 +1,8 @@
 import { Client } from '@elastic/elasticsearch';
 import dotenv from 'dotenv';
 import Pricelist from '../services/pricelist.schema.js';
+import { Lookup } from '../facility/facility.schema.js';
+
 dotenv.config()
 
 const client = new Client({ node: `http://${process.env.ELASTIC_HOST}:${process.env.ELASTIC_PORT}`});
@@ -311,7 +313,9 @@ async function search(queryParams) {
                 }
             )
             for(var service of result.hits.hits) {
-                services.push(service._source?.ServiceCode ?? "")
+                const FacilityDetails = await Lookup.findOne({ facilityNPI: service._source?.FacilityNPI});
+                service._source.FacilityDetails = FacilityDetails;
+                services.push(service._source);
             }
         }
         for(var item of result.hits.hits) {
@@ -347,51 +351,12 @@ async function search(queryParams) {
                 }
             )
             for(var service of result.hits.hits) {
-                services.push(service._source?.ServiceCode ?? "")
+                const FacilityDetails = await Lookup.findOne({ facilityNPI: service._source?.FacilityNPI});
+                service._source.FacilityDetails = FacilityDetails;
+                services.push(service._source);
             }
         }
-        const finalResult = await Pricelist.aggregate(
-            [
-                {
-                    $match: {
-                        "ServiceCode": { $in: services },
-                    }
-                }, 
-                {
-                    $lookup: {
-                        as: "facilityDetails",
-                        from: "Lookup",
-                        localField: "FacilityNPI",
-                        foreignField: "facilityNPI"
-                    }
-                },
-                {
-                    $unwind: {
-                        path: "$facilityDetails",
-                        preserveNullAndEmptyArrays: true
-                    }
-                },
-                {
-                    $project: {
-                        _id: 0,
-                        SNo: 1,
-                        ServiceCode: 1,
-                        DiagnosisTestorServiceName: 1,
-                        Organisationid: 1,
-                        OrganisationPrices: 1,
-                        FacilityNPI: 1,
-                        FacilityName: 1,
-                        FacilityPrices: 1,
-                        createdBy: 1,
-                        createdDate: 1,
-                        updatedBy: 1,
-                        updatedDate: 1,
-                        "FacilityDetails": "$facilityDetails",
-                    }
-                }
-            ]
-        )
-        return {data: finalResult};
+        return {data: services};
     } catch(e){
         console.log(e)
         throw Error(e)

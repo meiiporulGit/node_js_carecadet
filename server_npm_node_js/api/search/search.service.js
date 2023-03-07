@@ -206,7 +206,7 @@ async function search(queryParams) {
     const location = queryParams.location;
     const lat = queryParams.lat;
     const lon = queryParams.lon;
-    const distance = queryParams.distance ?? '30km';
+    const distance = queryParams.distance ?? '30mi';
     try{
         var facility_query = [];
         var facility_filter = [];

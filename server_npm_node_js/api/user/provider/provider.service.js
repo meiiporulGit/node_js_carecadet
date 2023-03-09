@@ -208,7 +208,7 @@ async function forgotPassword(email) {
       from: 'healthlens.demo@meiiporul.com',
       cc:'healthlens.demo@meiiporul.com',
       to: email,
-      subject: "Please Activate your link",
+      subject: "Please activate your link",
       html: `<h2>Please click on the given link to reset your password</h2>
                  
                  <p>Thank you for subscribing. Please confirm your email by clicking on the following link</p>

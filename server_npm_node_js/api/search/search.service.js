@@ -1,6 +1,8 @@
 import { Client } from '@elastic/elasticsearch';
 import dotenv from 'dotenv';
 import Pricelist from '../services/pricelist.schema.js';
+import { Lookup } from '../facility/facility.schema.js';
+
 dotenv.config()
 
 const client = new Client({ node: `http://${process.env.ELASTIC_HOST}:${process.env.ELASTIC_PORT}`});
@@ -204,9 +206,10 @@ async function search(queryParams) {
     const location = queryParams.location;
     const lat = queryParams.lat;
     const lon = queryParams.lon;
-    const distance = queryParams.distance ?? '30km';
+    const distance = queryParams.distance ?? '30mi';
     try{
         var facility_query = [];
+        var facility_filter = [];
         if(location != null) {
             facility_query.push(
                 {
@@ -234,10 +237,10 @@ async function search(queryParams) {
                     }
                 )
                 if(result.hits.hits.length > 0){
-                    facility_query.push(
+                    facility_filter.push(
                         {
                             geo_distance: {
-                                distance: "30km",
+                                distance: distance,
                                 location: {
                                   lat: +result.hits.hits[0]._source["LAT"] ?? 0,
                                   lon: +result.hits.hits[0]._source["LONG"] ?? 0,
@@ -249,7 +252,7 @@ async function search(queryParams) {
             } 
         } else {
             if(lat != null || lon != null){
-                facility_query.push(
+                facility_filter.push(
                     {
                         geo_distance: {
                           distance: distance,
@@ -265,6 +268,7 @@ async function search(queryParams) {
         var result = await client.search(
             {
                 index: "hltest.lookup",
+                from: 0, size: 1000,
                 runtime_mappings: {
                     location: {
                         type: "geo_point",
@@ -284,15 +288,17 @@ async function search(queryParams) {
                 },
                 query: {
                     bool: {
-                        should: facility_query
+                        should: facility_query,
+                        filter: facility_filter,
                     }                    
-                }
+                },
             }
         );
         var services = [];
         if(location == null && lat == null && lon == null){
             var result = await client.search(
                 {
+                    from: 0, size: 1000,
                     index: "hltest.pricelist",
                     query: {
                         bool: {
@@ -311,7 +317,9 @@ async function search(queryParams) {
                 }
             )
             for(var service of result.hits.hits) {
-                services.push(service._source?.ServiceCode ?? "")
+                const FacilityDetails = await Lookup.findOne({ facilityNPI: service._source?.FacilityNPI});
+                service._source.FacilityDetails = FacilityDetails;
+                services.push(service._source);
             }
         }
         for(var item of result.hits.hits) {
@@ -338,6 +346,7 @@ async function search(queryParams) {
             }
             var result = await client.search(
                 {
+                    from: 0, size: 1000,
                     index: "hltest.pricelist",
                     query: {
                         bool: {
@@ -347,51 +356,12 @@ async function search(queryParams) {
                 }
             )
             for(var service of result.hits.hits) {
-                services.push(service._source?.ServiceCode ?? "")
+                const FacilityDetails = await Lookup.findOne({ facilityNPI: service._source?.FacilityNPI});
+                service._source.FacilityDetails = FacilityDetails;
+                services.push(service._source);
             }
         }
-        const finalResult = await Pricelist.aggregate(
-            [
-                {
-                    $match: {
-                        "ServiceCode": { $in: services },
-                    }
-                }, 
-                {
-                    $lookup: {
-                        as: "facilityDetails",
-                        from: "Lookup",
-                        localField: "FacilityNPI",
-                        foreignField: "facilityNPI"
-                    }
-                },
-                {
-                    $unwind: {
-                        path: "$facilityDetails",
-                        preserveNullAndEmptyArrays: true
-                    }
-                },
-                {
-                    $project: {
-                        _id: 0,
-                        SNo: 1,
-                        ServiceCode: 1,
-                        DiagnosisTestorServiceName: 1,
-                        Organisationid: 1,
-                        OrganisationPrices: 1,
-                        FacilityNPI: 1,
-                        FacilityName: 1,
-                        FacilityPrices: 1,
-                        createdBy: 1,
-                        createdDate: 1,
-                        updatedBy: 1,
-                        updatedDate: 1,
-                        "FacilityDetails": "$facilityDetails",
-                    }
-                }
-            ]
-        )
-        return {data: finalResult};
+        return {data: services};
     } catch(e){
         console.log(e)
         throw Error(e)

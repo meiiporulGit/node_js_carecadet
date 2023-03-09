@@ -204,7 +204,7 @@ async function forgotPassword(email) {
     console.log(resettoken, "resettoken")
     const data = {
       from: 'healthlens.demo@meiiporul.com',
-
+      cc:'healthlens.demo@meiiporul.com',
       to: email,
       subject: "Please Activate your link",
       html: `<h2>Please click on the given link to reset your password</h2>

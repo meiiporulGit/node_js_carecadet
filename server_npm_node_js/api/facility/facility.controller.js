@@ -1,7 +1,8 @@
 import { Router } from "express";
 import FacilityService from "./facility.service.js";
 import ResObject from '../../core/util/res-object.js';
-import {Lookup,FacilityTypeLookup} from './facility.schema.js';
+import {Lookup} from './facility.schema.js';
+import {FacilityTypeLookup} from './facility.schema.js'
 
 const router = Router();
 

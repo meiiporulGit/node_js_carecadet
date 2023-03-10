@@ -11,7 +11,14 @@ let Address = new schema({
 },{
     _id: false
 })
-var GPSCoordinateField  = new schema({
+let FacilityTypeField  = new schema({
+    MainfacilityType: { type: String, trim: true },
+    OthersfacilityType: { type: String, trim: true }
+
+},{
+    _id: false
+})
+let GPSCoordinateField  = new schema({
     latitude: { type: String, trim: true},
     longitude: { type: String, trim: true},
 
@@ -29,7 +36,8 @@ let FacilitySchema = new schema({
     },
 
     facilityName: { type: String, required: [ true,'Enter Facility Name'] ,trim: true},
-    facilityType:{type: String, required: [ true,'Enter Facility Type'] ,trim: true},
+   
+    facilityType:FacilityTypeField,
     facilityNPI:{type: String, trim: true},
     address: Address,
     GPSCoordinate : GPSCoordinateField,
@@ -54,7 +62,7 @@ let FacilitySchema = new schema({
 let LookupSchema = new schema({
    
     facilityName: { type: String, required: [ true,'Enter Facility Name'] ,trim: true},
-    facilityType:{type: String, required: [ true,'Enter Facility Type'] ,trim: true},
+    // facilityType:{type: String, required: [ true,'Enter Facility Type'] ,trim: true},
     facilityNPI:{type: String, trim: true},
     addressLine1: { type: String, required: [true,'Enter Address Line 1'], trim: true },
     addressLine2: { type: String, trim: true },
@@ -82,10 +90,12 @@ let FacilityTypeLookupSchema = new schema({
     collection: "FacilityTypeLookup"
 })
 
-const Facility = db.model('Facility',FacilitySchema);
+export const Facility = db.model('Facility',FacilitySchema);
+ 
+
 export const Lookup = db.model('Lookup',LookupSchema)
 export const FacilityTypeLookup = db.model('FacilityTypeLookup',FacilityTypeLookupSchema)
-export default Facility;
+
 
 
 

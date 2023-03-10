@@ -1,6 +1,5 @@
 import { Client } from '@elastic/elasticsearch';
 import dotenv from 'dotenv';
-import Pricelist from '../services/pricelist.schema.js';
 import { Lookup } from '../facility/facility.schema.js';
 
 dotenv.config()
@@ -201,11 +200,23 @@ export default {
 //     }
 // }
 
+function calcDistance(lat1,lon1,lat2,lon2) {
+	var R = 6371; // km (change this constant to get miles)
+	var dLat = (lat2-lat1) * Math.PI / 180;
+	var dLon = (lon2-lon1) * Math.PI / 180;
+	var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+		Math.cos(lat1 * Math.PI / 180 ) * Math.cos(lat2 * Math.PI / 180 ) *
+		Math.sin(dLon/2) * Math.sin(dLon/2);
+	var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+	var d = R * c;
+	return d*1000;
+}
+
 async function search(queryParams) {
     const q = queryParams.q ?? "";
     const location = queryParams.location;
-    const lat = queryParams.lat;
-    const lon = queryParams.lon;
+    var lat = queryParams.lat;
+    var lon = queryParams.lon;
     const distance = queryParams.distance ?? '30mi';
     try{
         var facility_query = [];
@@ -237,6 +248,8 @@ async function search(queryParams) {
                     }
                 )
                 if(result.hits.hits.length > 0){
+                    lat = +result.hits.hits[0]._source["LAT"] ?? 0;
+                    lon = +result.hits.hits[0]._source["LONG"] ?? 0;
                     facility_filter.push(
                         {
                             geo_distance: {
@@ -319,6 +332,7 @@ async function search(queryParams) {
             for(var service of result.hits.hits) {
                 const FacilityDetails = await Lookup.findOne({ facilityNPI: service._source?.FacilityNPI});
                 service._source.FacilityDetails = FacilityDetails;
+                service._source.distance = calcDistance(lat ?? 0, lon ?? 0, +FacilityDetails?.latitude ?? 0, +FacilityDetails?.longitude ?? 0) * 0.000621371;
                 services.push(service._source);
             }
         }
@@ -358,6 +372,7 @@ async function search(queryParams) {
             for(var service of result.hits.hits) {
                 const FacilityDetails = await Lookup.findOne({ facilityNPI: service._source?.FacilityNPI});
                 service._source.FacilityDetails = FacilityDetails;
+                service._source.distance = calcDistance(lat ?? 0, lon ?? 0, +FacilityDetails.latitude, +FacilityDetails.longitude) * 0.000621371;
                 services.push(service._source);
             }
         }

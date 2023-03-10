@@ -206,7 +206,7 @@ async function search(queryParams) {
     const location = queryParams.location;
     const lat = queryParams.lat;
     const lon = queryParams.lon;
-    const distance = queryParams.distance ?? '30km';
+    const distance = queryParams.distance ?? '30mi';
     try{
         var facility_query = [];
         var facility_filter = [];
@@ -268,6 +268,7 @@ async function search(queryParams) {
         var result = await client.search(
             {
                 index: "hltest.lookup",
+                from: 0, size: 1000,
                 runtime_mappings: {
                     location: {
                         type: "geo_point",
@@ -297,6 +298,7 @@ async function search(queryParams) {
         if(location == null && lat == null && lon == null){
             var result = await client.search(
                 {
+                    from: 0, size: 1000,
                     index: "hltest.pricelist",
                     query: {
                         bool: {
@@ -344,6 +346,7 @@ async function search(queryParams) {
             }
             var result = await client.search(
                 {
+                    from: 0, size: 1000,
                     index: "hltest.pricelist",
                     query: {
                         bool: {

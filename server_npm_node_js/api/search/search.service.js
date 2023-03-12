@@ -332,7 +332,7 @@ async function search(queryParams) {
             for(var service of result.hits.hits) {
                 const FacilityDetails = await Lookup.findOne({ facilityNPI: service._source?.FacilityNPI});
                 service._source.FacilityDetails = FacilityDetails;
-                service._source.distance = (calcDistance(lat ?? 0, lon ?? 0, +FacilityDetails?.latitude ?? 0, +FacilityDetails?.longitude ?? 0) * 0.000621371).toFixed(2);
+                service._source.distance = parseFloat((calcDistance(lat ?? 0, lon ?? 0, +FacilityDetails?.latitude ?? 0, +FacilityDetails?.longitude ?? 0) * 0.000621371).toFixed(2));
                 services.push(service._source);
             }
         }
@@ -372,7 +372,7 @@ async function search(queryParams) {
             for(var service of result.hits.hits) {
                 const FacilityDetails = await Lookup.findOne({ facilityNPI: service._source?.FacilityNPI});
                 service._source.FacilityDetails = FacilityDetails;
-                service._source.distance = (calcDistance(lat ?? 0, lon ?? 0, +FacilityDetails.latitude, +FacilityDetails.longitude) * 0.000621371).toFixed(2);
+                service._source.distance = parseFloat((calcDistance(lat ?? 0, lon ?? 0, +FacilityDetails.latitude, +FacilityDetails.longitude) * 0.000621371).toFixed(2));
                 services.push(service._source);
             }
         }

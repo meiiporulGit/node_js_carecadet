@@ -19164,3 +19164,82 @@ Mar-10-2023 12:06:50 [32mhttp[39m: [32mPUT /provider/forgotpassword 200 66 - 
 [32m[39m
 Mar-10-2023 12:07:57 [32mhttp[39m: [32mPUT /provider/forgotpassword 200 66 - 3783.929 ms[39m
 [32m[39m
+Mar-10-2023 14:12:14 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Mar-10-2023 14:12:14 [32minfo[39m: [32mEnvironment : development[39m
+Mar-10-2023 14:12:14 [32minfo[39m: [32m2023-03-10T19:12:14.350Z[39m
+Mar-10-2023 14:12:35 [31merror[39m: [31mUncaught Exception[39m
+Mar-10-2023 14:21:15 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Mar-10-2023 14:21:15 [32minfo[39m: [32mEnvironment : development[39m
+Mar-10-2023 14:21:15 [32minfo[39m: [32m2023-03-10T19:21:15.534Z[39m
+Mar-10-2023 14:27:07 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Mar-10-2023 14:27:07 [32minfo[39m: [32mEnvironment : development[39m
+Mar-10-2023 14:27:07 [32minfo[39m: [32m2023-03-10T19:27:07.544Z[39m
+Mar-10-2023 14:28:03 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Mar-10-2023 14:28:03 [32minfo[39m: [32mdev err User doesnot exists with this email[39m
+Mar-10-2023 14:28:03 [31merror[39m: [31mUser doesnot exists with this email[39m
+Mar-10-2023 14:28:03 [32mhttp[39m: [32mPUT /provider/forgotpassword 500 342 - 563.486 ms[39m
+[32m[39m
+Mar-10-2023 14:45:26 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Mar-10-2023 14:45:26 [32minfo[39m: [32mdev err User doesnot exists with this email[39m
+Mar-10-2023 14:45:26 [31merror[39m: [31mUser doesnot exists with this email[39m
+Mar-10-2023 14:45:26 [32mhttp[39m: [32mPUT /provider/forgotpassword 500 342 - 313.343 ms[39m
+[32m[39m
+Mar-10-2023 14:46:39 [32mhttp[39m: [32mPUT /provider/forgotpassword 200 66 - 5416.311 ms[39m
+[32m[39m
+Mar-10-2023 14:47:40 [32mhttp[39m: [32mPUT /provider/forgotpassword 200 66 - 5104.297 ms[39m
+[32m[39m
+Mar-10-2023 14:50:26 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Mar-10-2023 14:50:26 [32minfo[39m: [32mdev err User doesnot exists with this email[39m
+Mar-10-2023 14:50:26 [31merror[39m: [31mUser doesnot exists with this email[39m
+Mar-10-2023 14:50:26 [32mhttp[39m: [32mPUT /provider/forgotpassword 500 342 - 317.358 ms[39m
+[32m[39m
+Mar-10-2023 15:00:49 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Mar-10-2023 15:00:49 [32minfo[39m: [32mEnvironment : development[39m
+Mar-10-2023 15:00:49 [32minfo[39m: [32m2023-03-10T20:00:49.486Z[39m
+Mar-10-2023 15:01:37 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Mar-10-2023 15:01:37 [32minfo[39m: [32mEnvironment : development[39m
+Mar-10-2023 15:01:37 [32minfo[39m: [32m2023-03-10T20:01:37.850Z[39m
+Mar-10-2023 15:01:59 [32mhttp[39m: [32mPUT /provider/forgotpassword 200 66 - 4299.282 ms[39m
+[32m[39m
+Mar-10-2023 15:04:39 [32mhttp[39m: [32mPUT /provider/forgotpassword 200 66 - 4079.707 ms[39m
+[32m[39m
+Mar-10-2023 15:09:28 [32mhttp[39m: [32mPUT /provider/forgotpassword 200 66 - 5639.317 ms[39m
+[32m[39m
+Mar-10-2023 15:10:39 [32mhttp[39m: [32mPUT /provider/forgotpassword 200 66 - 3828.758 ms[39m
+[32m[39m
+Mar-10-2023 15:12:30 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Mar-10-2023 15:12:30 [32minfo[39m: [32mdev err User with this token does not exist[39m
+Mar-10-2023 15:12:30 [31merror[39m: [31mUser with this token does not exist[39m
+Mar-10-2023 15:12:30 [32mhttp[39m: [32mPUT /provider/resetpassword 500 341 - 47.178 ms[39m
+[32m[39m
+Mar-10-2023 16:40:00 [32mhttp[39m: [32mPUT /provider/forgotpassword 200 66 - 6710.453 ms[39m
+[32m[39m
+Mar-12-2023 19:23:35 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Mar-12-2023 19:23:35 [32minfo[39m: [32mEnvironment : development[39m
+Mar-12-2023 19:23:35 [32minfo[39m: [32m2023-03-12T23:23:35.888Z[39m
+Mar-12-2023 19:26:35 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Mar-12-2023 19:26:35 [32minfo[39m: [32mEnvironment : development[39m
+Mar-12-2023 19:26:35 [32minfo[39m: [32m2023-03-12T23:26:35.183Z[39m
+Mar-12-2023 19:38:30 [32mhttp[39m: [32mPOST /user/login 200 596 - 585.999 ms[39m
+[32m[39m
+Mar-12-2023 19:38:30 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-296 304 - - 99.567 ms[39m
+[32m[39m
+Mar-12-2023 19:38:30 [32mhttp[39m: [32mGET /organization/getOrganizationByProvider?providerID=PVD-296 304 - - 58.541 ms[39m
+[32m[39m
+Mar-12-2023 19:38:31 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-296 200 669 - 59.840 ms[39m
+[32m[39m
+Mar-12-2023 19:38:31 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-296 304 - - 60.827 ms[39m
+[32m[39m
+Mar-12-2023 19:38:35 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1710491014&Organisationid=ORG-389 304 - - 56.452 ms[39m
+[32m[39m
+Mar-12-2023 19:38:35 [32mhttp[39m: [32mGET /service/getPriceListbyFacility?facilityNPI=1710491014&Organisationid=ORG-389 304 - - 42.971 ms[39m
+[32m[39m
+Mar-12-2023 19:38:43 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-296 304 - - 66.546 ms[39m
+[32m[39m
+Mar-12-2023 19:38:43 [32mhttp[39m: [32mGET /facility/getFacilityByProvider?providerID=PVD-296 304 - - 66.137 ms[39m
+[32m[39m
+Mar-12-2023 19:38:52 [32mhttp[39m: [32mPOST /user/logout 200 56 - 25.324 ms[39m
+[32m[39m
+Mar-13-2023 11:25:23 [32minfo[39m: [32mApp listening at http://localhost:5200[39m
+Mar-13-2023 11:25:23 [32minfo[39m: [32mEnvironment : development[39m
+Mar-13-2023 11:25:23 [32minfo[39m: [32m2023-03-13T15:25:23.845Z[39m

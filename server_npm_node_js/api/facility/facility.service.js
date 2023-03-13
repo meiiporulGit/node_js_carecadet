@@ -1,4 +1,4 @@
-import Facility from './facility.schema.js';
+import {Facility} from './facility.schema.js';
 import Pricelist from "../services/pricelist.schema.js";
 import { createId } from '../../shared/common-util.js';
 
@@ -21,8 +21,7 @@ async function createFacility(body) {
     if(!findFacility){
         const facilityDetails = new Facility();
         facilityDetails.facilityID = await createId(Facility.collection.name);      
-        facilityDetails.providerID = body.providerID;     
-      
+        facilityDetails.providerID = body.providerID;        
         facilityDetails.facilityName = body.facilityName;
         facilityDetails.facilityType = body.facilityType;
         facilityDetails.facilityNPI=body.facilityNPI;

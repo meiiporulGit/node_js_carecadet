@@ -43,6 +43,7 @@ async function login(body){
                 console.log("token", token);
                 let responseObj = {};
                 responseObj.userName = findProvider.username;
+                responseObj.role=findProvider.role;
                 responseObj.userID = findProvider.providerID;
                 responseObj.firstName = findProvider.firstName;
                 responseObj.lastName = findProvider.lastName;

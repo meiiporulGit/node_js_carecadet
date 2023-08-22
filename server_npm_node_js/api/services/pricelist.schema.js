@@ -38,9 +38,9 @@ let ServiceLookupSchema = new schema({
 {
   versionKey: false,
   strict: true,
-  collection: "ServiceLookup"
+  collection: "med_proc_details"
 })
-export const ServiceLookup = db.model('ServiceLookup',ServiceLookupSchema)
+export const ServiceLookup = db.model('med_proc_details',ServiceLookupSchema)
 
 var Pricelist = db.model("pricelist", pricelistschema);
 

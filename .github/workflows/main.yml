@@ -9,7 +9,7 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v0.1.7
       with:
-        host: 210.18.155.251
+        host: 122.165.73.103
         username: linuxadmin
         password: Qwerty@123
         port: 22

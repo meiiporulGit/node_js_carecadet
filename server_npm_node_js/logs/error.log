@@ -1,0 +1,1808 @@
+Nov-02-2022 15:51:13 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 15:51:13 [31merror[39m: [31mClass constructor ResObject cannot be invoked without 'new'[39m
+Nov-02-2022 15:52:01 [31merror[39m: [31merr{"errors":{"contact":{"name":"ValidatorError","message":"Enter a contact","properties":{"message":"Enter a contact","type":"required","path":"contact"},"kind":"required","path":"contact"},"role":{"name":"ValidatorError","message":"Enter a role","properties":{"message":"Enter a role","type":"required","path":"role"},"kind":"required","path":"role"},"createdBy":{"name":"ValidatorError","message":"Enter a created by","properties":{"message":"Enter a created by","type":"required","path":"createdBy","value":""},"kind":"required","path":"createdBy","value":""}},"_message":"Provider validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Provider validation failed: contact: Enter a contact, role: Enter a role, createdBy: Enter a created by"}[39m
+Nov-02-2022 15:52:01 [31merror[39m: [31mProvider validation failed: contact: Enter a contact, role: Enter a role, createdBy: Enter a created by[39m
+Nov-02-2022 15:52:33 [31merror[39m: [31merr{"errors":{"role":{"name":"ValidatorError","message":"Enter a role","properties":{"message":"Enter a role","type":"required","path":"role"},"kind":"required","path":"role"},"createdBy":{"name":"ValidatorError","message":"Enter a created by","properties":{"message":"Enter a created by","type":"required","path":"createdBy","value":""},"kind":"required","path":"createdBy","value":""}},"_message":"Provider validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Provider validation failed: role: Enter a role, createdBy: Enter a created by"}[39m
+Nov-02-2022 15:52:33 [31merror[39m: [31mProvider validation failed: role: Enter a role, createdBy: Enter a created by[39m
+Nov-02-2022 15:52:52 [31merror[39m: [31merr{"errors":{"createdBy":{"name":"ValidatorError","message":"Enter a created by","properties":{"message":"Enter a created by","type":"required","path":"createdBy","value":""},"kind":"required","path":"createdBy","value":""}},"_message":"Provider validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Provider validation failed: createdBy: Enter a created by"}[39m
+Nov-02-2022 15:52:52 [31merror[39m: [31mProvider validation failed: createdBy: Enter a created by[39m
+Nov-02-2022 16:11:50 [31merror[39m: [31merr{"errors":{"password":{"stringValue":"\"Promise { <pending> }\"","valueType":"Promise","kind":"string","value":{},"path":"password","reason":null,"name":"CastError","message":"Cast to string failed for value \"Promise { <pending> }\" (type Promise) at path \"password\""}},"_message":"Provider validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Provider validation failed: password: Cast to string failed for value \"Promise { <pending> }\" (type Promise) at path \"password\""}[39m
+Nov-02-2022 16:11:50 [31merror[39m: [31mProvider validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password"[39m
+Nov-02-2022 16:12:30 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 16:12:30 [31merror[39m: [31mIllegal arguments: string, undefined[39m
+Nov-02-2022 16:18:57 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 16:18:57 [31merror[39m: [31mCannot read property 'isModified' of undefined[39m
+Nov-02-2022 16:20:09 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 16:20:09 [31merror[39m: [31mCannot read property 'isModified' of undefined[39m
+Nov-02-2022 16:21:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 16:21:20 [31merror[39m: [31millegal arguments: string[39m
+Nov-02-2022 16:22:58 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 16:22:58 [31merror[39m: [31mAlready a user exists with this email[39m
+Nov-02-2022 16:58:08 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 16:58:08 [31merror[39m: [31mreq is not defined[39m
+Nov-02-2022 17:04:42 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 17:04:42 [31merror[39m: [31memployeeFindData is not defined[39m
+Nov-02-2022 17:05:11 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 17:05:11 [31merror[39m: [31mjwt is not defined[39m
+Nov-02-2022 17:05:52 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 17:05:52 [31merror[39m: [31mClass constructor ResObject cannot be invoked without 'new'[39m
+Nov-02-2022 17:33:00 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 17:33:00 [31merror[39m: [31mCannot create property 'name' on string 'Error'[39m
+Nov-02-2022 17:34:37 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Nov-02-2022 17:34:37 [31merror[39m: [31mNo Authorization provided[39m
+Nov-02-2022 17:35:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 17:35:05 [31merror[39m: [31mCannot create property 'name' on string 'Error'[39m
+Nov-02-2022 17:35:29 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Nov-02-2022 17:35:29 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Nov-02-2022 17:48:01 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 17:48:01 [31merror[39m: [31mparsedData is not defined[39m
+Nov-02-2022 17:48:47 [31merror[39m: [31merr{"name":"JsonWebTokenError","message":"invalid signature","statusCode":500,"status":"error"}[39m
+Nov-02-2022 17:48:47 [31merror[39m: [31mInvalid Token[39m
+Nov-02-2022 17:51:27 [31merror[39m: [31merr{"name":"JsonWebTokenError","message":"invalid signature","statusCode":500,"status":"error"}[39m
+Nov-02-2022 17:51:27 [31merror[39m: [31mInvalid Token[39m
+Nov-02-2022 17:58:46 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Nov-02-2022 17:58:46 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Nov-02-2022 18:22:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 18:22:24 [31merror[39m: [31m user dose exists with this email[39m
+Nov-02-2022 18:23:40 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 18:23:40 [31merror[39m: [31mIncorrect password[39m
+Nov-02-2022 18:26:28 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 18:26:28 [31merror[39m: [31mIncorrect password[39m
+Nov-02-2022 18:27:17 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 18:27:17 [31merror[39m: [31mIncorrect password[39m
+Nov-02-2022 18:30:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 18:30:23 [31merror[39m: [31m provider dose exists [39m
+Nov-02-2022 19:46:29 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-02-2022 19:46:29 [31merror[39m: [31mCannot access 'Organization' before initialization[39m
+Nov-04-2022 12:55:18 [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::4200[39m
+[31mError: listen EADDRINUSE: address already in use :::4200[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1463:16)[39m
+[31m    at listenInCluster (node:net:1511:12)[39m
+[31m    at Server.listen (node:net:1599:7)[39m
+[31m    at Function.listen (E:\node\Healthlens\npm_healthlens_nodejs\node_modules\express\lib\application.js:635:24)[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/server.js:88:5[39m
+Nov-04-2022 12:55:47 [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::4200[39m
+[31mError: listen EADDRINUSE: address already in use :::4200[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1463:16)[39m
+[31m    at listenInCluster (node:net:1511:12)[39m
+[31m    at Server.listen (node:net:1599:7)[39m
+[31m    at Function.listen (E:\node\Healthlens\npm_healthlens_nodejs\node_modules\express\lib\application.js:635:24)[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/server.js:88:5[39m
+Nov-04-2022 12:56:12 [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::4200[39m
+[31mError: listen EADDRINUSE: address already in use :::4200[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1463:16)[39m
+[31m    at listenInCluster (node:net:1511:12)[39m
+[31m    at Server.listen (node:net:1599:7)[39m
+[31m    at Function.listen (E:\node\Healthlens\npm_healthlens_nodejs\node_modules\express\lib\application.js:635:24)[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/server.js:88:5[39m
+Nov-04-2022 13:24:57 [31merror[39m: [31muncaughtException: listen EADDRINUSE: address already in use :::4200[39m
+[31mError: listen EADDRINUSE: address already in use :::4200[39m
+[31m    at Server.setupListenHandle [as _listen2] (node:net:1463:16)[39m
+[31m    at listenInCluster (node:net:1511:12)[39m
+[31m    at Server.listen (node:net:1599:7)[39m
+[31m    at Function.listen (E:\node\Healthlens\npm_healthlens_nodejs\node_modules\express\lib\application.js:635:24)[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/server.js:88:5[39m
+Nov-04-2022 13:43:42 [31merror[39m: [31muncaughtException: getOrganizationByProvider is not defined[39m
+[31mReferenceError: getOrganizationByProvider is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:10:37[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:43:54 [31merror[39m: [31muncaughtException: updateOrganization is not defined[39m
+[31mReferenceError: updateOrganization is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:12:34[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:44:02 [31merror[39m: [31muncaughtException: updateOrganization is not defined[39m
+[31mReferenceError: updateOrganization is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:12:30[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:44:11 [31merror[39m: [31muncaughtException: updateFacility is not defined[39m
+[31mReferenceError: updateFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:12:30[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:44:16 [31merror[39m: [31muncaughtException: updateFacility is not defined[39m
+[31mReferenceError: updateFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:12:30[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:44:22 [31merror[39m: [31muncaughtException: updateFacility is not defined[39m
+[31mReferenceError: updateFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:12:30[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:44:28 [31merror[39m: [31muncaughtException: updateFacility is not defined[39m
+[31mReferenceError: updateFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:12:30[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:44:43 [31merror[39m: [31muncaughtException: updateFacility is not defined[39m
+[31mReferenceError: updateFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:12:30[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:44:49 [31merror[39m: [31muncaughtException: updateFacility is not defined[39m
+[31mReferenceError: updateFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:12:30[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:44:56 [31merror[39m: [31muncaughtException: updateFacility is not defined[39m
+[31mReferenceError: updateFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:12:30[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:44:59 [31merror[39m: [31muncaughtException: deleteFacility is not defined[39m
+[31mReferenceError: deleteFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:13:33[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:45:08 [31merror[39m: [31muncaughtException: deleteFacility is not defined[39m
+[31mReferenceError: deleteFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:13:33[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:45:15 [31merror[39m: [31muncaughtException: deleteFacility is not defined[39m
+[31mReferenceError: deleteFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:13:33[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:45:21 [31merror[39m: [31muncaughtException: deleteFacility is not defined[39m
+[31mReferenceError: deleteFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:13:33[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:45:27 [31merror[39m: [31muncaughtException: deleteFacility is not defined[39m
+[31mReferenceError: deleteFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:13:33[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:45:34 [31merror[39m: [31muncaughtException: deleteFacility is not defined[39m
+[31mReferenceError: deleteFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:13:33[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 13:45:39 [31merror[39m: [31muncaughtException: deleteFacility is not defined[39m
+[31mReferenceError: deleteFacility is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/api/facility/facility.controller.js:13:33[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m
+Nov-04-2022 14:13:07 [31merror[39m: [31merr{"errors":{"FacilityID":{"name":"ValidatorError","message":"Enter a Facility ID","properties":{"message":"Enter a Facility ID","type":"required","path":"FacilityID"},"kind":"required","path":"FacilityID"}},"_message":"Facility validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Facility validation failed: FacilityID: Enter a Facility ID"}[39m
+Nov-04-2022 14:13:07 [31merror[39m: [31mFacility validation failed: FacilityID: Enter a Facility ID[39m
+Nov-04-2022 17:07:49 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Nov-04-2022 17:07:49 [31merror[39m: [31mNo Authorization provided[39m
+Nov-04-2022 17:10:19 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Nov-04-2022 17:10:19 [31merror[39m: [31mNo Authorization provided[39m
+Nov-04-2022 17:15:41 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Nov-04-2022 17:15:41 [31merror[39m: [31mNo Authorization provided[39m
+Nov-04-2022 17:21:11 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Nov-04-2022 17:21:11 [31merror[39m: [31mNo Authorization provided[39m
+Nov-04-2022 18:02:22 [31merror[39m: [31muncaughtException: startAuthAPI is not defined[39m
+[31mReferenceError: startAuthAPI is not defined[39m
+[31m    at file:///E:/node/Healthlens/npm_healthlens_nodejs/server.js:77:1[39m
+Nov-04-2022 18:03:02 [31merror[39m: [31merr{"errors":{"providerID":{"name":"ValidatorError","message":"Enter a provider ID","properties":{"message":"Enter a provider ID","type":"required","path":"providerID"},"kind":"required","path":"providerID"},"contact":{"name":"ValidatorError","message":"Enter a contact","properties":{"message":"Enter a contact","type":"required","path":"contact"},"kind":"required","path":"contact"}},"_message":"Facility validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Facility validation failed: providerID: Enter a provider ID, contact: Enter a contact"}[39m
+Nov-04-2022 18:03:02 [31merror[39m: [31mFacility validation failed: providerID: Enter a provider ID, contact: Enter a contact[39m
+Nov-04-2022 18:07:19 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 18:07:19 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 18:31:07 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 18:31:07 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 18:40:17 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 18:40:17 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 18:43:14 [31merror[39m: [31merr{"index":0,"code":11000,"keyPattern":{"FacilityID":1},"keyValue":{"FacilityID":null},"statusCode":500,"status":"error"}[39m
+Nov-04-2022 18:43:14 [31merror[39m: [31mE11000 duplicate key error collection: hltest.Facility index: FacilityID_1 dup key: { FacilityID: null }[39m
+Nov-04-2022 18:43:59 [31merror[39m: [31merr{"index":0,"code":11000,"keyPattern":{"FacilityID":1},"keyValue":{"FacilityID":null},"statusCode":500,"status":"error"}[39m
+Nov-04-2022 18:43:59 [31merror[39m: [31mE11000 duplicate key error collection: hltest.Facility index: FacilityID_1 dup key: { FacilityID: null }[39m
+Nov-04-2022 18:49:04 [31merror[39m: [31merr{"index":0,"code":11000,"keyPattern":{"FacilityID":1},"keyValue":{"FacilityID":null},"statusCode":500,"status":"error"}[39m
+Nov-04-2022 18:49:04 [31merror[39m: [31mE11000 duplicate key error collection: hltest.Facility index: FacilityID_1 dup key: { FacilityID: null }[39m
+Nov-04-2022 18:59:51 [31merror[39m: [31merr{"errors":{"firstName":{"name":"ValidatorError","message":"Enter a first name","properties":{"message":"Enter a first name","type":"required","path":"firstName"},"kind":"required","path":"firstName"}},"_message":"Provider validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Provider validation failed: firstName: Enter a first name"}[39m
+Nov-04-2022 18:59:51 [31merror[39m: [31mProvider validation failed: firstName: Enter a first name[39m
+Nov-04-2022 19:18:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 19:18:24 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 21:40:51 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 21:40:51 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 21:42:13 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 21:42:13 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 21:42:28 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 21:42:28 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 21:52:43 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 21:52:44 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 21:53:00 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 21:53:00 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 22:29:50 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 22:29:50 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 22:36:29 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 22:36:29 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 22:45:39 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 22:45:39 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 22:47:27 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 22:47:27 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 22:53:51 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 22:53:51 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 22:56:43 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 22:56:43 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 22:58:29 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 22:58:29 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 22:59:58 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 22:59:58 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 23:06:10 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 23:06:10 [31merror[39m: [31mFacility already exists[39m
+Nov-04-2022 23:07:16 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-04-2022 23:07:16 [31merror[39m: [31mFacility already exists[39m
+Nov-05-2022 08:46:15 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-05-2022 08:46:15 [31merror[39m: [31mFacility already exists[39m
+Nov-05-2022 08:50:39 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-05-2022 08:50:39 [31merror[39m: [31mFacility already exists[39m
+Nov-05-2022 10:46:06 [31merror[39m: [31merr{"errors":{"providerID":{"name":"ValidatorError","message":"Enter a provider ID","properties":{"message":"Enter a provider ID","type":"required","path":"providerID","value":""},"kind":"required","path":"providerID","value":""}},"_message":"Organization validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Organization validation failed: providerID: Enter a provider ID"}[39m
+Nov-05-2022 10:46:06 [31merror[39m: [31mOrganization validation failed: providerID: Enter a provider ID[39m
+Nov-05-2022 11:03:09 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-05-2022 11:03:09 [31merror[39m: [31mUser not found[39m
+Nov-05-2022 11:06:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-05-2022 11:06:23 [31merror[39m: [31mUser not found[39m
+Nov-07-2022 16:55:57 [31merror[39m: [31merr{"index":0,"code":11000,"keyPattern":{"providerID":1},"keyValue":{"providerID":"PVD-13"},"statusCode":500,"status":"error"}[39m
+Nov-07-2022 16:55:57 [31merror[39m: [31mE11000 duplicate key error collection: hltest.Organization index: providerID_1 dup key: { providerID: "PVD-13" }[39m
+Nov-07-2022 20:49:23 [31merror[39m: [31merr{"errors":{"facilityType":{"name":"ValidatorError","message":"Enter Facility Type","properties":{"message":"Enter Facility Type","type":"required","path":"facilityType","value":""},"kind":"required","path":"facilityType","value":""}},"_message":"Facility validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Facility validation failed: facilityType: Enter Facility Type"}[39m
+Nov-07-2022 20:49:23 [31merror[39m: [31mFacility validation failed: facilityType: Enter Facility Type[39m
+Nov-30-2022 13:08:13 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-30-2022 13:08:13 [31merror[39m: [31mUser not found[39m
+Nov-30-2022 13:09:07 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-30-2022 13:09:07 [31merror[39m: [31mUser not found[39m
+Nov-30-2022 13:09:19 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-30-2022 13:09:19 [31merror[39m: [31mUser not found[39m
+Nov-30-2022 13:09:27 [31merror[39m: [31merr{"expose":true,"statusCode":400,"status":400,"body":"{\r\n    \"userName\": \"irfan25\",\r\n    \"password\": \"1234\",\r\n \r\n}","type":"entity.parse.failed"}[39m
+Nov-30-2022 13:09:27 [31merror[39m: [31mUnexpected token } in JSON at position 59[39m
+Nov-30-2022 13:09:32 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Nov-30-2022 13:09:32 [31merror[39m: [31mUser not found[39m
+Dec-01-2022 12:01:02 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-01-2022 12:01:02 [31merror[39m: [31mIncorrect password[39m
+Dec-05-2022 11:18:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 11:18:24 [31merror[39m: [31morganization not found[39m
+Dec-05-2022 11:36:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 11:36:23 [31merror[39m: [31mfacility not found[39m
+Dec-05-2022 11:58:54 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 11:58:54 [31merror[39m: [31mplease provider provider id[39m
+Dec-05-2022 13:56:59 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 13:56:59 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 13:56:59 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 13:56:59 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 13:58:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 13:58:24 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 13:58:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 13:58:24 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 13:58:33 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 13:58:33 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 13:58:33 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 13:58:33 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 13:58:52 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 13:58:52 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 13:58:52 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 13:58:52 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 13:58:57 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 13:58:57 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 13:58:58 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 13:58:58 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 14:06:47 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 14:06:47 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 14:06:47 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 14:06:47 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 17:11:29 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 17:11:29 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 17:11:29 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 17:11:29 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 18:13:02 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 18:13:02 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 18:13:02 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 18:13:02 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 18:13:10 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 18:13:10 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 18:13:10 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 18:13:10 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 20:17:33 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 20:17:33 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 20:17:33 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 20:17:33 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 20:24:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 20:24:31 [31merror[39m: [31mfacility not found[39m
+Dec-05-2022 20:25:47 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 20:25:47 [31merror[39m: [31mfacility not found[39m
+Dec-05-2022 20:47:32 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 20:47:32 [31merror[39m: [31mInvalid body parameter[39m
+Dec-05-2022 22:03:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 22:03:23 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 22:03:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 22:03:23 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 22:03:27 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 22:03:27 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 22:03:27 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 22:03:27 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 22:03:41 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 22:03:41 [31merror[39m: [31mplease provide provider id[39m
+Dec-05-2022 22:03:41 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-05-2022 22:03:41 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 12:47:53 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 12:47:53 [31merror[39m: [31mFacility already exists[39m
+Dec-06-2022 12:50:03 [31merror[39m: [31merr{"errors":{"providerID":{"name":"ValidatorError","message":"Enter a provider ID","properties":{"message":"Enter a provider ID","type":"required","path":"providerID"},"kind":"required","path":"providerID"}},"_message":"Facility validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Facility validation failed: providerID: Enter a provider ID"}[39m
+Dec-06-2022 12:50:03 [31merror[39m: [31mFacility validation failed: providerID: Enter a provider ID[39m
+Dec-06-2022 12:51:19 [31merror[39m: [31merr{"errors":{"providerID":{"name":"ValidatorError","message":"Enter a provider ID","properties":{"message":"Enter a provider ID","type":"required","path":"providerID"},"kind":"required","path":"providerID"}},"_message":"Facility validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Facility validation failed: providerID: Enter a provider ID"}[39m
+Dec-06-2022 12:51:19 [31merror[39m: [31mFacility validation failed: providerID: Enter a provider ID[39m
+Dec-06-2022 12:55:18 [31merror[39m: [31merr{"errors":{"providerID":{"name":"ValidatorError","message":"Enter a provider ID","properties":{"message":"Enter a provider ID","type":"required","path":"providerID"},"kind":"required","path":"providerID"}},"_message":"Facility validation failed","statusCode":500,"status":"error","name":"ValidationError","message":"Facility validation failed: providerID: Enter a provider ID"}[39m
+Dec-06-2022 12:55:18 [31merror[39m: [31mFacility validation failed: providerID: Enter a provider ID[39m
+Dec-06-2022 13:00:18 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:00:18 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:00:18 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:00:18 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:00:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:00:23 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:00:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:00:23 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:00:37 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:00:37 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:00:37 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:00:37 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:00:49 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:00:49 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:00:49 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:00:49 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:25 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:25 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:25 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:25 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:30 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:30 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:30 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:30 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:31 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:31 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:44 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:44 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:44 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:44 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:46 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:46 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:46 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:46 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:47 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:47 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:47 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:47 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:51 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:51 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:51 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:51 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:52 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:52 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:08:52 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:08:52 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:09:39 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:09:39 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:09:39 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:09:39 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:10:30 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:10:30 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:10:30 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:10:30 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:11:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:11:05 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:11:15 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:11:15 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:11:37 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:11:37 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:11:37 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:11:37 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:11:40 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:11:40 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:11:40 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:11:40 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:12:18 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:12:18 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:12:18 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:12:18 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:12:21 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:12:21 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:12:52 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:12:52 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:12:52 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:12:52 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:13:33 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:13:33 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:13:45 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:13:45 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:13:46 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:13:46 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:16:16 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:16:16 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:16:16 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:16:16 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:16:21 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:16:21 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:16:21 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:16:22 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:16:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:16:31 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 13:16:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 13:16:31 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:47:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:47:05 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:47:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:47:05 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:47:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:47:12 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:47:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:47:12 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:52:00 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:52:00 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:52:00 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:52:00 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:52:08 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:52:08 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:52:08 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:52:08 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:54:54 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:54:54 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:54:54 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:54:54 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:54:57 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:54:57 [31merror[39m: [31mplease provide provider id[39m
+Dec-06-2022 21:54:57 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-06-2022 21:54:57 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 10:26:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 10:26:31 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 10:26:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 10:26:31 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 12:39:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 12:39:23 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 12:39:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 12:39:23 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 12:55:49 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 12:55:49 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 12:55:49 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 12:55:49 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 12:55:54 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 12:55:54 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 12:55:54 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 12:55:54 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 12:59:00 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 12:59:00 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 12:59:00 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 12:59:00 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 12:59:07 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 12:59:07 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 12:59:07 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 12:59:07 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:00:16 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:00:16 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:00:16 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:00:16 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:16 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:16 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:16 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:16 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:22 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:22 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:22 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:22 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:27 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:27 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:27 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:27 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:38 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:38 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:38 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:38 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:41 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:41 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:41 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:41 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:53 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:53 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:02:53 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:02:53 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:05 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:05 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:14 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:14 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:14 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:14 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:17 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:17 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:17 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:17 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:21 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:21 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:21 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:21 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:28 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:28 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:28 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:28 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:30 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:30 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:30 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:30 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:32 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:32 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:32 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:32 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:34 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:34 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:34 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:34 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:36 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:36 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:36 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:36 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:38 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:38 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:03:38 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:03:38 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:04:58 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:04:58 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:04:58 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:04:58 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:05:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:05:05 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:05:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:05:05 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:05:08 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:05:08 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:05:08 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:05:08 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:05:11 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:05:11 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:05:11 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:05:11 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:05:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:05:23 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:05:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:05:23 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:27:08 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:27:08 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:27:08 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:27:08 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:27:28 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:27:28 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:27:28 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:27:28 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:28:02 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:28:02 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 13:28:02 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 13:28:02 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 16:48:16 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 16:48:16 [31merror[39m: [31mfacility not found[39m
+Dec-07-2022 16:49:45 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 16:49:45 [31merror[39m: [31mfacility not found[39m
+Dec-07-2022 16:52:11 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 16:52:11 [31merror[39m: [31mfacility not found[39m
+Dec-07-2022 19:41:44 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 19:41:44 [31merror[39m: [31mPlease provide facilityID[39m
+Dec-07-2022 20:51:07 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 20:51:07 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 20:51:07 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 20:51:07 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 20:51:11 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 20:51:11 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 20:51:11 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 20:51:11 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 20:51:17 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 20:51:17 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 20:51:17 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 20:51:17 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 21:07:06 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 21:07:06 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 21:07:06 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 21:07:06 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 21:07:09 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 21:07:09 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 21:07:09 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 21:07:09 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 21:23:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 21:23:24 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 21:23:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 21:23:24 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 21:24:22 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 21:24:22 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 21:24:22 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 21:24:22 [31merror[39m: [31mplease provide provider id[39m
+Dec-07-2022 21:25:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-07-2022 21:25:24 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 11:02:55 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 11:02:55 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 11:02:55 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 11:02:55 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 11:07:27 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 11:07:27 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 11:07:27 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 11:07:27 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 11:07:34 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 11:07:34 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 11:07:34 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 11:07:34 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 12:14:39 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 12:14:39 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 12:14:39 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 12:14:39 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 12:23:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 12:23:20 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 12:23:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 12:23:20 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 12:23:42 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 12:23:42 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 12:23:58 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 12:23:58 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 12:24:01 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 12:24:01 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 12:24:14 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 12:24:14 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 12:24:21 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 12:24:21 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 21:05:28 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 21:05:28 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 21:05:28 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 21:05:28 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 21:07:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 21:07:12 [31merror[39m: [31mplease provide provider id[39m
+Dec-08-2022 21:07:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-08-2022 21:07:12 [31merror[39m: [31mplease provide provider id[39m
+Dec-12-2022 12:12:48 [31merror[39m: [31muncaughtException: publishPricelist is not defined[39m
+[31mReferenceError: publishPricelist is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/carecadet_project/server_npm_node_js/api/services/pricelist.service.js:11:35[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Dec-12-2022 12:13:00 [31merror[39m: [31muncaughtException: publishPricelist is not defined[39m
+[31mReferenceError: publishPricelist is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/carecadet_project/server_npm_node_js/api/services/pricelist.service.js:11:35[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Dec-12-2022 12:17:57 [31merror[39m: [31muncaughtException: pricelist validation failed: OrganisationPrices: Path `OrganisationPrices` is required., Organisationid: Path `Organisationid` is required., DiagnosisTestorServiceName: Path `DiagnosisTestorServiceName` is required., SNo: Path `SNo` is required.[39m
+[31mValidationError: pricelist validation failed: OrganisationPrices: Path `OrganisationPrices` is required., Organisationid: Path `Organisationid` is required., DiagnosisTestorServiceName: Path `DiagnosisTestorServiceName` is required., SNo: Path `SNo` is required.[39m
+[31m    at model.Document.invalidate (D:\HealthLensProvider\healthlens\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\document.js:3097:32)[39m
+[31m    at D:\HealthLensProvider\healthlens\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\document.js:2885:17[39m
+[31m    at D:\HealthLensProvider\healthlens\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\schematype.js:1349:9[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:78:11)[39m
+Dec-12-2022 12:21:13 [31merror[39m: [31muncaughtException: pricelist validation failed: OrganisationPrices: Path `OrganisationPrices` is required., Organisationid: Path `Organisationid` is required., DiagnosisTestorServiceName: Path `DiagnosisTestorServiceName` is required., SNo: Path `SNo` is required.[39m
+[31mValidationError: pricelist validation failed: OrganisationPrices: Path `OrganisationPrices` is required., Organisationid: Path `Organisationid` is required., DiagnosisTestorServiceName: Path `DiagnosisTestorServiceName` is required., SNo: Path `SNo` is required.[39m
+[31m    at model.Document.invalidate (D:\HealthLensProvider\healthlens\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\document.js:3097:32)[39m
+[31m    at D:\HealthLensProvider\healthlens\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\document.js:2885:17[39m
+[31m    at D:\HealthLensProvider\healthlens\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\schematype.js:1349:9[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:78:11)[39m
+Dec-12-2022 13:45:10 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 13:45:10 [31merror[39m: [31mAlready a user exists with this email[39m
+Dec-12-2022 13:45:13 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 13:45:13 [31merror[39m: [31mAlready a user exists with this email[39m
+Dec-12-2022 13:45:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 13:45:20 [31merror[39m: [31mAlready a user exists with this email[39m
+Dec-12-2022 13:45:22 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 13:45:22 [31merror[39m: [31mAlready a user exists with this email[39m
+Dec-12-2022 18:48:21 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:48:21 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:50:19 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:50:19 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:50:22 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:50:22 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:50:25 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:50:25 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:50:28 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:50:28 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:50:30 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:50:30 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:50:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:50:31 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:50:37 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:50:37 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:50:48 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:50:48 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:50:51 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:50:51 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:50:58 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:50:58 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:51:00 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:51:00 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:51:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:51:12 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:51:16 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:51:16 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:51:17 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:51:17 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:51:19 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:51:19 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:51:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:51:20 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:51:40 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:51:40 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:51:42 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:51:42 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:57:54 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:57:54 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:57:54 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:57:54 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:58:56 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:58:56 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:58:59 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:58:59 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:59:22 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:59:22 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:59:27 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:59:27 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:59:29 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:59:29 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:59:48 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:59:48 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 18:59:59 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 18:59:59 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:00:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:00:12 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:00:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:00:20 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:00:36 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:00:36 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:00:36 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:00:36 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:01:56 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:01:56 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:02:29 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:02:29 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:03:03 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:03:03 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:03:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:03:05 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:03:18 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:03:18 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:03:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:03:20 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:03:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:03:24 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:03:27 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:03:27 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:03:30 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:03:30 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:03:36 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:03:36 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:03:47 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:03:47 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:03:50 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:03:50 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:03:53 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:03:53 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:04:22 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:04:22 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:04:32 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:04:32 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:05:14 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:05:14 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:05:14 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:05:14 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:06:19 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:06:19 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:06:26 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:06:26 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:06:26 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:06:26 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:08:46 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:08:46 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:08:46 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:08:46 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:08:53 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:08:53 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:08:53 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:08:53 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:09:19 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:09:19 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:09:19 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:09:19 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:09:49 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:09:49 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:09:49 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:09:49 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:09:53 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:09:53 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 19:09:53 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 19:09:53 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 20:15:37 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 20:15:37 [31merror[39m: [31mplease provide facility npi[39m
+Dec-12-2022 20:44:46 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Dec-12-2022 20:44:46 [31merror[39m: [31mInvalid body parameter[39m
+Jan-02-2023 14:21:37 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-02-2023 14:21:37 [31merror[39m: [31mNo Authorization provided[39m
+Jan-02-2023 14:25:56 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-02-2023 14:25:56 [31merror[39m: [31mNo Authorization provided[39m
+Jan-02-2023 14:29:19 [31merror[39m: [31muncaughtException: a is not defined[39m
+[31mReferenceError: a is not defined[39m
+[31m    at file:///E:/carecadet_project/server_npm_node_js/server.js:86:1[39m
+Jan-02-2023 14:29:35 [31merror[39m: [31muncaughtException: app.use() requires a middleware function[39m
+[31mTypeError: app.use() requires a middleware function[39m
+[31m    at Function.use (E:\carecadet_project\server_npm_node_js\node_modules\express\lib\application.js:217:11)[39m
+[31m    at file:///E:/carecadet_project/server_npm_node_js/server.js:82:5[39m
+Jan-02-2023 14:29:42 [31merror[39m: [31muncaughtException: app.use() requires a middleware function[39m
+[31mTypeError: app.use() requires a middleware function[39m
+[31m    at Function.use (E:\carecadet_project\server_npm_node_js\node_modules\express\lib\application.js:217:11)[39m
+[31m    at file:///E:/carecadet_project/server_npm_node_js/server.js:82:5[39m
+Jan-02-2023 14:31:11 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 14:31:11 [31merror[39m: [31mPending Account[39m
+Jan-02-2023 14:51:47 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 14:51:47 [31merror[39m: [31mUser not found[39m
+Jan-02-2023 15:10:05 [31merror[39m: [31muncaughtException: querySrv ETIMEOUT _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31mError: querySrv ETIMEOUT _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31m    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)[39m
+Jan-02-2023 15:50:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 15:50:20 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-02-2023 15:57:08 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 15:57:08 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-02-2023 15:57:41 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 15:57:41 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-02-2023 15:59:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 15:59:05 [31merror[39m: [31mIncorrect password[39m
+Jan-02-2023 16:00:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:00:23 [31merror[39m: [31mUser not found[39m
+Jan-02-2023 16:02:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:02:31 [31merror[39m: [31mIncorrect password[39m
+Jan-02-2023 16:06:37 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:06:37 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-02-2023 16:07:17 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:07:17 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-02-2023 16:09:55 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:09:55 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-02-2023 16:14:56 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:14:56 [31merror[39m: [31mIncorrect password[39m
+Jan-02-2023 16:15:14 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:15:14 [31merror[39m: [31mUser not found[39m
+Jan-02-2023 16:17:45 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:17:45 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-02-2023 16:18:25 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:18:25 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-02-2023 16:19:46 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:19:46 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-02-2023 16:19:49 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:19:49 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-02-2023 16:21:34 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:21:34 [31merror[39m: [31mUser not found[39m
+Jan-02-2023 16:28:22 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:28:22 [31merror[39m: [31mUser not found[39m
+Jan-02-2023 16:42:06 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-02-2023 16:42:06 [31merror[39m: [31mUser not found[39m
+Jan-11-2023 11:21:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-11-2023 11:21:05 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-11-2023 15:29:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-11-2023 15:29:31 [31merror[39m: [31mUser not found[39m
+Jan-11-2023 16:14:01 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-11-2023 16:14:01 [31merror[39m: [31mNo Authorization provided[39m
+Jan-11-2023 16:14:01 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-11-2023 16:14:01 [31merror[39m: [31mNo Authorization provided[39m
+Jan-11-2023 16:14:04 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-11-2023 16:14:04 [31merror[39m: [31mNo Authorization provided[39m
+Jan-11-2023 16:14:04 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-11-2023 16:14:04 [31merror[39m: [31mNo Authorization provided[39m
+Jan-11-2023 16:14:40 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-11-2023 16:14:40 [31merror[39m: [31mNo Authorization provided[39m
+Jan-11-2023 16:14:40 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-11-2023 16:14:40 [31merror[39m: [31mNo Authorization provided[39m
+Jan-11-2023 16:14:42 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-11-2023 16:14:42 [31merror[39m: [31mNo Authorization provided[39m
+Jan-11-2023 16:14:42 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-11-2023 16:14:42 [31merror[39m: [31mNo Authorization provided[39m
+Jan-12-2023 08:17:05 [31merror[39m: [31muncaughtException: app.use() requires a middleware function[39m
+[31mTypeError: app.use() requires a middleware function[39m
+[31m    at Function.use (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\express\lib\application.js:217:11)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/server.js:84:5[39m
+Jan-12-2023 08:44:41 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-12-2023 08:44:41 [31merror[39m: [31mResObject is not defined[39m
+Jan-12-2023 09:42:52 [31merror[39m: [31muncaughtException: nodemailer is not defined[39m
+[31mReferenceError: nodemailer is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/contact/contact.service.js:9:4[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 09:44:11 [31merror[39m: [31muncaughtException: confirmEmail is not defined[39m
+[31mReferenceError: confirmEmail is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/user/provider/provider.service.js:12:5[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 09:59:22 [31merror[39m: [31muncaughtException: Email not sent[39m
+[31mError: Email not sent[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/contact/contact.service.js:36:17[39m
+[31m    at D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\mailer\index.js:230:21[39m
+[31m    at SMTPConnection.<anonymous> (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-transport\index.js:176:24)[39m
+[31m    at Object.onceWrapper (node:events:640:26)[39m
+[31m    at SMTPConnection.emit (node:events:520:28)[39m
+[31m    at SMTPConnection._onError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:780:14)[39m
+[31m    at TLSSocket.SMTPConnection._onSocketError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:194:45)[39m
+[31m    at TLSSocket.emit (node:events:520:28)[39m
+[31m    at emitErrorNT (node:internal/streams/destroy:157:8)[39m
+[31m    at emitErrorCloseNT (node:internal/streams/destroy:122:3)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m
+Jan-12-2023 10:02:20 [31merror[39m: [31muncaughtException: Server selection timed out after 30000 ms[39m
+[31mMongooseServerSelectionError: Server selection timed out after 30000 ms[39m
+[31m    at NativeConnection.Connection.openUri (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:824:32)[39m
+[31m    at D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\index.js:417:10[39m
+[31m    at D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at promiseOrCallback (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)[39m
+[31m    at Mongoose._promiseOrCallback (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\index.js:1270:10)[39m
+[31m    at Mongoose.connect (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\index.js:416:20)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/core/mongodb/mongo-connection.js:8:9[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+Jan-12-2023 10:03:24 [31merror[39m: [31muncaughtException: Email not sent[39m
+[31mError: Email not sent[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/contact/contact.service.js:36:17[39m
+[31m    at D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\mailer\index.js:230:21[39m
+[31m    at SMTPConnection.<anonymous> (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-transport\index.js:176:24)[39m
+[31m    at Object.onceWrapper (node:events:640:26)[39m
+[31m    at SMTPConnection.emit (node:events:520:28)[39m
+[31m    at SMTPConnection._onError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:780:14)[39m
+[31m    at TLSSocket.SMTPConnection._onSocketError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:194:45)[39m
+[31m    at TLSSocket.emit (node:events:520:28)[39m
+[31m    at emitErrorNT (node:internal/streams/destroy:157:8)[39m
+[31m    at emitErrorCloseNT (node:internal/streams/destroy:122:3)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m
+Jan-12-2023 10:05:27 [31merror[39m: [31muncaughtException: provider does exists[39m
+[31mError: provider does exists[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/contact/contact.service.js:36:17[39m
+[31m    at D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\mailer\index.js:230:21[39m
+[31m    at SMTPConnection.<anonymous> (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-transport\index.js:176:24)[39m
+[31m    at Object.onceWrapper (node:events:640:26)[39m
+[31m    at SMTPConnection.emit (node:events:520:28)[39m
+[31m    at SMTPConnection._onError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:780:14)[39m
+[31m    at TLSSocket.SMTPConnection._onSocketError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:194:45)[39m
+[31m    at TLSSocket.emit (node:events:520:28)[39m
+[31m    at emitErrorNT (node:internal/streams/destroy:157:8)[39m
+[31m    at emitErrorCloseNT (node:internal/streams/destroy:122:3)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m
+Jan-12-2023 10:08:04 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-12-2023 10:08:04 [31merror[39m: [31mOrganization already exists[39m
+Jan-12-2023 10:11:41 [31merror[39m: [31muncaughtException: provider does exists[39m
+[31mError: provider does exists[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/contact/contact.service.js:36:17[39m
+[31m    at D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\mailer\index.js:230:21[39m
+[31m    at SMTPConnection.<anonymous> (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-transport\index.js:176:24)[39m
+[31m    at Object.onceWrapper (node:events:640:26)[39m
+[31m    at SMTPConnection.emit (node:events:520:28)[39m
+[31m    at SMTPConnection._onError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:780:14)[39m
+[31m    at TLSSocket.SMTPConnection._onSocketError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:194:45)[39m
+[31m    at TLSSocket.emit (node:events:520:28)[39m
+[31m    at emitErrorNT (node:internal/streams/destroy:157:8)[39m
+[31m    at emitErrorCloseNT (node:internal/streams/destroy:122:3)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m
+Jan-12-2023 10:15:23 [31merror[39m: [31muncaughtException: Organization already exists[39m
+[31mError: Organization already exists[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/contact/contact.service.js:36:17[39m
+[31m    at D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\mailer\index.js:230:21[39m
+[31m    at SMTPConnection.<anonymous> (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-transport\index.js:176:24)[39m
+[31m    at Object.onceWrapper (node:events:640:26)[39m
+[31m    at SMTPConnection.emit (node:events:520:28)[39m
+[31m    at SMTPConnection._onError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:780:14)[39m
+[31m    at TLSSocket.SMTPConnection._onSocketError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:194:45)[39m
+[31m    at TLSSocket.emit (node:events:520:28)[39m
+[31m    at emitErrorNT (node:internal/streams/destroy:157:8)[39m
+[31m    at emitErrorCloseNT (node:internal/streams/destroy:122:3)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m
+Jan-12-2023 10:16:30 [31merror[39m: [31muncaughtException: Organization already exists[39m
+[31mError: Organization already exists[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/contact/contact.service.js:36:17[39m
+[31m    at D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\mailer\index.js:230:21[39m
+[31m    at SMTPConnection.<anonymous> (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-transport\index.js:176:24)[39m
+[31m    at Object.onceWrapper (node:events:640:26)[39m
+[31m    at SMTPConnection.emit (node:events:520:28)[39m
+[31m    at SMTPConnection._onError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:780:14)[39m
+[31m    at TLSSocket.SMTPConnection._onSocketError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:194:45)[39m
+[31m    at TLSSocket.emit (node:events:520:28)[39m
+[31m    at emitErrorNT (node:internal/streams/destroy:157:8)[39m
+[31m    at emitErrorCloseNT (node:internal/streams/destroy:122:3)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m
+Jan-12-2023 10:17:35 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-12-2023 10:17:35 [31merror[39m: [31mOrganization already exists[39m
+Jan-12-2023 12:19:49 [31merror[39m: [31muncaughtException: connect ETIMEDOUT 18.233.86.194:27017[39m
+[31mMongoNetworkError: connect ETIMEDOUT 18.233.86.194:27017[39m
+[31m    at connectionFailureError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongodb\lib\cmap\connect.js:387:20)[39m
+[31m    at TLSSocket.<anonymous> (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongodb\lib\cmap\connect.js:310:22)[39m
+[31m    at Object.onceWrapper (node:events:640:26)[39m
+[31m    at TLSSocket.emit (node:events:520:28)[39m
+[31m    at emitErrorNT (node:internal/streams/destroy:157:8)[39m
+[31m    at emitErrorCloseNT (node:internal/streams/destroy:122:3)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m
+Jan-12-2023 12:21:32 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-12-2023 12:21:32 [31merror[39m: [31mNo Authorization provided[39m
+Jan-12-2023 12:33:08 [31merror[39m: [31muncaughtException: Cannot read properties of undefined (reading 'userID')[39m
+[31mTypeError: Cannot read properties of undefined (reading 'userID')[39m
+[31m    at sendConfirmationEmail (file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pricelist.service.js:54:32)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pricelist.service.js:84:9[39m
+[31m    at FSReqCallback.oncomplete (node:fs:188:23)[39m
+Jan-12-2023 12:36:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-12-2023 12:36:31 [31merror[39m: [31mOperation `UserSession.findOne()` buffering timed out after 10000ms[39m
+Jan-12-2023 12:45:22 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-12-2023 12:45:22 [31merror[39m: [31mOperation `UserSession.findOne()` buffering timed out after 10000ms[39m
+Jan-12-2023 12:57:06 [31merror[39m: [31muncaughtException: connect ETIMEDOUT 18.233.86.194:27017[39m
+[31mMongoNetworkError: connect ETIMEDOUT 18.233.86.194:27017[39m
+[31m    at connectionFailureError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongodb\lib\cmap\connect.js:387:20)[39m
+[31m    at TLSSocket.<anonymous> (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongodb\lib\cmap\connect.js:310:22)[39m
+[31m    at Object.onceWrapper (node:events:640:26)[39m
+[31m    at TLSSocket.emit (node:events:520:28)[39m
+[31m    at emitErrorNT (node:internal/streams/destroy:157:8)[39m
+[31m    at emitErrorCloseNT (node:internal/streams/destroy:122:3)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m
+Jan-12-2023 13:00:36 [31merror[39m: [31muncaughtException: connect ETIMEDOUT 18.233.86.194:27017[39m
+[31mMongoNetworkError: connect ETIMEDOUT 18.233.86.194:27017[39m
+[31m    at connectionFailureError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongodb\lib\cmap\connect.js:387:20)[39m
+[31m    at TLSSocket.<anonymous> (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongodb\lib\cmap\connect.js:310:22)[39m
+[31m    at Object.onceWrapper (node:events:640:26)[39m
+[31m    at TLSSocket.emit (node:events:520:28)[39m
+[31m    at emitErrorNT (node:internal/streams/destroy:157:8)[39m
+[31m    at emitErrorCloseNT (node:internal/streams/destroy:122:3)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m
+Jan-12-2023 13:02:28 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:02:30 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:02:59 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:03:08 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:03:11 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:03:15 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:03:18 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:03:22 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:03:24 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:03:27 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:03:31 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:03:37 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:03:44 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:04:06 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:04:18 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:04:26 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:04:29 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:04:36 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:04:46 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:04:53 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:05:03 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:05:22 [31merror[39m: [31muncaughtException: Cannot overwrite `pricelist` model once compiled.[39m
+[31mOverwriteModelError: Cannot overwrite `pricelist` model once compiled.[39m
+[31m    at NativeConnection.Connection.model (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:1199:13)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.schema.js:23:24[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-12-2023 13:08:52 [31merror[39m: [31muncaughtException: connect ETIMEDOUT 18.233.86.194:27017[39m
+[31mMongooseServerSelectionError: connect ETIMEDOUT 18.233.86.194:27017[39m
+[31m    at NativeConnection.Connection.openUri (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\connection.js:824:32)[39m
+[31m    at D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\index.js:417:10[39m
+[31m    at D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at promiseOrCallback (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)[39m
+[31m    at Mongoose._promiseOrCallback (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\index.js:1270:10)[39m
+[31m    at Mongoose.connect (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongoose\lib\index.js:416:20)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/core/mongodb/mongo-connection.js:8:9[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+Jan-12-2023 13:09:26 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-12-2023 13:09:26 [31merror[39m: [31mOperation `UserSession.findOne()` buffering timed out after 10000ms[39m
+Jan-12-2023 13:09:39 [31merror[39m: [31muncaughtException: connect ETIMEDOUT 18.233.86.194:27017[39m
+[31mMongoNetworkError: connect ETIMEDOUT 18.233.86.194:27017[39m
+[31m    at connectionFailureError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongodb\lib\cmap\connect.js:387:20)[39m
+[31m    at TLSSocket.<anonymous> (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongodb\lib\cmap\connect.js:310:22)[39m
+[31m    at Object.onceWrapper (node:events:640:26)[39m
+[31m    at TLSSocket.emit (node:events:520:28)[39m
+[31m    at emitErrorNT (node:internal/streams/destroy:157:8)[39m
+[31m    at emitErrorCloseNT (node:internal/streams/destroy:122:3)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m
+Jan-12-2023 13:57:29 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-12-2023 13:57:29 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-12-2023 14:15:02 [31merror[39m: [31muncaughtException: app.use() requires a middleware function[39m
+[31mTypeError: app.use() requires a middleware function[39m
+[31m    at Function.use (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\express\lib\application.js:217:11)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/server.js:87:5[39m
+Jan-12-2023 14:15:09 [31merror[39m: [31muncaughtException: app.use() requires a middleware function[39m
+[31mTypeError: app.use() requires a middleware function[39m
+[31m    at Function.use (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\express\lib\application.js:217:11)[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/server.js:87:5[39m
+Jan-12-2023 14:15:11 [31merror[39m: [31muncaughtException: p is not defined[39m
+[31mReferenceError: p is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/server.js:87:26[39m
+Jan-12-2023 14:15:13 [31merror[39m: [31muncaughtException: P is not defined[39m
+[31mReferenceError: P is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/server.js:87:26[39m
+Jan-12-2023 14:19:19 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-12-2023 14:19:19 [31merror[39m: [31mNo Authorization provided[39m
+Jan-12-2023 14:22:41 [31merror[39m: [31muncaughtException: Cannot read properties of undefined (reading 'then')[39m
+[31mTypeError: Cannot read properties of undefined (reading 'then')[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pricelist.service.js:129:55[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:96:5)[39m
+Jan-12-2023 14:36:38 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-12-2023 14:36:38 [31merror[39m: [31mNo Authorization provided[39m
+Jan-12-2023 14:39:30 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-12-2023 14:39:30 [31merror[39m: [31mNo Authorization provided[39m
+Jan-12-2023 17:20:02 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-12-2023 17:20:02 [31merror[39m: [31mNo Authorization provided[39m
+Jan-13-2023 09:31:16 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-13-2023 09:31:16 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-13-2023 09:31:16 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-13-2023 09:31:16 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-13-2023 09:31:16 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-13-2023 09:31:16 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-13-2023 09:31:16 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-13-2023 09:31:16 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-13-2023 09:32:18 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-13-2023 09:32:18 [31merror[39m: [31mNo Authorization provided[39m
+Jan-13-2023 10:02:07 [31merror[39m: [31muncaughtException: fileConfirmation is not defined[39m
+[31mReferenceError: fileConfirmation is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pricelist.service.js:24:3[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-13-2023 10:02:09 [31merror[39m: [31muncaughtException: fileConfirmation is not defined[39m
+[31mReferenceError: fileConfirmation is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pricelist.service.js:24:3[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-13-2023 10:03:33 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-13-2023 10:03:33 [31merror[39m: [31mPathPricelist is not defined[39m
+Jan-13-2023 10:03:33 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-13-2023 10:03:33 [31merror[39m: [31mNo Authorization provided[39m
+Jan-13-2023 10:05:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-13-2023 10:05:23 [31merror[39m: [31mPathPricelist is not defined[39m
+Jan-13-2023 10:05:23 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-13-2023 10:05:23 [31merror[39m: [31mNo Authorization provided[39m
+Jan-13-2023 10:05:58 [31merror[39m: [31muncaughtException: imp is not defined[39m
+[31mReferenceError: imp is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.controller.js:2:1[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-13-2023 10:07:37 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-13-2023 10:07:37 [31merror[39m: [31mNo Authorization provided[39m
+Jan-13-2023 10:13:34 [31merror[39m: [31muncaughtException: ro is not defined[39m
+[31mReferenceError: ro is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.controller.js:9:1[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-13-2023 10:32:38 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-13-2023 10:32:38 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-13-2023 10:32:38 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-13-2023 10:32:38 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-13-2023 11:00:12 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-13-2023 11:00:12 [31merror[39m: [31mNo Authorization provided[39m
+Jan-13-2023 11:42:44 [31merror[39m: [31muncaughtException: get is not defined[39m
+[31mReferenceError: get is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.controller.js:10:20[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-13-2023 11:43:08 [31merror[39m: [31muncaughtException: connect ETIMEDOUT 35.169.99.30:27017[39m
+[31mMongoNetworkError: connect ETIMEDOUT 35.169.99.30:27017[39m
+[31m    at connectionFailureError (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongodb\lib\cmap\connect.js:387:20)[39m
+[31m    at TLSSocket.<anonymous> (D:\HealthLensProvider\healthlens\work_only\carecadet_project\server_npm_node_js\node_modules\mongodb\lib\cmap\connect.js:310:22)[39m
+[31m    at Object.onceWrapper (node:events:640:26)[39m
+[31m    at TLSSocket.emit (node:events:520:28)[39m
+[31m    at emitErrorNT (node:internal/streams/destroy:157:8)[39m
+[31m    at emitErrorCloseNT (node:internal/streams/destroy:122:3)[39m
+[31m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m
+Jan-13-2023 11:45:00 [31merror[39m: [31merr{"name":"JsonWebTokenError","message":"invalid signature","statusCode":500,"status":"error"}[39m
+Jan-13-2023 11:45:00 [31merror[39m: [31mInvalid Token[39m
+Jan-13-2023 11:47:34 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-13-2023 11:47:34 [31merror[39m: [31mpath must be absolute or specify root to res.sendFile[39m
+Jan-13-2023 11:49:27 [31merror[39m: [31muncaughtException: path is not defined[39m
+[31mReferenceError: path is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.controller.js:6:19[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-13-2023 11:49:29 [31merror[39m: [31muncaughtException: path is not defined[39m
+[31mReferenceError: path is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.controller.js:8:19[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-13-2023 11:49:31 [31merror[39m: [31muncaughtException: im is not defined[39m
+[31mReferenceError: im is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.controller.js:4:1[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-13-2023 11:49:57 [31merror[39m: [31muncaughtException: _ is not defined[39m
+[31mReferenceError: _ is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.controller.js:9:13[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:337:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:88:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:61:12)[39m
+Jan-13-2023 11:50:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-13-2023 11:50:24 [31merror[39m: [31mpath must be absolute or specify root to res.sendFile[39m
+Jan-13-2023 11:50:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-13-2023 11:50:24 [31merror[39m: [31mpath must be absolute or specify root to res.sendFile[39m
+Jan-13-2023 11:50:45 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-13-2023 11:50:45 [31merror[39m: [31mpath must be absolute or specify root to res.sendFile[39m
+Jan-13-2023 11:50:45 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-13-2023 11:50:45 [31merror[39m: [31mpath must be absolute or specify root to res.sendFile[39m
+Jan-18-2023 10:17:32 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-18-2023 10:17:32 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-18-2023 10:17:32 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-18-2023 10:17:32 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-18-2023 10:17:33 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-18-2023 10:17:33 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-18-2023 10:17:34 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-18-2023 10:17:34 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-18-2023 11:13:49 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-18-2023 11:13:49 [31merror[39m: [31mNo Authorization provided[39m
+Jan-18-2023 11:20:49 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-18-2023 11:20:49 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-18-2023 11:20:49 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-18-2023 11:20:49 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-18-2023 11:20:50 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-18-2023 11:20:50 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-18-2023 11:20:50 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-18-2023 11:20:50 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-18-2023 15:00:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-18-2023 15:00:31 [31merror[39m: [31mrequire is not defined[39m
+Jan-18-2023 15:00:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-18-2023 15:00:31 [31merror[39m: [31mrequire is not defined[39m
+Jan-18-2023 15:06:11 [31merror[39m: [31muncaughtException: data is not defined[39m
+[31mReferenceError: data is not defined[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.controller.js:43:19[39m
+[31m    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)[39m
+Jan-18-2023 15:06:43 [31merror[39m: [31muncaughtException: fileData.split is not a function[39m
+[31mTypeError: fileData.split is not a function[39m
+[31m    at file:///D:/HealthLensProvider/healthlens/work_only/carecadet_project/server_npm_node_js/api/services/pathPricelist.controller.js:43:28[39m
+[31m    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)[39m
+Jan-18-2023 15:38:42 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-18-2023 15:38:42 [31merror[39m: [31mNo Authorization provided[39m
+Jan-18-2023 16:26:46 [31merror[39m: [31merr{"reason":{"type":"ReplicaSetNoPrimary","servers":{},"stale":false,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"setName":"atlas-5816ar-shard-0","maxElectionId":"7fffffff0000000000000089","maxSetVersion":9,"commonWireVersion":0,"logicalSessionTimeoutMinutes":null},"statusCode":500,"status":"error"}[39m
+Jan-18-2023 16:26:46 [31merror[39m: [31mgetaddrinfo ENOTFOUND ac-wjy5vpi-shard-00-00.daesicp.mongodb.net[39m
+Jan-18-2023 16:27:08 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-18-2023 16:27:08 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-18-2023 16:27:10 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-18-2023 16:27:10 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-19-2023 11:02:34 [31merror[39m: [31muncaughtException: querySrv EREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31mError: querySrv EREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31m    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:173:17)[39m
+Jan-19-2023 11:04:08 [31merror[39m: [31muncaughtException: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31mError: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31m    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:173:17)[39m
+Jan-19-2023 11:04:15 [31merror[39m: [31muncaughtException: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31mError: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31m    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:173:17)[39m
+Jan-19-2023 11:04:29 [31merror[39m: [31muncaughtException: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31mError: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31m    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:173:17)[39m
+Jan-19-2023 11:04:31 [31merror[39m: [31muncaughtException: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31mError: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31m    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:173:17)[39m
+Jan-19-2023 11:04:38 [31merror[39m: [31muncaughtException: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31mError: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31m    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:173:17)[39m
+Jan-19-2023 11:04:42 [31merror[39m: [31muncaughtException: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31mError: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31m    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:173:17)[39m
+Jan-19-2023 11:10:14 [31merror[39m: [31muncaughtException: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31mError: querySrv ECONNREFUSED _mongodb._tcp.lens.daesicp.mongodb.net[39m
+[31m    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:173:17)[39m
+Jan-19-2023 11:15:00 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 11:15:01 [31merror[39m: [31mOperation `UserSession.findOne()` buffering timed out after 10000ms[39m
+Jan-19-2023 11:15:06 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-19-2023 11:15:06 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-19-2023 11:15:08 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-19-2023 11:15:08 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-19-2023 11:15:09 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-19-2023 11:15:09 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-19-2023 11:15:47 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 11:15:47 [31merror[39m: [31mA callback is required![39m
+Jan-19-2023 11:16:51 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 11:16:51 [31merror[39m: [31mOperation `UserSession.findOne()` buffering timed out after 10000ms[39m
+Jan-19-2023 11:19:25 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 11:19:25 [31merror[39m: [31mA callback is required![39m
+Jan-19-2023 11:28:04 [31merror[39m: [31merr{"code":"ERR_INVALID_CALLBACK","statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:01:15 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:01:15 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-19-2023 19:01:15 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:01:15 [31merror[39m: [31mfileContent is not defined[39m
+Jan-19-2023 19:07:25 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:07:25 [31merror[39m: [31minvalid data[39m
+Jan-19-2023 19:07:57 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:07:57 [31merror[39m: [31minvalid data[39m
+Jan-19-2023 19:08:28 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:08:28 [31merror[39m: [31minvalid data[39m
+Jan-19-2023 19:09:08 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:09:08 [31merror[39m: [31minvalid data[39m
+Jan-19-2023 19:10:41 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:10:41 [31merror[39m: [31minvalid data[39m
+Jan-19-2023 19:11:16 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:11:16 [31merror[39m: [31minvalid data[39m
+Jan-19-2023 19:11:39 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:11:39 [31merror[39m: [31minvalid data[39m
+Jan-19-2023 19:12:03 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:12:03 [31merror[39m: [31minvalid data[39m
+Jan-19-2023 19:12:18 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:12:18 [31merror[39m: [31minvalid data[39m
+Jan-19-2023 19:14:34 [31merror[39m: [31merr{"code":"ERR_INVALID_CALLBACK","statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:14:34 [31merror[39m: [31mCallback must be a function. Received undefined[39m
+Jan-19-2023 19:32:11 [31merror[39m: [31merr{"code":"EAUTH","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials j14-20020a170903024e00b00189667acf19sm25207222plh.95 - gsmtp","responseCode":535,"command":"AUTH PLAIN","statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:32:11 [31merror[39m: [31mInvalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials j14-20020a170903024e00b00189667acf19sm25207222plh.95 - gsmtp[39m
+Jan-19-2023 19:45:48 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:45:48 [31merror[39m: [31minvalid data[39m
+Jan-19-2023 19:49:13 [31merror[39m: [31merr{"code":"EAUTH","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials k185-20020a6284c2000000b00586a59b4b01sm23135653pfd.12 - gsmtp","responseCode":535,"command":"AUTH PLAIN","statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:49:13 [31merror[39m: [31mInvalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials k185-20020a6284c2000000b00586a59b4b01sm23135653pfd.12 - gsmtp[39m
+Jan-19-2023 19:50:43 [31merror[39m: [31merr{"code":"EAUTH","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials h124-20020a628382000000b0058bb2f12080sm11876262pfe.48 - gsmtp","responseCode":535,"command":"AUTH PLAIN","statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:50:43 [31merror[39m: [31mInvalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials h124-20020a628382000000b0058bb2f12080sm11876262pfe.48 - gsmtp[39m
+Jan-19-2023 19:51:42 [31merror[39m: [31merr{"code":"EAUTH","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials r3-20020a632b03000000b00478e14e6e76sm21247160pgr.32 - gsmtp","responseCode":535,"command":"AUTH PLAIN","statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:51:42 [31merror[39m: [31mInvalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials r3-20020a632b03000000b00478e14e6e76sm21247160pgr.32 - gsmtp[39m
+Jan-19-2023 19:53:10 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-19-2023 19:53:10 [31merror[39m: [31mNo Authorization provided[39m
+Jan-20-2023 11:06:53 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-20-2023 11:06:53 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-20-2023 11:06:53 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-20-2023 11:06:53 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-20-2023 11:06:53 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-20-2023 11:06:53 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-20-2023 11:06:53 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-20-2023 11:06:53 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-20-2023 11:07:23 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 11:07:23 [31merror[39m: [31minvalid data[39m
+Jan-20-2023 11:23:22 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 11:23:22 [31merror[39m: [31minvalid data[39m
+Jan-20-2023 12:35:36 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-20-2023 12:35:36 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-20-2023 12:36:57 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 12:36:57 [31merror[39m: [31mOperation `UserSession.findOne()` buffering timed out after 10000ms[39m
+Jan-20-2023 12:42:40 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-20-2023 12:42:40 [31merror[39m: [31mNo Authorization provided[39m
+Jan-20-2023 12:45:14 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 12:45:14 [31merror[39m: [31mInvalid data[39m
+Jan-20-2023 12:45:26 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 12:45:26 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain,Albumin Test already exists[39m
+Jan-20-2023 12:47:03 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 12:47:03 [31merror[39m: [31mInvalid data[39m
+Jan-20-2023 12:47:56 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-20-2023 12:47:56 [31merror[39m: [31mNo Authorization provided[39m
+Jan-20-2023 13:05:45 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 13:05:45 [31merror[39m: [31mInvalid data[39m
+Jan-20-2023 13:16:24 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 13:16:24 [31merror[39m: [31mService already exists[39m
+Jan-20-2023 13:18:03 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 13:18:03 [31merror[39m: [31mService already exists[39m
+Jan-20-2023 13:41:12 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-20-2023 13:41:12 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-20-2023 13:41:13 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-20-2023 13:41:13 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-20-2023 15:43:37 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 15:43:37 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-20-2023 15:44:41 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 15:44:41 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-20-2023 15:47:37 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 15:47:37 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-20-2023 15:49:17 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 15:49:17 [31merror[39m: [31mPending Account.Please Verify Your Email![39m
+Jan-20-2023 15:49:42 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-20-2023 15:49:42 [31merror[39m: [31mNo Authorization provided[39m
+Jan-20-2023 15:55:35 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-20-2023 15:55:35 [31merror[39m: [31mFacility already exists[39m
+Jan-21-2023 13:25:17 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-21-2023 13:25:17 [31merror[39m: [31mNo Authorization provided[39m
+Jan-21-2023 13:25:17 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-21-2023 13:25:17 [31merror[39m: [31mNo Authorization provided[39m
+Jan-23-2023 10:06:56 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-23-2023 10:06:56 [31merror[39m: [31mIncorrect password[39m
+Jan-23-2023 10:08:34 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-23-2023 10:08:34 [31merror[39m: [31mPending Account.Please Verify Your Email![39m
+Jan-23-2023 10:08:44 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-23-2023 10:08:44 [31merror[39m: [31mNo Authorization provided[39m
+Jan-23-2023 10:26:20 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-23-2023 10:26:20 [31merror[39m: [31mNo Authorization provided[39m
+Jan-23-2023 10:31:55 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-23-2023 10:31:55 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain,Albumin Test already exists[39m
+Jan-23-2023 10:34:53 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-23-2023 10:34:53 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain,Albumin Test,Aldolase Test already exists[39m
+Jan-23-2023 10:37:58 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-23-2023 10:37:58 [31merror[39m: [31mNo Authorization provided[39m
+Jan-23-2023 11:13:53 [31merror[39m: [31merr{"errno":-4058,"code":"ENOENT","syscall":"stat","path":"F:\\carecadet_project\\server_npm_node_js\\PathPrice.html","expose":false,"statusCode":404,"status":404}[39m
+Jan-23-2023 11:13:53 [31merror[39m: [31mENOENT: no such file or directory, stat 'F:\carecadet_project\server_npm_node_js\PathPrice.html'[39m
+Jan-23-2023 11:13:53 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-23-2023 11:13:53 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 17:48:05 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 17:48:05 [31merror[39m: [31mAlready a user exists with this email[39m
+Jan-30-2023 17:48:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 17:48:20 [31merror[39m: [31mPending Account.Please Verify Your Email![39m
+Jan-30-2023 17:49:06 [31merror[39m: [31muncaughtException: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials ck11-20020a056a00328b00b00593906a8843sm4679981pfb.176 - gsmtp[39m
+[31mError: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials ck11-20020a056a00328b00b00593906a8843sm4679981pfb.176 - gsmtp[39m
+[31m    at SMTPConnection._formatError (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)[39m
+[31m    at SMTPConnection._actionAUTHComplete (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)[39m
+[31m    at SMTPConnection.<anonymous> (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)[39m
+[31m    at SMTPConnection._processResponse (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)[39m
+[31m    at SMTPConnection._onData (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)[39m
+[31m    at SMTPConnection._onSocketData (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)[39m
+[31m    at TLSSocket.emit (node:events:513:28)[39m
+[31m    at addChunk (node:internal/streams/readable:324:12)[39m
+[31m    at readableAddChunk (node:internal/streams/readable:297:9)[39m
+[31m    at Readable.push (node:internal/streams/readable:234:10)[39m
+[31m    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)[39m
+Jan-30-2023 17:53:42 [31merror[39m: [31muncaughtException: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials e12-20020a170902ed8c00b00188ea79fae0sm7831461plj.48 - gsmtp[39m
+[31mError: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at[39m
+[31m535 5.7.8  https://support.google.com/mail/?p=BadCredentials e12-20020a170902ed8c00b00188ea79fae0sm7831461plj.48 - gsmtp[39m
+[31m    at SMTPConnection._formatError (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)[39m
+[31m    at SMTPConnection._actionAUTHComplete (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)[39m
+[31m    at SMTPConnection.<anonymous> (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)[39m
+[31m    at SMTPConnection._processResponse (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)[39m
+[31m    at SMTPConnection._onData (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)[39m
+[31m    at SMTPConnection._onSocketData (F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)[39m
+[31m    at TLSSocket.emit (node:events:513:28)[39m
+[31m    at addChunk (node:internal/streams/readable:324:12)[39m
+[31m    at readableAddChunk (node:internal/streams/readable:297:9)[39m
+[31m    at Readable.push (node:internal/streams/readable:234:10)[39m
+[31m    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)[39m
+Jan-30-2023 17:55:10 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 17:55:10 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 18:00:04 [31merror[39m: [31merr{"errno":-4058,"code":"ESTREAM","syscall":"open","path":"F:\\Carecadet-30.1\\node_js_carecadet\\server_npm_node_js\\unknownHeaderUploads\\1675119602987_servicepricemistake.csv","command":"API","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:00:04 [31merror[39m: [31mENOENT: no such file or directory, open 'F:\Carecadet-30.1\node_js_carecadet\server_npm_node_js\unknownHeaderUploads\1675119602987_servicepricemistake.csv'[39m
+Jan-30-2023 18:10:31 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:10:31 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 18:14:19 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:14:19 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain already exists[39m
+Jan-30-2023 18:16:37 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:16:37 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 18:57:23 [31merror[39m: [31merr{"name":"NoAuthorizationProvided","statusCode":500,"status":"error"}[39m
+Jan-30-2023 18:57:23 [31merror[39m: [31mNo Authorization provided[39m
+Jan-30-2023 19:52:54 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Jan-30-2023 19:52:54 [31merror[39m: [31mFacility already exists[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-31-2023 16:10:08 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Jan-31-2023 16:10:10 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Jan-31-2023 16:10:10 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:14 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 12:25:49 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:25:49 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 12:41:21 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:41:21 [31merror[39m: [31mCannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 12:46:31 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:46:31 [31merror[39m: [31mCannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 12:57:18 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 12:57:18 [31merror[39m: [31mCannot read properties of undefined (reading 'orgID')[39m
+Feb-09-2023 13:01:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 13:01:12 [31merror[39m: [31mCannot read properties of undefined (reading 'filePath')[39m
+Feb-09-2023 14:19:33 [31merror[39m: [31muncaughtException: ppublishPricelistCorrectformat is not defined[39m
+[31mReferenceError: ppublishPricelistCorrectformat is not defined[39m
+[31m    at file:///D:/Divya/carecadet-git/node_js_carecadet/server_npm_node_js/api/services/pricelist.controller.js:12:47[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+Feb-09-2023 14:19:36 [31merror[39m: [31muncaughtException: publishPricelistCorrectformat is not defined[39m
+[31mReferenceError: publishPricelistCorrectformat is not defined[39m
+[31m    at file:///D:/Divya/carecadet-git/node_js_carecadet/server_npm_node_js/api/services/pricelist.controller.js:12:47[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:22:54 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Feb-09-2023 14:32:44 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:32:44 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain,Albumin Test already exists[39m
+Feb-09-2023 14:33:33 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:33:33 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 14:33:47 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 14:33:47 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 15:26:20 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 15:26:20 [31merror[39m: [31m2D Echo,4D Scan,ACTH (Adreno Corticotropic Hormone) Test,Adenosine Deaminase Test,AEC (Absolute Eosinophil Count) Test,AFB (Acid Fast Bacilli) Culture Test,AFP (Alpha Feto Protein) Test,Alberts Stain,Albumin Test already exists[39m
+Feb-09-2023 15:27:12 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 15:27:12 [31merror[39m: [31mFacility already exists[39m
+Feb-09-2023 15:27:38 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Feb-09-2023 15:27:38 [31merror[39m: [31mFacility already exists[39m
+Aug-10-2023 12:49:29 [31merror[39m: [31muncaughtException: connect ETIMEDOUT 122.165.67.82:5004[39m
+[31mMongooseServerSelectionError: connect ETIMEDOUT 122.165.67.82:5004[39m
+[31m    at NativeConnection.Connection.openUri (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\connection.js:824:32)[39m
+[31m    at E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\index.js:417:10[39m
+[31m    at E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at promiseOrCallback (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)[39m
+[31m    at Mongoose._promiseOrCallback (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\index.js:1270:10)[39m
+[31m    at Mongoose.connect (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\index.js:416:20)[39m
+[31m    at file:///E:/Typescript/care_cadet_typescript_26_06_2023/node_js_carecadet/server_npm_node_js/core/mongodb/mongo-connection.js:8:9[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+Aug-16-2023 17:01:06 [31merror[39m: [31muncaughtException: connect ECONNREFUSED 127.0.0.1:8000[39m
+[31mMongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:8000[39m
+[31m    at NativeConnection.Connection.openUri (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\connection.js:824:32)[39m
+[31m    at E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\index.js:417:10[39m
+[31m    at E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at promiseOrCallback (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)[39m
+[31m    at Mongoose._promiseOrCallback (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\index.js:1270:10)[39m
+[31m    at Mongoose.connect (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\index.js:416:20)[39m
+[31m    at file:///E:/Typescript/care_cadet_typescript_26_06_2023/node_js_carecadet/server_npm_node_js/core/mongodb/mongo-connection.js:8:9[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+Aug-16-2023 17:29:19 [31merror[39m: [31muncaughtException: connect ECONNREFUSED 127.0.0.1:8000[39m
+[31mMongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:8000[39m
+[31m    at NativeConnection.Connection.openUri (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\connection.js:824:32)[39m
+[31m    at E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\index.js:417:10[39m
+[31m    at E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at promiseOrCallback (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)[39m
+[31m    at Mongoose._promiseOrCallback (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\index.js:1270:10)[39m
+[31m    at Mongoose.connect (E:\Typescript\care_cadet_typescript_26_06_2023\node_js_carecadet\server_npm_node_js\node_modules\mongoose\lib\index.js:416:20)[39m
+[31m    at file:///E:/Typescript/care_cadet_typescript_26_06_2023/node_js_carecadet/server_npm_node_js/core/mongodb/mongo-connection.js:8:9[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+Aug-16-2023 19:06:03 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Aug-16-2023 19:06:03 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Aug-16-2023 19:06:03 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Aug-16-2023 19:06:03 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Aug-16-2023 19:06:03 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Aug-16-2023 19:06:03 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Aug-16-2023 19:06:03 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Aug-16-2023 19:06:03 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Aug-16-2023 21:14:28 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Aug-16-2023 21:14:28 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Aug-16-2023 21:14:28 [31merror[39m: [31merr{"name":"TokenExpiredError","statusCode":500,"status":"error"}[39m
+Aug-16-2023 21:14:28 [31merror[39m: [31mAuthorization or session expired, Please login again[39m
+Aug-16-2023 21:16:13 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Aug-16-2023 21:16:13 [31merror[39m: [31mMongoServerError: Unrecognized pipeline stage name: '$npi_details'[39m
+Aug-16-2023 21:16:13 [31merror[39m: [31merr{"statusCode":500,"status":"error"}[39m
+Aug-16-2023 21:16:13 [31merror[39m: [31mMongoServerError: Unrecognized pipeline stage name: '$npi_details'[39m
+Aug-21-2023 13:00:22 [31merror[39m: [31muncaughtException: negotiatedSearch is not defined[39m
+[31mReferenceError: negotiatedSearch is not defined[39m
+[31m    at file:///E:/Typescript/care_cadet_typescript_26_06_2023/node_js_carecadet/server_npm_node_js/api/search/search.service.js:16:3[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)[39m
+[31m    at async Promise.all (index 0)[39m
+[31m    at async ESMLoader.import (node:internal/modules/esm/loader:526:24)[39m
+[31m    at async loadESM (node:internal/process/esm_loader:91:5)[39m
+[31m    at async handleMainPromise (node:internal/modules/run_main:65:12)[39m

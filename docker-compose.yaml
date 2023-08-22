@@ -1,0 +1,72 @@
+version: '3'
+services:
+    app:
+        build: ./server_npm_node_js
+        links:
+            - mongo
+        depends_on:
+            - mongo
+        ports:
+            - "5003:5200"
+        restart: always
+        
+    mongo:
+        image: mongo
+        command: [ "--bind_ip_all","--replSet", "rs"]
+        ports:
+            - "5004:27017"
+        volumes:
+            - "$HOME/healthlens_mongodb1:/data/db"
+        restart: always
+
+    es01:
+        image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
+        volumes:
+            - healthlens_esdata01:/usr/share/elasticsearch/data
+        ports:
+            - "5005:9200"
+        environment:
+            - node.name=es01
+            - cluster.name=${CLUSTER_NAME}
+            - cluster.initial_master_nodes=es01
+            - bootstrap.memory_lock=true
+            - xpack.security.enabled=false
+            - xpack.license.self_generated.type=${LICENSE}
+        mem_limit: ${MEM_LIMIT}
+        ulimits:
+            memlock:
+                soft: -1
+                hard: -1
+        restart: always
+
+    kibana:
+        image: docker.elastic.co/kibana/kibana:${STACK_VERSION}
+        environment:
+            - ELASTICSEARCH_HOSTS=http://es01:9200
+        depends_on:
+            - es01
+        links:
+            - es01
+        ports:
+            - "5006:5601"
+        restart: always
+
+    monstache:        
+        image: monstache   
+        working_dir: /monstache        
+        command: -f ./config.toml        
+        volumes:          
+            - ./monstache:/monstache/        
+        ports:          
+            - "5007:8080"        
+        restart: always  
+
+volumes:
+    mongodb:
+
+    healthlens_esdata01:
+        driver: local
+
+    scripts:
+
+    monstache:

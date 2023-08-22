@@ -1,0 +1,5 @@
+mongo-url = "mongodb://mongo:27017" 
+elasticsearch-urls = ["http://es01:9200"]
+change-stream-namespaces = [""] 
+verbose = true
+

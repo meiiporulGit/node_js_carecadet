@@ -1,0 +1,20 @@
+name: remote ssh command
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v0.1.7
+      with:
+        host: 210.18.155.251
+        username: linuxadmin
+        password: Qwerty@123
+        port: 22
+        script: |
+          cd /home/linuxadmin/Projects/Healthlens/
+          git pull dev main
+          docker-compose down
+          docker-compose up -d --build
